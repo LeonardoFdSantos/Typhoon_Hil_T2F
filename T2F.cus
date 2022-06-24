@@ -1,7 +1,7 @@
 <ui_settings>
     <version>2.7</version>
     <model_locked>False</model_locked>
-    <canvas_bg_color>#ffffff</canvas_bg_color>
+    <canvas_bg_color>#353535</canvas_bg_color>
     <initialization_code><![CDATA[
 # NOTE: Variables and functions defined here will be
 # available for use in all Macro and Expression scripts.
@@ -169,7 +169,26 @@ elos = {
         'e': 0.3425,
         'IoIn': 100,
     }
-}]]></initialization_code>
+}
+global TipoA
+global TipoA1
+global TipoA2
+global TipoB
+global TipoB1
+global TipoB2
+global TipoC
+
+global TempoA
+global TempoA1
+global TempoA2
+global TempoB
+global TempoB1
+global TempoB2
+global TempoC
+
+global PotenciaTransformadorIsolador
+global PotenciaTransformadorConsumidor
+global FP]]></initialization_code>
     <components>
         <component_data>
                 <id>11ae1ab4d2dc11eca33918c04df853b6</id>
@@ -195,8 +214,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>8.0</x>
-                    <y>8.0</y>
+                    <x>16.0</x>
+                    <y>152.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -236,8 +255,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>152.0</x>
-                    <y>8.0</y>
+                    <x>160.0</x>
+                    <y>152.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -277,8 +296,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>296.0</x>
-                    <y>8.0</y>
+                    <x>304.0</x>
+                    <y>152.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -318,8 +337,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>8.0</x>
-                    <y>64.0</y>
+                    <x>16.0</x>
+                    <y>208.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -359,8 +378,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>296.0</x>
-                    <y>64.0</y>
+                    <x>304.0</x>
+                    <y>208.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -400,8 +419,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>152.0</x>
-                    <y>64.0</y>
+                    <x>160.0</x>
+                    <y>208.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -441,8 +460,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>152.0</x>
-                    <y>176.0</y>
+                    <x>160.0</x>
+                    <y>320.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -482,8 +501,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>296.0</x>
-                    <y>176.0</y>
+                    <x>304.0</x>
+                    <y>320.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -523,8 +542,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>8.0</x>
-                    <y>176.0</y>
+                    <x>16.0</x>
+                    <y>320.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -564,8 +583,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>8.0</x>
-                    <y>120.0</y>
+                    <x>16.0</x>
+                    <y>272.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -605,8 +624,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>296.0</x>
-                    <y>120.0</y>
+                    <x>304.0</x>
+                    <y>272.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -646,8 +665,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>152.0</x>
-                    <y>120.0</y>
+                    <x>160.0</x>
+                    <y>272.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -698,12 +717,12 @@ displayValue = data
                 <digital_signals><![CDATA[[]]]></digital_signals>
                 <streaming_analog_signals><![CDATA[[]]]></streaming_analog_signals>
                 <streaming_digital_signals><![CDATA[[]]]></streaming_digital_signals>
-                <update_rate>250</update_rate>
+                <update_rate>1000</update_rate>
                 <execution_rate>None</execution_rate>
                 <background_color>black</background_color>
                 <widget_settings>
-                    <x>0</x>
-                    <y>232</y>
+                    <x>1032.0</x>
+                    <y>376.0</y>
                     <width>432</width>
                     <height>184</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -718,7 +737,7 @@ displayValue = data
                     <y_range_min>13000.0</y_range_min>
                     <y_range_max>14000.0</y_range_max>
                     <time_window>15</time_window>
-                    <auto_scale_enabled>True</auto_scale_enabled>
+                    <auto_scale_enabled>False</auto_scale_enabled>
                     <legend_enabled>True</legend_enabled>
                     <x_axis_title_enabled>False</x_axis_title_enabled>
                     <y_axis_title_enabled>False</y_axis_title_enabled>
@@ -792,12 +811,12 @@ displayValue = data
                 <digital_signals><![CDATA[[]]]></digital_signals>
                 <streaming_analog_signals><![CDATA[[]]]></streaming_analog_signals>
                 <streaming_digital_signals><![CDATA[[]]]></streaming_digital_signals>
-                <update_rate>250</update_rate>
+                <update_rate>1000</update_rate>
                 <execution_rate>None</execution_rate>
                 <background_color>black</background_color>
                 <widget_settings>
-                    <x>0.0</x>
-                    <y>416.0</y>
+                    <x>1032.0</x>
+                    <y>560.0</y>
                     <width>432</width>
                     <height>184</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -858,7 +877,7 @@ referenceCurves = [refCurveData1]
                 <description><![CDATA[]]></description>
                 <working_mode>windowed</working_mode>
                 <widget_settings>
-                    <x>440.0</x>
+                    <x>32.0</x>
                     <y>8.0</y>
                     <width>120</width>
                     <height>120</height>
@@ -1316,7 +1335,7 @@ displayValue = [ ['Tensao A Linha', hil.get_scada_output_value('Linha_Angulo_A')
                     <x>560.0</x>
                     <y>0.0</y>
                     <width>400</width>
-                    <height>664</height>
+                    <height>376</height>
                     <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
@@ -1357,10 +1376,10 @@ displayValue = [ ['Tensao A Consumidor', hil.get_scada_output_value('Linha_Angul
                 <phasors_data>
                     </phasors_data>
                 <widget_settings>
-                    <x>960</x>
-                    <y>0</y>
+                    <x>960.0</x>
+                    <y>0.0</y>
                     <width>400</width>
-                    <height>664</height>
+                    <height>376</height>
                     <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
@@ -1443,237 +1462,11 @@ widgetValue = None
                 <availableValues><![CDATA[['Sem Falta', 'Falta ABC', 'Falta AB', 'Falta AC', 'Falta BC']]]></availableValues>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
-                    <x>8.0</x>
-                    <y>600.0</y>
+                    <x>16.0</x>
+                    <y>376.0</y>
                     <width>240</width>
                     <height>32</height>
-                    <appearance><![CDATA[Flat]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>99dd0e08f30511ecb14b18c04df853b6</id>
-                <name><![CDATA[Fusivel]]></name>
-                <type>ComboBoxMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-
-def RetornaValorTempoCorrente(Modelo, Icc):
-  x = np.log(Icc)
-  valor = elos[str(Modelo)]['a'] + (elos[str(Modelo)]['b'] * x) + (elos[str(Modelo)]['c'] * x**2) + (elos[str(Modelo)]['d'] * x**3) + (elos[str(Modelo)]['e'] * x**4)
-  return np.exp(valor)
-
-for x in elos:
-    capturaCorrente = hil.get_scada_output_value('Fuse_Link_A')
-    if inputValue == x:
-        Tempo = RetornaValorTempoCorrente(x, capturaCorrente)
-        clock1 = hil.get_sim_step()
-        if Tempo >= (clock1+hil.get_sim_step()):
-            hil.set_contactor('S1', swControl=True, swState=False)
-            pass
-]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-
-elos = {
-    '1H': {
-        'a': 11.5834,
-        'b': -7.7159,
-        'c': 2.2435,
-        'd': -0.4141,
-        'e': 0.0293,
-        'IoIn': 1,
-    },
-    '2H': {
-        'a': 15.3612,
-        'b': -11.3048,
-        'c': 3.7855,
-        'd': -0.6767,
-        'e': 0.0442,
-        'IoIn': 2,
-    },
-    '3H': {
-        'a': 16.6469,
-        'b': -10.3608,
-        'c': 2.8987,
-        'd': -0.4844,
-        'e': 0.0315,
-        'IoIn': 3,
-    },
-    '5H': {
-        'a': 33.5364,
-        'b': -24.1389,
-        'c': 7.0071,
-        'd': -1.0167,
-        'e': 0.0569,
-        'IoIn': 5,
-    },
-    '8H': {
-        'a': 137.5572,
-        'b': -119.0117,
-        'c': 38.2794,
-        'd': -5.4440,
-        'e': 0.2846,
-        'IoIn': 8,
-    },
-    '6K': {
-        'a': 181.2568,
-        'b': -167.5711,
-        'c': 57.6673,
-        'd': -8.7672,
-        'e': 0.4916,
-        'IoIn': 6,
-    },
-    '8K': {
-        'a': 201.6778,
-        'b': -175.2376,
-        'c': 56.8760,
-        'd': -8.1725,
-        'e': 0.4340,
-        'IoIn': 8,
-    },
-    '10K': {
-        'a': 251.8801,
-        'b': -206.6378,
-        'c': 63.3069,
-        'd': -8.5810,
-        'e': 0.4304,
-        'IoIn': 10,
-    },
-    '12K': {
-        'a': 294.2461,
-        'b': -229.0340,
-        'c': 66.6693,
-        'd': -8.5945,
-        'e': 0.4107,
-        'IoIn': 12,
-    },
-    '15K': {
-        'a': 346.4070,
-        'b': -257.6697,
-        'c': 71.6644,
-        'd': -8.8225,
-        'e': 0.4027,
-        'IoIn': 15,
-    },
-    '20K': {
-        'a': 382.4620,
-        'b': -271.3985,
-        'c': 72.1161,
-        'd': -8.4924,
-        'e': 0.3714,
-        'IoIn': 20,
-    },
-    '25K': {
-        'a': 469.9755,
-        'b': -321.2512,
-        'c': 82.1749,
-        'd': -9.3092,
-        'e': 0.3918,
-        'IoIn': 25,
-    },
-    '30K': {
-        'a': 516.7220,
-        'b': -337.6034,
-        'c': 82.5876,
-        'd': -8.9522,
-        'e': 0.3608,
-        'IoIn': 30,
-    },
-    '40K': {
-        'a': 672.1360,
-        'b': -424.7867,
-        'c': 100.3706,
-        'd': -10.4950,
-        'e': 0.4080,
-        'IoIn': 40,
-    },
-    '50K': {
-        'a': 691.3953,
-        'b': -419.2300,
-        'c': 95.1730,
-        'd': -9.5735,
-        'e': 0.3584,
-        'IoIn': 50,
-    },
-    '65K': {
-        'a': 841.8993,
-        'b': -492.8148,
-        'c': 107.9499,
-        'd': -10.4731,
-        'e': 0.3783,
-        'IoIn': 65,
-    },
-    '80K': {
-        'a': 881.1649,
-        'b': -499.4578,
-        'c': 106.0005,
-        'd': -9.9685,
-        'e': 0.3492,
-        'IoIn': 80,
-    },
-    '100K': {
-        'a': 1020.0325,
-        'b': -554.4466,
-        'c': 112.8674,
-        'd': -10.1845,
-        'e': 0.3425,
-        'IoIn': 100,
-    }
-}]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Custom code]]></on_start_code_source>
-                <inputValue><![CDATA[5H]]></inputValue>
-                <availableValues><![CDATA[['1H', '2H', '3H', '5H', '8H', '6K', '8K', '10K', '12K', '15K', '20K', '25K', '30K', '40K', '50K', '65K', '80K', '100K']]]></availableValues>
-                <unit><![CDATA[]]></unit>
-                <widget_settings>
-                    <x>8</x>
-                    <y>632</y>
-                    <width>256</width>
-                    <height>32</height>
-                    <appearance><![CDATA[Flat]]></appearance>
+                    <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
                     <label><![CDATA[]]></label>
@@ -1772,10 +1565,10 @@ widgetValue = None
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
                     <x>264.0</x>
-                    <y>600.0</y>
+                    <y>376.0</y>
                     <width>256</width>
                     <height>32</height>
-                    <appearance><![CDATA[Flat]]></appearance>
+                    <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
                     <label><![CDATA[]]></label>
@@ -1783,8 +1576,68 @@ widgetValue = None
                 </widget_settings>
             </component_data>
         <component_data>
-                <id>55df268cf30711ecae3318c04df853b6</id>
-                <name><![CDATA[Corrente Fuse Link]]></name>
+                <id>7d8c4c49f32e11ecacd118c04df853b6</id>
+                <name><![CDATA[Control Rele]]></name>
+                <type>Macro</type>
+                <description><![CDATA[]]></description>
+                <on_click_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+DESTRAVATUDO = 1
+hil.set_scada_input_value('Memoria50', 0)
+hil.set_scada_input_value('Memoria51', 0)]]></on_click_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+DESTRAVATUDO = 0
+hil.set_scada_input_value('Memoria50', 0)
+hil.set_scada_input_value('Memoria51', 0)]]></on_start_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+if DESTRAVATUDO == 0:
+    if hil.get_scada_output_value('Disj1') == 1:
+            hil.set_scada_input_value('Memoria50', 1)
+    elif hil.get_scada_output_value('Disj2') == 1:
+            hil.set_scada_input_value('Memoria51', 1)
+else:
+    DESTRAVATUDO = 0]]></on_timer_code>
+                <run_each>1000</run_each>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+]]></on_stop_code>
+                <widget_settings>
+                    <x>16</x>
+                    <y>416</y>
+                    <width>504</width>
+                    <height>40</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>e9c8f261f32311ec823dd89c67ff3936</id>
+                <name><![CDATA[Display2]]></name>
                 <type>DigitalDisplay</type>
                 <description><![CDATA[]]></description>
                 <data_type>Expression</data_type>
@@ -1797,18 +1650,19 @@ widgetValue = None
 # This object can be used as an argument in SCADA API functions.
 
 # mandatory variable used for storing value that will be displayed
-displayValue = hil.get_scada_output_value('Fuse_Link_A')
+displayValue = hil.get_scada_output_value('Dial_reset')
+
 
 
 ]]></code>
-                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
-                <unit><![CDATA[A]]></unit>
-                <automatic_unit>False</automatic_unit>
+                <signal_name><![CDATA[]]></signal_name>
+                <unit><![CDATA[]]></unit>
+                <automatic_unit>True</automatic_unit>
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>288</x>
-                    <y>640</y>
+                    <x>848.0</x>
+                    <y>376.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1825,42 +1679,115 @@ displayValue = hil.get_scada_output_value('Fuse_Link_A')
                 </advance_widget_settings>
             </component_data>
         <component_data>
-                <id>a729228cf31011eca27f18c04df853b6</id>
-                <name><![CDATA[EstadoFusiveis]]></name>
-                <type>MacroButton</type>
+                <id>5d4c6008f32411ecb074d89c67ff3936</id>
+                <name><![CDATA[LED2]]></name>
+                <type>LedDisplay</type>
                 <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+                <data_type>Expression</data_type>
+                <signal_name><![CDATA[]]></signal_name>
+                <hil_device>0</hil_device>
+                <led_color>Blue</led_color>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
 # SCADA API is imported as 'panel'
 # SCADA API constants are imported as 'api_const'
 # 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
 # This object can be used as an argument in SCADA API functions.
 
-hil.set_contactor('S1', swControl=True, swState=True)
-]]></on_use_code>
-                <on_start_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
+# mandatory variable used for storing LED indicator state
+# True -> On, False -> Off
+if hil.get_scada_output_value('Dial_reset') == 1:
+    displayValue = True
+else: displayValue = False
 
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-]]></on_stop_code>
-                <on_start_code_source><![CDATA[Custom code]]></on_start_code_source>
+]]></code>
+                <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>8</x>
-                    <y>664</y>
-                    <width>152</width>
+                    <x>848</x>
+                    <y>432</y>
+                    <width>144</width>
                     <height>32</height>
-                    <appearance><![CDATA[Flat]]></appearance>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>dafef839f32311ec862ed89c67ff3936</id>
+                <name><![CDATA[Display1]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = hil.get_scada_output_value('Disj2')
+
+
+]]></code>
+                <signal_name><![CDATA[]]></signal_name>
+                <unit><![CDATA[]]></unit>
+                <automatic_unit>True</automatic_unit>
+                <decimals><![CDATA[2]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>704.0</x>
+                    <y>376.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>507b8c56f32411ec852dd89c67ff3936</id>
+                <name><![CDATA[LED1]]></name>
+                <type>LedDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <signal_name><![CDATA[]]></signal_name>
+                <hil_device>0</hil_device>
+                <led_color>Green</led_color>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing LED indicator state
+# True -> On, False -> Off
+if hil.get_scada_output_value('Disj2') == 1:
+    displayValue = True
+else: displayValue = False
+
+]]></code>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>704</x>
+                    <y>432</y>
+                    <width>144</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
                     <label><![CDATA[]]></label>
@@ -1889,96 +1816,11 @@ displayValue = hil.get_scada_output_value('Disj1')]]></code>
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>504.0</x>
-                    <y>672.0</y>
+                    <x>560.0</x>
+                    <y>376.0</y>
                     <width>144</width>
                     <height>56</height>
-                    <appearance><![CDATA[Flat]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-                <advance_widget_settings>
-                    <color_range>False</color_range>
-                    <green_range>(0, 0, 0, 0)</green_range>
-                    <orange_range>(0, 0, 0, 0)</orange_range>
-                    <red_range>(0, 0, 0, 0)</red_range>
-                </advance_widget_settings>
-            </component_data>
-        <component_data>
-                <id>dafef839f32311ec862ed89c67ff3936</id>
-                <name><![CDATA[Display1]]></name>
-                <type>DigitalDisplay</type>
-                <description><![CDATA[]]></description>
-                <data_type>Expression</data_type>
-                <code><![CDATA[# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# mandatory variable used for storing value that will be displayed
-displayValue = hil.get_scada_output_value('Disj2')
-
-
-]]></code>
-                <signal_name><![CDATA[]]></signal_name>
-                <unit><![CDATA[]]></unit>
-                <automatic_unit>True</automatic_unit>
-                <decimals><![CDATA[2]]></decimals>
-                <updateRate>500</updateRate>
-                <widget_settings>
-                    <x>664.0</x>
-                    <y>672.0</y>
-                    <width>144</width>
-                    <height>56</height>
-                    <appearance><![CDATA[Flat]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-                <advance_widget_settings>
-                    <color_range>False</color_range>
-                    <green_range>(0, 0, 0, 0)</green_range>
-                    <orange_range>(0, 0, 0, 0)</orange_range>
-                    <red_range>(0, 0, 0, 0)</red_range>
-                </advance_widget_settings>
-            </component_data>
-        <component_data>
-                <id>e9c8f261f32311ec823dd89c67ff3936</id>
-                <name><![CDATA[Display2]]></name>
-                <type>DigitalDisplay</type>
-                <description><![CDATA[]]></description>
-                <data_type>Expression</data_type>
-                <code><![CDATA[# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# mandatory variable used for storing value that will be displayed
-displayValue = hil.get_scada_output_value('Dial_reset')
-
-
-
-]]></code>
-                <signal_name><![CDATA[]]></signal_name>
-                <unit><![CDATA[]]></unit>
-                <automatic_unit>True</automatic_unit>
-                <decimals><![CDATA[2]]></decimals>
-                <updateRate>500</updateRate>
-                <widget_settings>
-                    <x>816.0</x>
-                    <y>672.0</y>
-                    <width>144</width>
-                    <height>56</height>
-                    <appearance><![CDATA[Flat]]></appearance>
+                    <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
                     <label><![CDATA[]]></label>
@@ -2017,11 +1859,11 @@ else: displayValue = False
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>1024.0</x>
-                    <y>688.0</y>
-                    <width>56</width>
+                    <x>560</x>
+                    <y>432</y>
+                    <width>144</width>
                     <height>32</height>
-                    <appearance><![CDATA[Flat]]></appearance>
+                    <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
                     <label><![CDATA[]]></label>
@@ -2029,14 +1871,56 @@ else: displayValue = False
                 </widget_settings>
             </component_data>
         <component_data>
-                <id>507b8c56f32411ec852dd89c67ff3936</id>
-                <name><![CDATA[LED1]]></name>
+                <id>396eb16bf35e11ec9c59988389db1b8e</id>
+                <name><![CDATA[Corrente Fuse Link3]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = hil.get_scada_output_value('Fuse_Link_B1')
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[A]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[2]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>712.0</x>
+                    <y>544.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>396eb16cf35e11ecb44b988389db1b8e</id>
+                <name><![CDATA[S5]]></name>
                 <type>LedDisplay</type>
                 <description><![CDATA[]]></description>
                 <data_type>Expression</data_type>
                 <signal_name><![CDATA[]]></signal_name>
                 <hil_device>0</hil_device>
-                <led_color>Green</led_color>
+                <led_color>Red</led_color>
                 <code><![CDATA[# HIL API is imported as 'hil'
 # NOTE: Only read functions are available from the HIL API
 
@@ -2047,18 +1931,17 @@ else: displayValue = False
 
 # mandatory variable used for storing LED indicator state
 # True -> On, False -> Off
-if hil.get_scada_output_value('Disj2') == 1:
+if hil.get_scada_output_value('S5_feed') == 0:
     displayValue = True
 else: displayValue = False
-
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>1024.0</x>
-                    <y>712.0</y>
-                    <width>56</width>
+                    <x>568.0</x>
+                    <y>728.0</y>
+                    <width>120</width>
                     <height>32</height>
-                    <appearance><![CDATA[Flat]]></appearance>
+                    <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
                     <label><![CDATA[]]></label>
@@ -2066,8 +1949,164 @@ else: displayValue = False
                 </widget_settings>
             </component_data>
         <component_data>
-                <id>5d4c6008f32411ecb074d89c67ff3936</id>
-                <name><![CDATA[LED2]]></name>
+                <id>396eb16df35e11ec9ee0988389db1b8e</id>
+                <name><![CDATA[S4]]></name>
+                <type>LedDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <signal_name><![CDATA[]]></signal_name>
+                <hil_device>0</hil_device>
+                <led_color>Red</led_color>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing LED indicator state
+# True -> On, False -> Off
+if hil.get_scada_output_value('S4_feed') == 0:
+    displayValue = True
+else: displayValue = False
+]]></code>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>568.0</x>
+                    <y>696.0</y>
+                    <width>120</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>396eb16ef35e11ec9fb6988389db1b8e</id>
+                <name><![CDATA[S3]]></name>
+                <type>LedDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <signal_name><![CDATA[]]></signal_name>
+                <hil_device>0</hil_device>
+                <led_color>Red</led_color>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing LED indicator state
+# True -> On, False -> Off
+if hil.get_scada_output_value('S3_feed') == 0:
+    displayValue = True
+else: displayValue = False
+]]></code>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>568.0</x>
+                    <y>664.0</y>
+                    <width>120</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>396eb16ff35e11ecab54988389db1b8e</id>
+                <name><![CDATA[Corrente Fuse Link]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = hil.get_scada_output_value('Fuse_Link_A')
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[A]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[2]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>568.0</x>
+                    <y>488.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>396eb170f35e11eca37c988389db1b8e</id>
+                <name><![CDATA[Corrente Fuse Link4]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = hil.get_scada_output_value('Fuse_Link_A1')
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[A]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[2]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>712.0</x>
+                    <y>488.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>396eb171f35e11ec8bde988389db1b8e</id>
+                <name><![CDATA[S6]]></name>
                 <type>LedDisplay</type>
                 <description><![CDATA[]]></description>
                 <data_type>Expression</data_type>
@@ -2084,18 +2123,17 @@ else: displayValue = False
 
 # mandatory variable used for storing LED indicator state
 # True -> On, False -> Off
-if hil.get_scada_output_value('Dial_reset') == 1:
+if hil.get_scada_output_value('S6_feed') == 0:
     displayValue = True
 else: displayValue = False
-
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>1024.0</x>
-                    <y>744.0</y>
-                    <width>56</width>
+                    <x>808.0</x>
+                    <y>664.0</y>
+                    <width>120</width>
                     <height>32</height>
-                    <appearance><![CDATA[Flat]]></appearance>
+                    <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
                     <label><![CDATA[]]></label>
@@ -2103,8 +2141,522 @@ else: displayValue = False
                 </widget_settings>
             </component_data>
         <component_data>
-                <id>7d8c4c49f32e11ecacd118c04df853b6</id>
-                <name><![CDATA[Control Rele]]></name>
+                <id>396eb172f35e11eca9b1988389db1b8e</id>
+                <name><![CDATA[S1]]></name>
+                <type>LedDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <signal_name><![CDATA[]]></signal_name>
+                <hil_device>0</hil_device>
+                <led_color>Green</led_color>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing LED indicator state
+# True -> On, False -> Off
+if hil.get_scada_output_value('S1_feed') == 0:
+    displayValue = True
+else: displayValue = False
+]]></code>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>688.0</x>
+                    <y>664.0</y>
+                    <width>120</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>396eb173f35e11ecaba9988389db1b8e</id>
+                <name><![CDATA[S2]]></name>
+                <type>LedDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <signal_name><![CDATA[]]></signal_name>
+                <hil_device>0</hil_device>
+                <led_color>Green</led_color>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing LED indicator state
+# True -> On, False -> Off
+if hil.get_scada_output_value('S2_feed') == 0:
+    displayValue = True
+else: displayValue = False
+]]></code>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>688.0</x>
+                    <y>696.0</y>
+                    <width>120</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>396eb174f35e11ec9b28988389db1b8e</id>
+                <name><![CDATA[Corrente Fuse Link2]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = hil.get_scada_output_value('Fuse_Link_B')
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[A]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[2]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>568.0</x>
+                    <y>600.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>396eb175f35e11ec9d07988389db1b8e</id>
+                <name><![CDATA[Corrente Fuse Link1]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = hil.get_scada_output_value('Fuse_Link_B')
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[A]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[2]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>568.0</x>
+                    <y>544.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>396ed859f35e11ecbf9d988389db1b8e</id>
+                <name><![CDATA[Corrente Fuse Link6]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = hil.get_scada_output_value('Fuse_Link_A2')
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[A]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[2]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>856.0</x>
+                    <y>488.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>396ed85af35e11ec8a00988389db1b8e</id>
+                <name><![CDATA[S7]]></name>
+                <type>LedDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <signal_name><![CDATA[]]></signal_name>
+                <hil_device>0</hil_device>
+                <led_color>Blue</led_color>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing LED indicator state
+# True -> On, False -> Off
+if hil.get_scada_output_value('S7_feed') == 0:
+    displayValue = True
+else: displayValue = False
+]]></code>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>808.0</x>
+                    <y>696.0</y>
+                    <width>120</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>396ed85bf35e11ecbbee988389db1b8e</id>
+                <name><![CDATA[Corrente Fuse Link5]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = hil.get_scada_output_value('Fuse_Link_B2')
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[A]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[2]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>856.0</x>
+                    <y>544.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d0b94f35e11ecabb8988389db1b8e</id>
+                <name><![CDATA[Fusivel Lado T2F Consumidor A2 B2]]></name>
+                <type>ComboBoxMacro</type>
+                <description><![CDATA[]]></description>
+                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+# NOTE: entered value is available through variable 'inputValue'
+
+for x in elos:
+    if inputValue == x:
+        scm.TipoA2 = x
+        scm.TipoB2 = x]]></on_use_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None]]></on_start_code>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_stop_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
+# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_timer_code>
+                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
+                <inputValue><![CDATA[5H]]></inputValue>
+                <availableValues><![CDATA[['1H', '2H', '3H', '5H', '8H', '6K', '8K', '10K', '12K', '15K', '20K', '25K', '30K', '40K', '50K', '65K', '80K', '100K']]]></availableValues>
+                <unit><![CDATA[]]></unit>
+                <widget_settings>
+                    <x>16</x>
+                    <y>520</y>
+                    <width>256</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d0b95f35e11ecaf8d988389db1b8e</id>
+                <name><![CDATA[Tempo A2]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = scm.TempoA2
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[s]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[4]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>304.0</x>
+                    <y>560.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d0b96f35e11ec94ad988389db1b8e</id>
+                <name><![CDATA[Tempo A1]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+
+displayValue = scm.TempoA1
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[s]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[4]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>160</x>
+                    <y>560</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d0b97f35e11ec8826988389db1b8e</id>
+                <name><![CDATA[Tempo A]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = scm.TempoA
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[s]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[4]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>16</x>
+                    <y>560</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d0b98f35e11eca187988389db1b8e</id>
+                <name><![CDATA[Tempo B2]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = scm.TempoB2
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[s]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[4]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>304.0</x>
+                    <y>616.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d328bf35e11ecb87c988389db1b8e</id>
+                <name><![CDATA[Fusivel]]></name>
                 <type>Macro</type>
                 <description><![CDATA[]]></description>
                 <on_click_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
@@ -2114,33 +2666,83 @@ else: displayValue = False
 # 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
 # This object can be used as an argument in SCADA API functions.
 
-DESTRAVATUDO = 1
-hil.set_scada_input_value('Memoria50', 0)
-hil.set_scada_input_value('Memoria51', 0)]]></on_click_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-DESTRAVATUDO = 0
-hil.set_scada_input_value('Memoria50', 0)
-hil.set_scada_input_value('Memoria51', 0)]]></on_start_code>
-                <on_timer_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+hil.set_contactor('S1', swControl=True, swState=True)
+hil.set_contactor('S2', swControl=True, swState=True)
+hil.set_contactor('S3', swControl=True, swState=True)
+hil.set_contactor('S4', swControl=True, swState=True)
+hil.set_contactor('S5', swControl=True, swState=True)
+hil.set_contactor('S6', swControl=True, swState=True)
+hil.set_contactor('S7', swControl=True, swState=True)]]></on_click_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
 # NOTE: Variables specified here will be available in other handlers.
 # HIL API is imported as 'hil'
 # SCADA API is imported as 'panel'
 # SCADA API constants are imported as 'api_const'
 # 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
 # This object can be used as an argument in SCADA API functions.
-if DESTRAVATUDO == 0:
-    if hil.get_scada_output_value('Disj1') == 1:
-            hil.set_scada_input_value('Memoria50', 1)
-    elif hil.get_scada_output_value('Disj2') == 1:
-            hil.set_scada_input_value('Memoria51', 1)
-else:
-    DESTRAVATUDO = 0]]></on_timer_code>
+
+scm.TempoA = 0
+scm.TempoA1 = 0
+scm.TempoA2 = 0
+scm.TempoB = 0
+scm.TempoB1 = 0
+scm.TempoB2 = 0
+scm.TempoC = 0]]></on_start_code>
+                <on_timer_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on timer event.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+def RetornaValorTempoCorrente(Modelo, Icc):
+  x = np.log(Icc)
+  valor = elos[str(Modelo)]['a'] + (elos[str(Modelo)]['b'] * x) + (elos[str(Modelo)]['c'] * x**2) + (elos[str(Modelo)]['d'] * x**3) + (elos[str(Modelo)]['e'] * x**4)
+  return np.exp(valor)
+
+capturaCorrenteA = hil.get_scada_output_value('Fuse_Link_A')
+capturaCorrenteB = hil.get_scada_output_value('Fuse_Link_B')
+capturaCorrenteC = hil.get_scada_output_value('Fuse_Link_C')
+capturaCorrenteA1 = hil.get_scada_output_value('Fuse_Link_A1')
+capturaCorrenteB1 = hil.get_scada_output_value('Fuse_Link_B1')
+capturaCorrenteA2 = hil.get_scada_output_value('Fuse_Link_A2')
+capturaCorrenteB2 = hil.get_scada_output_value('Fuse_Link_B2')
+
+if (capturaCorrenteA >= 2.5*elos[scm.TipoA]['IoIn']):
+    scm.TempoA = RetornaValorTempoCorrente(scm.TipoA, capturaCorrenteA)
+    clockA = hil.get_sim_step()
+    if scm.TempoA >= (clockA+hil.get_sim_step()):
+        hil.set_contactor('S3', swControl=True, swState=False)
+elif (capturaCorrenteB >= 2.5*elos[scm.TipoB]['IoIn']):
+    scm.TempoB = RetornaValorTempoCorrente(scm.TipoB, capturaCorrenteB)
+    clockB = hil.get_sim_step()
+    if scm.TempoB >= (clockB+hil.get_sim_step()):
+        hil.set_contactor('S4', swControl=True, swState=False)
+elif (capturaCorrenteB >= 2.5*elos[scm.TipoC]['IoIn']):
+    scm.TempoC = RetornaValorTempoCorrente(scm.TipoC, capturaCorrenteC)
+    clockC = hil.get_sim_step()
+    if scm.TempoC >= (clockC+hil.get_sim_step()):
+        hil.set_contactor('S5', swControl=True, swState=False)
+elif (capturaCorrenteA1 >= 2.5*elos[scm.TipoA1]['IoIn']):
+    scm.TempoA1 = RetornaValorTempoCorrente(scm.TipoA1, capturaCorrenteA)
+    clockA = hil.get_sim_step()
+    if scm.TempoA1 >= (clockA+hil.get_sim_step()):
+        hil.set_contactor('S1', swControl=True, swState=False)
+elif (capturaCorrenteB1 >= 2.5*elos[scm.TipoB1]['IoIn']):
+    scm.TempoB1 = RetornaValorTempoCorrente(scm.TipoB1, capturaCorrenteB)
+    clockB = hil.get_sim_step()
+    if scm.TempoB1 >= (clockB+hil.get_sim_step()):
+        hil.set_contactor('S2', swControl=True, swState=False)
+if (capturaCorrenteA2 >= 2.5*elos[scm.TipoA2]['IoIn']):
+    scm.TempoA2 = RetornaValorTempoCorrente(scm.TipoA2, capturaCorrenteA)
+    clockA = hil.get_sim_step()
+    if scm.TempoA2 >= (clockA+hil.get_sim_step()):
+        hil.set_contactor('S6', swControl=True, swState=False)
+elif (capturaCorrenteB2 >= 2.5*elos[scm.TipoB2]['IoIn']):
+    scm.TempoB2 = RetornaValorTempoCorrente(scm.TipoB2, capturaCorrenteB)
+    clockB = hil.get_sim_step()
+    if scm.TempoB2 >= (clockB+hil.get_sim_step()):
+        hil.set_contactor('S7', swControl=True, swState=False)]]></on_timer_code>
                 <run_each>1000</run_each>
                 <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
 # HIL API is imported as 'hil'
@@ -2151,11 +2753,540 @@ else:
 
 ]]></on_stop_code>
                 <widget_settings>
-                    <x>304</x>
-                    <y>704</y>
-                    <width>128</width>
+                    <x>320</x>
+                    <y>496</y>
+                    <width>144</width>
                     <height>40</height>
-                    <appearance><![CDATA[Flat]]></appearance>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d328cf35e11ec962b988389db1b8e</id>
+                <name><![CDATA[Fusivel Lado T2F Isolador A1 B1]]></name>
+                <type>ComboBoxMacro</type>
+                <description><![CDATA[]]></description>
+                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+# NOTE: entered value is available through variable 'inputValue'
+
+for x in elos:
+    if inputValue == x:
+        scm.TipoA1 = x
+        scm.TipoB1 = x]]></on_use_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None]]></on_start_code>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_stop_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
+# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_timer_code>
+                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
+                <inputValue><![CDATA[5H]]></inputValue>
+                <availableValues><![CDATA[['1H', '2H', '3H', '5H', '8H', '6K', '8K', '10K', '12K', '15K', '20K', '25K', '30K', '40K', '50K', '65K', '80K', '100K']]]></availableValues>
+                <unit><![CDATA[]]></unit>
+                <widget_settings>
+                    <x>16</x>
+                    <y>488</y>
+                    <width>256</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d328df35e11ec9fdc988389db1b8e</id>
+                <name><![CDATA[Tempo C]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = scm.TempoC
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[s]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[4]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>16.0</x>
+                    <y>672.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d328ef35e11ecb8db988389db1b8e</id>
+                <name><![CDATA[Tempo B]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = scm.TempoB
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[s]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[4]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>16.0</x>
+                    <y>616.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d328ff35e11eca773988389db1b8e</id>
+                <name><![CDATA[Fusivel Lado Trifásico Isolador A B C]]></name>
+                <type>ComboBoxMacro</type>
+                <description><![CDATA[]]></description>
+                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+# NOTE: entered value is available through variable 'inputValue'
+
+for x in elos:
+    if inputValue == x:
+        scm.TipoA = x
+        scm.TipoB = x
+        scm.TipoC = x]]></on_use_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None]]></on_start_code>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_stop_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
+# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_timer_code>
+                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
+                <inputValue><![CDATA[5H]]></inputValue>
+                <availableValues><![CDATA[['1H', '2H', '3H', '5H', '8H', '6K', '8K', '10K', '12K', '15K', '20K', '25K', '30K', '40K', '50K', '65K', '80K', '100K']]]></availableValues>
+                <unit><![CDATA[]]></unit>
+                <widget_settings>
+                    <x>16</x>
+                    <y>456</y>
+                    <width>256</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>3f5d3290f35e11ec9e13988389db1b8e</id>
+                <name><![CDATA[Tempo B1]]></name>
+                <type>DigitalDisplay</type>
+                <description><![CDATA[]]></description>
+                <data_type>Expression</data_type>
+                <code><![CDATA[# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# mandatory variable used for storing value that will be displayed
+displayValue = scm.TempoB1
+
+
+]]></code>
+                <signal_name><![CDATA[FuseLinkA.rms]]></signal_name>
+                <unit><![CDATA[s]]></unit>
+                <automatic_unit>False</automatic_unit>
+                <decimals><![CDATA[4]]></decimals>
+                <updateRate>500</updateRate>
+                <widget_settings>
+                    <x>160.0</x>
+                    <y>616.0</y>
+                    <width>144</width>
+                    <height>56</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+                <advance_widget_settings>
+                    <color_range>False</color_range>
+                    <green_range>(0, 0, 0, 0)</green_range>
+                    <orange_range>(0, 0, 0, 0)</orange_range>
+                    <red_range>(0, 0, 0, 0)</red_range>
+                </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>8036a659f36011ec9659988389db1b8e</id>
+                <name><![CDATA[Potência Isolador]]></name>
+                <type>ComboBoxMacro</type>
+                <description><![CDATA[]]></description>
+                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+# NOTE: entered value is available through variable 'inputValue'
+
+if inputValue == 25:
+    scm.PotenciaTransformadorIsolador = 25e3
+elif inputValue == 30:
+    scm.PotenciaTransformadorIsolador = 30e3
+elif inputValue == 37.5:
+    scm.PotenciaTransformadorIsolador = 37.5e3
+elif inputValue == 45:
+    scm.PotenciaTransformadorIsolador = 45e3
+elif inputValue == 50:
+    scm.PotenciaTransformadorIsolador = 50e3
+elif inputValue == 75:
+    scm.PotenciaTransformadorIsolador = 75e3
+elif inputValue == 100:
+    scm.PotenciaTransformadorIsolador = 100e3
+elif inputValue == 112.5:
+    scm.PotenciaTransformadorIsolador = 112.5e3
+elif inputValue == 150:
+    scm.PotenciaTransformadorIsolador = 150e3
+elif inputValue == 200:
+    scm.PotenciaTransformadorIsolador = 200e3
+elif inputValue == 225:
+    scm.PotenciaTransformadorIsolador = 225e3
+elif inputValue == 250:
+    scm.PotenciaTransformadorIsolador = 250e3
+elif inputValue == 300:
+    scm.PotenciaTransformadorIsolador = 300e3
+elif inputValue == 400:
+    scm.PotenciaTransformadorIsolador = 400e3
+elif inputValue == 500:
+    scm.PotenciaTransformadorIsolador = 500e3
+elif inputValue == 600:
+    scm.PotenciaTransformadorIsolador = 600e3]]></on_use_code>
+                <on_start_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_start_code>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_stop_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
+# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_timer_code>
+                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
+                <inputValue><![CDATA[25]]></inputValue>
+                <availableValues><![CDATA[['25', '30', '37.5', '45', '50', '75', '100', '112.5', '150', '200', '225', '250', '300', '400', '500', '600']]]></availableValues>
+                <unit><![CDATA[]]></unit>
+                <widget_settings>
+                    <x>168</x>
+                    <y>16</y>
+                    <width>248</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>0813b9e8f36211ec9289988389db1b8e</id>
+                <name><![CDATA[Potência Consumidor]]></name>
+                <type>ComboBoxMacro</type>
+                <description><![CDATA[]]></description>
+                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+# NOTE: entered value is available through variable 'inputValue'
+
+if inputValue == 25:
+    scm.PotenciaTransformadorConsumidor = 25e3
+elif inputValue == 30:
+    scm.PotenciaTransformadorConsumidor = 30e3
+elif inputValue == 37.5:
+    scm.PotenciaTransformadorConsumidor = 37.5e3
+elif inputValue == 45:
+    scm.PotenciaTransformadorConsumidor = 45e3
+elif inputValue == 50:
+    scm.PotenciaTransformadorConsumidor = 50e3
+elif inputValue == 75:
+    scm.PotenciaTransformadorConsumidor = 75e3
+elif inputValue == 100:
+    scm.PotenciaTransformadorConsumidor = 100e3
+elif inputValue == 112.5:
+    scm.PotenciaTransformadorConsumidor = 112.5e3
+elif inputValue == 150:
+    scm.PotenciaTransformadorConsumidor = 150e3
+elif inputValue == 200:
+    scm.PotenciaTransformadorConsumidor = 200e3
+elif inputValue == 225:
+    scm.PotenciaTransformadorConsumidor = 225e3
+elif inputValue == 250:
+    scm.PotenciaTransformadorConsumidor = 250e3
+elif inputValue == 300:
+    scm.PotenciaTransformadorConsumidor = 300e3
+elif inputValue == 400:
+    scm.PotenciaTransformadorConsumidor = 400e3
+elif inputValue == 500:
+    scm.PotenciaTransformadorConsumidor = 500e3
+elif inputValue == 600:
+    scm.PotenciaTransformadorConsumidor = 600e3]]></on_use_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_start_code>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_stop_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
+# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_timer_code>
+                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
+                <inputValue><![CDATA[30]]></inputValue>
+                <availableValues><![CDATA[['25', '30', '37.5', '45', '50', '75', '100', '112.5', '150', '200', '225', '250', '300', '400', '500', '600']]]></availableValues>
+                <unit><![CDATA[]]></unit>
+                <widget_settings>
+                    <x>168</x>
+                    <y>48</y>
+                    <width>248</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>02fbda29f36311eca657988389db1b8e</id>
+                <name><![CDATA[FP]]></name>
+                <type>SliderMacro</type>
+                <description><![CDATA[]]></description>
+                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+# NOTE: entered value is available through variable 'inputValue'
+
+scm.FP = inputValue]]></on_use_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_start_code>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_stop_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
+# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_timer_code>
+                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
+                <inputValue><![CDATA[0.8]]></inputValue>
+                <min>0.8</min>
+                <max>1.0</max>
+                <step>0.01</step>
+                <widget_settings>
+                    <x>168</x>
+                    <y>88</y>
+                    <width>288</width>
+                    <height>48</height>
+                    <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
                     <label><![CDATA[]]></label>

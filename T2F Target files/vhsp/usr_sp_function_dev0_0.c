@@ -454,6 +454,32 @@ typedef double real;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //@cmp.def.end
 
 
@@ -495,6 +521,12 @@ double _consumidor_zero__out = 0.0;
 X_Int32 _falta_fault_select__out;
 X_Int32 _faltaconsumidor_fault_select__out;
 double _fuselinka_cpu_trans_output__out;
+double _fuselinka1_cpu_trans_output__out;
+double _fuselinka3_cpu_trans_output__out;
+double _fuselinkb_cpu_trans_output__out;
+double _fuselinkb1_cpu_trans_output__out;
+double _fuselinkb2_cpu_trans_output__out;
+double _fuselinkb5_cpu_trans_output__out;
 double _linha_ia_ia1__out;
 double _linha_ib_ia1__out;
 double _linha_ic_ia1__out;
@@ -511,6 +543,13 @@ double _linha_vcn_va1__out;
 double _linha_zero__out = 0.0;
 double _memoria50__out;
 double _memoria51__out;
+X_Int32 _s1_ctc_wrapper__feedback_out = 0;
+X_Int32 _s2_ctc_wrapper__feedback_out = 0;
+X_Int32 _s3_ctc_wrapper__feedback_out = 0;
+X_Int32 _s4_ctc_wrapper__feedback_out = 0;
+X_Int32 _s5_ctc_wrapper__feedback_out = 0;
+X_Int32 _s6_ctc_wrapper__feedback_out = 0;
+X_Int32 _s7_ctc_wrapper__feedback_out = 0;
 double __50__instantaneous_overcurrent1_3_phase_over_threshold_block_function_logical_operator2__out;
 double __50__instantaneous_overcurrent1_3_phase_over_threshold_pd1__out;
 float __50__instantaneous_overcurrent1_trip_mem__tmp;
@@ -1080,53 +1119,66 @@ void ReInit_user_sp_cpu0_dev0() {
     _linha_pll_pid_integrator1__state = 376.99111843;
     _linha_pll_pid_integrator2__state = 0.0;
     _linha_pll_unit_delay1__state = 0.0;
-    HIL_OutAO(0x2004, 0.0f);
+    HIL_OutAO(0x200a, 0.0f);
     _consumidor_meassm_mode_and_dfract__dFract = 0;
     _consumidor_meassm_mode_and_dfract__fMax = 1.0 / 0.001;
     _consumidor_meassm_mode_and_dfract__cycle_counter = 0;
     _consumidor_meassm_mode_and_dfract__reset = 1;
-    XIo_OutFloat(0x55000128, 0.0f);
-    HIL_OutAO(0x200f, 0.0f);
+    XIo_OutFloat(0x55000174, 0.0f);
+    XIo_OutFloat(0x55000170, 0.0f);
+    XIo_OutFloat(0x55000178, 0.0f);
+    XIo_OutFloat(0x55000180, 0.0f);
+    XIo_OutFloat(0x5500017c, 0.0f);
+    XIo_OutFloat(0x55000188, 0.0f);
+    XIo_OutFloat(0x55000184, 0.0f);
+    HIL_OutAO(0x2015, 0.0f);
     _linha_meassm_mode_and_dfract__dFract = 0;
     _linha_meassm_mode_and_dfract__fMax = 1.0 / 0.001;
     _linha_meassm_mode_and_dfract__cycle_counter = 0;
     _linha_meassm_mode_and_dfract__reset = 1;
+    XIo_OutInt32(0x550001bc, 0);
+    XIo_OutInt32(0x550001c0, 0);
+    XIo_OutInt32(0x550001c4, 0);
+    XIo_OutInt32(0x550001c8, 0);
+    XIo_OutInt32(0x550001cc, 0);
+    XIo_OutInt32(0x550001d0, 0);
+    XIo_OutInt32(0x550001d4, 0);
     _consumidor_i_rms_calc_rms__mode = 1;
     _consumidor_vll_rms_calc_rms__mode = 1;
     _consumidor_vln_rms_calc_rms__mode = 1;
     _linha_i_rms_calc_rms__mode = 1;
     _linha_vll_rms_calc_rms__mode = 1;
     _linha_vln_rms_calc_rms__mode = 1;
-    HIL_OutAO(0x2005, 0.0f);
-    HIL_OutAO(0x2006, 0.0f);
-    HIL_OutAO(0x2007, 0.0f);
-    HIL_OutAO(0x2009, 0.0f);
     HIL_OutAO(0x200b, 0.0f);
-    HIL_OutAO(0x200d, 0.0f);
-    HIL_OutAO(0x200a, 0.0f);
     HIL_OutAO(0x200c, 0.0f);
-    HIL_OutAO(0x200e, 0.0f);
+    HIL_OutAO(0x200d, 0.0f);
+    HIL_OutAO(0x200f, 0.0f);
+    HIL_OutAO(0x2011, 0.0f);
+    HIL_OutAO(0x2013, 0.0f);
+    HIL_OutAO(0x2010, 0.0f);
+    HIL_OutAO(0x2012, 0.0f);
+    HIL_OutAO(0x2014, 0.0f);
     _consumidor_pll_abc_to_dq_lpf_d__filtered_value = 0x0;
     _consumidor_pll_abc_to_dq_lpf_d__previous_in = 0x0;
     _consumidor_pll_abc_to_dq_lpf_q__filtered_value = 0x0;
     _consumidor_pll_abc_to_dq_lpf_q__previous_in = 0x0;
-    HIL_OutAO(0x2010, 0.0f);
-    HIL_OutAO(0x2011, 0.0f);
-    HIL_OutAO(0x2012, 0.0f);
-    HIL_OutAO(0x2014, 0.0f);
     HIL_OutAO(0x2016, 0.0f);
-    HIL_OutAO(0x2018, 0.0f);
-    HIL_OutAO(0x2015, 0.0f);
     HIL_OutAO(0x2017, 0.0f);
-    HIL_OutAO(0x2019, 0.0f);
+    HIL_OutAO(0x2018, 0.0f);
+    HIL_OutAO(0x201a, 0.0f);
+    HIL_OutAO(0x201c, 0.0f);
+    HIL_OutAO(0x201e, 0.0f);
+    HIL_OutAO(0x201b, 0.0f);
+    HIL_OutAO(0x201d, 0.0f);
+    HIL_OutAO(0x201f, 0.0f);
     _linha_pll_abc_to_dq_lpf_d__filtered_value = 0x0;
     _linha_pll_abc_to_dq_lpf_d__previous_in = 0x0;
     _linha_pll_abc_to_dq_lpf_q__filtered_value = 0x0;
     _linha_pll_abc_to_dq_lpf_q__previous_in = 0x0;
     _consumidor_pll_normalize__pk = 0;
     _linha_pll_normalize__pk = 0;
-    HIL_OutAO(0x2008, 0.0f);
-    HIL_OutAO(0x2013, 0.0f);
+    HIL_OutAO(0x200e, 0.0f);
+    HIL_OutAO(0x2019, 0.0f);
     _three_phase_phasor3__phase1_state = 0x0;
     _three_phase_phasor3__magnitude1_state = 0x0;
     _three_phase_phasor3__zc1 = 0x0;
@@ -1199,27 +1251,27 @@ void ReInit_user_sp_cpu0_dev0() {
     _three_phase_phasor4__sample_cnt_ref = 0x0;
     _three_phase_phasor4__previous_filtered_value_ref = 0x0;
     _three_phase_phasor4__filtered_value_ref = 0x0;
-    XIo_OutFloat(0x55000130, 0.0f);
-    XIo_OutFloat(0x55000138, 0.0f);
-    XIo_OutFloat(0x55000140, 0.0f);
-    XIo_OutFloat(0x55000148, 0.0f);
-    XIo_OutFloat(0x55000150, 0.0f);
-    XIo_OutFloat(0x55000158, 0.0f);
-    HIL_OutAO(0x2001, 0.0f);
-    HIL_OutAO(0x2002, 0.0f);
-    HIL_OutAO(0x2003, 0.0f);
-    XIo_OutFloat(0x5500011c, 0.0f);
-    XIo_OutFloat(0x55000124, 0.0f);
-    XIo_OutFloat(0x5500012c, 0.0f);
-    XIo_OutFloat(0x55000134, 0.0f);
-    XIo_OutFloat(0x5500013c, 0.0f);
-    XIo_OutFloat(0x55000144, 0.0f);
-    XIo_OutFloat(0x5500014c, 0.0f);
-    XIo_OutFloat(0x55000154, 0.0f);
+    XIo_OutFloat(0x55000190, 0.0f);
+    XIo_OutFloat(0x55000198, 0.0f);
+    XIo_OutFloat(0x550001a0, 0.0f);
+    XIo_OutFloat(0x550001a8, 0.0f);
+    XIo_OutFloat(0x550001b0, 0.0f);
+    XIo_OutFloat(0x550001b8, 0.0f);
+    HIL_OutAO(0x2007, 0.0f);
+    HIL_OutAO(0x2008, 0.0f);
+    HIL_OutAO(0x2009, 0.0f);
+    XIo_OutFloat(0x55000164, 0.0f);
+    XIo_OutFloat(0x5500016c, 0.0f);
+    XIo_OutFloat(0x5500018c, 0.0f);
+    XIo_OutFloat(0x55000194, 0.0f);
+    XIo_OutFloat(0x5500019c, 0.0f);
+    XIo_OutFloat(0x550001a4, 0.0f);
+    XIo_OutFloat(0x550001ac, 0.0f);
+    XIo_OutFloat(0x550001b4, 0.0f);
     _consumidor_pll_rate_limiter1__state = 0;
     _consumidor_pll_rate_limiter1__first_step = 1;
     _consumidor_pll_integrator__out = 0;
-    XIo_OutFloat(0x55000120, 0.0f);
+    XIo_OutFloat(0x55000168, 0.0f);
     _linha_pll_rate_limiter1__state = 0;
     _linha_pll_rate_limiter1__first_step = 1;
     _linha_pll_integrator__out = 0;
@@ -1334,11 +1386,11 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     __51__ac_inverse_time_overcurrent1_trip_memory_sr1__out_n = __51__ac_inverse_time_overcurrent1_trip_memory_sr1__state != -1 ? !__51__ac_inverse_time_overcurrent1_trip_memory_sr1__state : -1;
     // Generated from the component: (51) AC Inverse Time Overcurrent1.reset_mode
     // Generated from the component: Consumidor.IA.Ia1
-    _consumidor_ia_ia1__out = (HIL_InFloat(0xc80000 + 0x109));
+    _consumidor_ia_ia1__out = (HIL_InFloat(0xc80000 + 0x20f));
     // Generated from the component: Consumidor.IB.Ia1
-    _consumidor_ib_ia1__out = (HIL_InFloat(0xc80000 + 0x10a));
+    _consumidor_ib_ia1__out = (HIL_InFloat(0xc80000 + 0x210));
     // Generated from the component: Consumidor.IC.Ia1
-    _consumidor_ic_ia1__out = (HIL_InFloat(0xc80000 + 0x10b));
+    _consumidor_ic_ia1__out = (HIL_InFloat(0xc80000 + 0x211));
     // Generated from the component: Consumidor.PLL.PID.Integrator1
     _consumidor_pll_pid_integrator1__out = _consumidor_pll_pid_integrator1__state;
     // Generated from the component: Consumidor.PLL.PID.Integrator2
@@ -1348,30 +1400,42 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     // Generated from the component: Consumidor.PLL.to_Hz
     _consumidor_pll_to_hz__out = 0.15915494309189535 * _consumidor_pll_lpf_lpf__out;
     // Generated from the component: Consumidor.VAB.Va1
-    _consumidor_vab_va1__out = (HIL_InFloat(0xc80000 + 0x103));
+    _consumidor_vab_va1__out = (HIL_InFloat(0xc80000 + 0x209));
     // Generated from the component: Consumidor.VAn.Va1
-    _consumidor_van_va1__out = (HIL_InFloat(0xc80000 + 0x104));
+    _consumidor_van_va1__out = (HIL_InFloat(0xc80000 + 0x20a));
     // Generated from the component: Consumidor.VBC.Va1
-    _consumidor_vbc_va1__out = (HIL_InFloat(0xc80000 + 0x105));
+    _consumidor_vbc_va1__out = (HIL_InFloat(0xc80000 + 0x20b));
     // Generated from the component: Consumidor.VBn.Va1
-    _consumidor_vbn_va1__out = (HIL_InFloat(0xc80000 + 0x106));
+    _consumidor_vbn_va1__out = (HIL_InFloat(0xc80000 + 0x20c));
     // Generated from the component: Consumidor.VCA.Va1
-    _consumidor_vca_va1__out = (HIL_InFloat(0xc80000 + 0x107));
+    _consumidor_vca_va1__out = (HIL_InFloat(0xc80000 + 0x20d));
     // Generated from the component: Consumidor.VCn.Va1
-    _consumidor_vcn_va1__out = (HIL_InFloat(0xc80000 + 0x108));
+    _consumidor_vcn_va1__out = (HIL_InFloat(0xc80000 + 0x20e));
     // Generated from the component: Consumidor.zero
     // Generated from the component: Falta.Fault select
-    _falta_fault_select__out = XIo_InInt32(0x5500010c);
+    _falta_fault_select__out = XIo_InInt32(0x55000154);
     // Generated from the component: FaltaConsumidor.Fault select
-    _faltaconsumidor_fault_select__out = XIo_InInt32(0x55000110);
+    _faltaconsumidor_fault_select__out = XIo_InInt32(0x55000158);
     // Generated from the component: FuseLinkA.cpu_trans.Output
     _fuselinka_cpu_trans_output__out = XIo_InFloat(0x55000100);
+    // Generated from the component: FuseLinkA1.cpu_trans.Output
+    _fuselinka1_cpu_trans_output__out = XIo_InFloat(0x55000104);
+    // Generated from the component: FuseLinkA3.cpu_trans.Output
+    _fuselinka3_cpu_trans_output__out = XIo_InFloat(0x55000108);
+    // Generated from the component: FuseLinkB.cpu_trans.Output
+    _fuselinkb_cpu_trans_output__out = XIo_InFloat(0x5500010c);
+    // Generated from the component: FuseLinkB1.cpu_trans.Output
+    _fuselinkb1_cpu_trans_output__out = XIo_InFloat(0x55000110);
+    // Generated from the component: FuseLinkB2.cpu_trans.Output
+    _fuselinkb2_cpu_trans_output__out = XIo_InFloat(0x55000114);
+    // Generated from the component: FuseLinkB5.cpu_trans.Output
+    _fuselinkb5_cpu_trans_output__out = XIo_InFloat(0x55000118);
     // Generated from the component: Linha.IA.Ia1
-    _linha_ia_ia1__out = (HIL_InFloat(0xc80000 + 0x19));
+    _linha_ia_ia1__out = (HIL_InFloat(0xc80000 + 0xe));
     // Generated from the component: Linha.IB.Ia1
-    _linha_ib_ia1__out = (HIL_InFloat(0xc80000 + 0x1a));
+    _linha_ib_ia1__out = (HIL_InFloat(0xc80000 + 0xf));
     // Generated from the component: Linha.IC.Ia1
-    _linha_ic_ia1__out = (HIL_InFloat(0xc80000 + 0x1b));
+    _linha_ic_ia1__out = (HIL_InFloat(0xc80000 + 0x10));
     // Generated from the component: Linha.PLL.PID.Integrator1
     _linha_pll_pid_integrator1__out = _linha_pll_pid_integrator1__state;
     // Generated from the component: Linha.PLL.PID.Integrator2
@@ -1381,22 +1445,36 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     // Generated from the component: Linha.PLL.to_Hz
     _linha_pll_to_hz__out = 0.15915494309189535 * _linha_pll_lpf_lpf__out;
     // Generated from the component: Linha.VAB.Va1
-    _linha_vab_va1__out = (HIL_InFloat(0xc80000 + 0xe));
+    _linha_vab_va1__out = (HIL_InFloat(0xc80000 + 0x4));
     // Generated from the component: Linha.VAn.Va1
-    _linha_van_va1__out = (HIL_InFloat(0xc80000 + 0xf));
+    _linha_van_va1__out = (HIL_InFloat(0xc80000 + 0x5));
     // Generated from the component: Linha.VBC.Va1
-    _linha_vbc_va1__out = (HIL_InFloat(0xc80000 + 0x10));
+    _linha_vbc_va1__out = (HIL_InFloat(0xc80000 + 0x6));
     // Generated from the component: Linha.VBn.Va1
-    _linha_vbn_va1__out = (HIL_InFloat(0xc80000 + 0x11));
+    _linha_vbn_va1__out = (HIL_InFloat(0xc80000 + 0x7));
     // Generated from the component: Linha.VCA.Va1
-    _linha_vca_va1__out = (HIL_InFloat(0xc80000 + 0x12));
+    _linha_vca_va1__out = (HIL_InFloat(0xc80000 + 0x8));
     // Generated from the component: Linha.VCn.Va1
-    _linha_vcn_va1__out = (HIL_InFloat(0xc80000 + 0x13));
+    _linha_vcn_va1__out = (HIL_InFloat(0xc80000 + 0x9));
     // Generated from the component: Linha.zero
     // Generated from the component: Memoria50
-    _memoria50__out = XIo_InFloat(0x55000114);
+    _memoria50__out = XIo_InFloat(0x5500015c);
     // Generated from the component: Memoria51
-    _memoria51__out = XIo_InFloat(0x55000118);
+    _memoria51__out = XIo_InFloat(0x55000160);
+    // Generated from the component: S1.CTC_Wrapper
+    _s1_ctc_wrapper__feedback_out = HIL_InInt32(0xf8040f);
+    // Generated from the component: S2.CTC_Wrapper
+    _s2_ctc_wrapper__feedback_out = HIL_InInt32(0xf80410);
+    // Generated from the component: S3.CTC_Wrapper
+    _s3_ctc_wrapper__feedback_out = HIL_InInt32(0xf80411);
+    // Generated from the component: S4.CTC_Wrapper
+    _s4_ctc_wrapper__feedback_out = HIL_InInt32(0xf80412);
+    // Generated from the component: S5.CTC_Wrapper
+    _s5_ctc_wrapper__feedback_out = HIL_InInt32(0xf80413);
+    // Generated from the component: S6.CTC_Wrapper
+    _s6_ctc_wrapper__feedback_out = HIL_InInt32(0xf80422);
+    // Generated from the component: S7.CTC_Wrapper
+    _s7_ctc_wrapper__feedback_out = HIL_InInt32(0xf80423);
     // Generated from the component: (50) Instantaneous Overcurrent1.3-Phase Over Threshold.block function.Logical operator2
     __50__instantaneous_overcurrent1_3_phase_over_threshold_block_function_logical_operator2__out = !__50__instantaneous_overcurrent1_block__out;
     // Generated from the component: (50) Instantaneous Overcurrent1.3-Phase Over Threshold.PD1
@@ -1413,7 +1491,7 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     _consumidor_pll_sin__out = sin(_consumidor_pll_unit_delay1__out);
     // Generated from the component: Consumidor.TRMwt
     // Generated from the component: Consumidor.Freq
-    HIL_OutAO(0x2004, (float)_consumidor_pll_to_hz__out);
+    HIL_OutAO(0x200a, (float)_consumidor_pll_to_hz__out);
     // Generated from the component: Consumidor.measSM.mode_and_dFract
     _consumidor_meassm_mode_and_dfract__Freq = _consumidor_pll_to_hz__out;
     _consumidor_meassm_mode_and_dfract__freqAbs = fabs(_consumidor_meassm_mode_and_dfract__Freq);
@@ -1661,13 +1739,25 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
         _faltaconsumidor_control_state_machine__Cc = 0;
         _faltaconsumidor_control_state_machine__Cn = 0;
     }
+    // Generated from the component: Fuse_Link_A1
+    XIo_OutFloat(0x55000174, (float)_fuselinka_cpu_trans_output__out);
     // Generated from the component: Fuse_Link_A
-    XIo_OutFloat(0x55000128, (float)_fuselinka_cpu_trans_output__out);
+    XIo_OutFloat(0x55000170, (float)_fuselinka1_cpu_trans_output__out);
+    // Generated from the component: Fuse_Link_A2
+    XIo_OutFloat(0x55000178, (float)_fuselinka3_cpu_trans_output__out);
+    // Generated from the component: Fuse_Link_B1
+    XIo_OutFloat(0x55000180, (float)_fuselinkb_cpu_trans_output__out);
+    // Generated from the component: Fuse_Link_B
+    XIo_OutFloat(0x5500017c, (float)_fuselinkb1_cpu_trans_output__out);
+    // Generated from the component: Fuse_Link_C
+    XIo_OutFloat(0x55000188, (float)_fuselinkb2_cpu_trans_output__out);
+    // Generated from the component: Fuse_Link_B2
+    XIo_OutFloat(0x55000184, (float)_fuselinkb5_cpu_trans_output__out);
     // Generated from the component: Linha.PLL.sin
     _linha_pll_sin__out = sin(_linha_pll_unit_delay1__out);
     // Generated from the component: Linha.TRMwt
     // Generated from the component: Linha.Freq
-    HIL_OutAO(0x200f, (float)_linha_pll_to_hz__out);
+    HIL_OutAO(0x2015, (float)_linha_pll_to_hz__out);
     // Generated from the component: Linha.measSM.mode_and_dFract
     _linha_meassm_mode_and_dfract__Freq = _linha_pll_to_hz__out;
     _linha_meassm_mode_and_dfract__freqAbs = fabs(_linha_meassm_mode_and_dfract__Freq);
@@ -1755,6 +1845,20 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     _linha_extra_output_bus__out[11] = _linha_zero__out;
     // Generated from the component: Logical operator3
     _logical_operator3__out = !( _memoria51__out || _memoria50__out );
+    // Generated from the component: S1_feed
+    XIo_OutInt32(0x550001bc, _s1_ctc_wrapper__feedback_out);
+    // Generated from the component: S2_feed
+    XIo_OutInt32(0x550001c0, _s2_ctc_wrapper__feedback_out);
+    // Generated from the component: S3_feed
+    XIo_OutInt32(0x550001c4, _s3_ctc_wrapper__feedback_out);
+    // Generated from the component: S4_feed
+    XIo_OutInt32(0x550001c8, _s4_ctc_wrapper__feedback_out);
+    // Generated from the component: S5_feed
+    XIo_OutInt32(0x550001cc, _s5_ctc_wrapper__feedback_out);
+    // Generated from the component: S6_feed
+    XIo_OutInt32(0x550001d0, _s6_ctc_wrapper__feedback_out);
+    // Generated from the component: S7_feed
+    XIo_OutInt32(0x550001d4, _s7_ctc_wrapper__feedback_out);
     // Generated from the component: Consumidor.TRMsin
     // Generated from the component: Consumidor.I_RMS_calc.RMS
     _consumidor_i_rms_calc_rms__IN1 = _consumidor_ia_ia1__out;
@@ -1893,31 +1997,31 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     }
     // Generated from the component: FaltaConsumidor.S1.CTC_Wrapper
     if (_faltaconsumidor_control_state_machine__Ca == 0x0) {
-        HIL_OutInt32(0x8640480, 0x0);
+        HIL_OutInt32(0x8a40480, 0x0);
     }
     else {
-        HIL_OutInt32(0x8640480, 0x1);
+        HIL_OutInt32(0x8a40480, 0x1);
     }
     // Generated from the component: FaltaConsumidor.S2.CTC_Wrapper
     if (_faltaconsumidor_control_state_machine__Cn == 0x0) {
-        HIL_OutInt32(0x8640481, 0x0);
+        HIL_OutInt32(0x8a40481, 0x0);
     }
     else {
-        HIL_OutInt32(0x8640481, 0x1);
+        HIL_OutInt32(0x8a40481, 0x1);
     }
     // Generated from the component: FaltaConsumidor.S3.CTC_Wrapper
     if (_faltaconsumidor_control_state_machine__Cb == 0x0) {
-        HIL_OutInt32(0x8640482, 0x0);
+        HIL_OutInt32(0x8a40482, 0x0);
     }
     else {
-        HIL_OutInt32(0x8640482, 0x1);
+        HIL_OutInt32(0x8a40482, 0x1);
     }
     // Generated from the component: FaltaConsumidor.S4.CTC_Wrapper
     if (_faltaconsumidor_control_state_machine__Cc == 0x0) {
-        HIL_OutInt32(0x8640483, 0x0);
+        HIL_OutInt32(0x8a40483, 0x0);
     }
     else {
-        HIL_OutInt32(0x8640483, 0x1);
+        HIL_OutInt32(0x8a40483, 0x1);
     }
     // Generated from the component: Linha.TRMsin
     // Generated from the component: Linha.I_RMS_calc.RMS
@@ -2035,25 +2139,25 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
         HIL_OutInt32(0x8240480, 0x1);
     }
     // Generated from the component: Consumidor.IA_RMS
-    HIL_OutAO(0x2005, (float)_consumidor_i_rms_calc_rms__RMS1);
+    HIL_OutAO(0x200b, (float)_consumidor_i_rms_calc_rms__RMS1);
     // Generated from the component: Consumidor.IB_RMS
-    HIL_OutAO(0x2006, (float)_consumidor_i_rms_calc_rms__RMS2);
+    HIL_OutAO(0x200c, (float)_consumidor_i_rms_calc_rms__RMS2);
     // Generated from the component: Consumidor.IC_RMS
-    HIL_OutAO(0x2007, (float)_consumidor_i_rms_calc_rms__RMS3);
+    HIL_OutAO(0x200d, (float)_consumidor_i_rms_calc_rms__RMS3);
     // Generated from the component: Consumidor.sumI_RMS
     _consumidor_sumi_rms__out = _consumidor_i_rms_calc_rms__RMS1 + _consumidor_i_rms_calc_rms__RMS2 + _consumidor_i_rms_calc_rms__RMS3;
     // Generated from the component: Consumidor.VAB_RMS
-    HIL_OutAO(0x2009, (float)_consumidor_vll_rms_calc_rms__RMS1);
+    HIL_OutAO(0x200f, (float)_consumidor_vll_rms_calc_rms__RMS1);
     // Generated from the component: Consumidor.VBC_RMS
-    HIL_OutAO(0x200b, (float)_consumidor_vll_rms_calc_rms__RMS2);
+    HIL_OutAO(0x2011, (float)_consumidor_vll_rms_calc_rms__RMS2);
     // Generated from the component: Consumidor.VCA_RMS
-    HIL_OutAO(0x200d, (float)_consumidor_vll_rms_calc_rms__RMS3);
+    HIL_OutAO(0x2013, (float)_consumidor_vll_rms_calc_rms__RMS3);
     // Generated from the component: Consumidor.VAn_RMS
-    HIL_OutAO(0x200a, (float)_consumidor_vln_rms_calc_rms__RMS1);
+    HIL_OutAO(0x2010, (float)_consumidor_vln_rms_calc_rms__RMS1);
     // Generated from the component: Consumidor.VBn_RMS
-    HIL_OutAO(0x200c, (float)_consumidor_vln_rms_calc_rms__RMS2);
+    HIL_OutAO(0x2012, (float)_consumidor_vln_rms_calc_rms__RMS2);
     // Generated from the component: Consumidor.VCn_RMS
-    HIL_OutAO(0x200e, (float)_consumidor_vln_rms_calc_rms__RMS3);
+    HIL_OutAO(0x2014, (float)_consumidor_vln_rms_calc_rms__RMS3);
     // Generated from the component: Consumidor.PLL.abc to dq.LPF_d
     _consumidor_pll_abc_to_dq_lpf_d__previous_filtered_value = _consumidor_pll_abc_to_dq_lpf_d__filtered_value;
     _consumidor_pll_abc_to_dq_lpf_d__filtered_value = _consumidor_pll_abc_to_dq_lpf_d__previous_in * (1.0 * 62.83185307 * 0.001) + _consumidor_pll_abc_to_dq_lpf_d__previous_filtered_value * (1 - 1.0 * 62.83185307 * 0.001 );
@@ -2065,25 +2169,25 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     _consumidor_pll_abc_to_dq_lpf_q__out = _consumidor_pll_abc_to_dq_lpf_q__filtered_value;
     _consumidor_pll_abc_to_dq_lpf_q__previous_in = _consumidor_pll_abc_to_dq_alpha_beta_to_dq__q;
     // Generated from the component: Linha.IA_RMS
-    HIL_OutAO(0x2010, (float)_linha_i_rms_calc_rms__RMS1);
+    HIL_OutAO(0x2016, (float)_linha_i_rms_calc_rms__RMS1);
     // Generated from the component: Linha.IB_RMS
-    HIL_OutAO(0x2011, (float)_linha_i_rms_calc_rms__RMS2);
+    HIL_OutAO(0x2017, (float)_linha_i_rms_calc_rms__RMS2);
     // Generated from the component: Linha.IC_RMS
-    HIL_OutAO(0x2012, (float)_linha_i_rms_calc_rms__RMS3);
+    HIL_OutAO(0x2018, (float)_linha_i_rms_calc_rms__RMS3);
     // Generated from the component: Linha.sumI_RMS
     _linha_sumi_rms__out = _linha_i_rms_calc_rms__RMS1 + _linha_i_rms_calc_rms__RMS2 + _linha_i_rms_calc_rms__RMS3;
     // Generated from the component: Linha.VAB_RMS
-    HIL_OutAO(0x2014, (float)_linha_vll_rms_calc_rms__RMS1);
+    HIL_OutAO(0x201a, (float)_linha_vll_rms_calc_rms__RMS1);
     // Generated from the component: Linha.VBC_RMS
-    HIL_OutAO(0x2016, (float)_linha_vll_rms_calc_rms__RMS2);
+    HIL_OutAO(0x201c, (float)_linha_vll_rms_calc_rms__RMS2);
     // Generated from the component: Linha.VCA_RMS
-    HIL_OutAO(0x2018, (float)_linha_vll_rms_calc_rms__RMS3);
+    HIL_OutAO(0x201e, (float)_linha_vll_rms_calc_rms__RMS3);
     // Generated from the component: Linha.VAn_RMS
-    HIL_OutAO(0x2015, (float)_linha_vln_rms_calc_rms__RMS1);
+    HIL_OutAO(0x201b, (float)_linha_vln_rms_calc_rms__RMS1);
     // Generated from the component: Linha.VBn_RMS
-    HIL_OutAO(0x2017, (float)_linha_vln_rms_calc_rms__RMS2);
+    HIL_OutAO(0x201d, (float)_linha_vln_rms_calc_rms__RMS2);
     // Generated from the component: Linha.VCn_RMS
-    HIL_OutAO(0x2019, (float)_linha_vln_rms_calc_rms__RMS3);
+    HIL_OutAO(0x201f, (float)_linha_vln_rms_calc_rms__RMS3);
     // Generated from the component: Linha.PLL.abc to dq.LPF_d
     _linha_pll_abc_to_dq_lpf_d__previous_filtered_value = _linha_pll_abc_to_dq_lpf_d__filtered_value;
     _linha_pll_abc_to_dq_lpf_d__filtered_value = _linha_pll_abc_to_dq_lpf_d__previous_in * (1.0 * 62.83185307 * 0.001) + _linha_pll_abc_to_dq_lpf_d__previous_filtered_value * (1 - 1.0 * 62.83185307 * 0.001 );
@@ -2125,7 +2229,7 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     }
     // Generated from the component: Linha.TRMq
     // Generated from the component: Consumidor.I_RMS
-    HIL_OutAO(0x2008, (float)_consumidor_gaini_rms__out);
+    HIL_OutAO(0x200e, (float)_consumidor_gaini_rms__out);
     // Generated from the component: Consumidor.output_bus
     _consumidor_output_bus__out[0] = _consumidor_van_va1__out;
     _consumidor_output_bus__out[1] = _consumidor_vbn_va1__out;
@@ -2165,7 +2269,7 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     _consumidor_pll_pid_kp__out = 100.0 * _consumidor_pll_normalize__in2_pu;
     // Generated from the component: Consumidor.PLL.term_pk
     // Generated from the component: Linha.I_RMS
-    HIL_OutAO(0x2013, (float)_linha_gaini_rms__out);
+    HIL_OutAO(0x2019, (float)_linha_gaini_rms__out);
     // Generated from the component: Linha.output_bus
     _linha_output_bus__out[0] = _linha_van_va1__out;
     _linha_output_bus__out[1] = _linha_vbn_va1__out;
@@ -2641,17 +2745,17 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     _meter_split2_extra_input_bus__out10 = _meter_split2_gain__out[10];
     _meter_split2_extra_input_bus__out11 = _meter_split2_gain__out[11];
     // Generated from the component: Linha_Angulo_A1
-    XIo_OutFloat(0x55000130, (float)_three_phase_phasor3__phase1);
+    XIo_OutFloat(0x55000190, (float)_three_phase_phasor3__phase1);
     // Generated from the component: Linha_Angulo_B1
-    XIo_OutFloat(0x55000138, (float)_three_phase_phasor3__phase2);
+    XIo_OutFloat(0x55000198, (float)_three_phase_phasor3__phase2);
     // Generated from the component: Linha_Angulo_C1
-    XIo_OutFloat(0x55000140, (float)_three_phase_phasor3__phase3);
+    XIo_OutFloat(0x550001a0, (float)_three_phase_phasor3__phase3);
     // Generated from the component: Linha_Tensao_A1
-    XIo_OutFloat(0x55000148, (float)_three_phase_phasor3__out1);
+    XIo_OutFloat(0x550001a8, (float)_three_phase_phasor3__out1);
     // Generated from the component: Linha_Tensao_B1
-    XIo_OutFloat(0x55000150, (float)_three_phase_phasor3__out2);
+    XIo_OutFloat(0x550001b0, (float)_three_phase_phasor3__out2);
     // Generated from the component: Linha_Tensao_C1
-    XIo_OutFloat(0x55000158, (float)_three_phase_phasor3__out3);
+    XIo_OutFloat(0x550001b8, (float)_three_phase_phasor3__out3);
     // Generated from the component: Consumidor.PLL.PID.Sum5
     _consumidor_pll_pid_sum5__out = _consumidor_pll_pid_kp__out + _consumidor_pll_pid_gain1__out + _consumidor_pll_pid_integrator1__out;
     // Generated from the component: (50) Instantaneous Overcurrent1.3-Phase Over Threshold.block function.Logical operator1
@@ -2674,19 +2778,19 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     __50__instantaneous_overcurrent1_meter_split_extra_input_bus__out10 = __50__instantaneous_overcurrent1_meter_split_gain__out[10];
     __50__instantaneous_overcurrent1_meter_split_extra_input_bus__out11 = __50__instantaneous_overcurrent1_meter_split_gain__out[11];
     // Generated from the component: (51) AC Inverse Time Overcurrent1.DIAL-POS-A
-    HIL_OutAO(0x2001, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__DialPosA);
+    HIL_OutAO(0x2007, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__DialPosA);
     // Generated from the component: (51) AC Inverse Time Overcurrent1.DIAL-POS-B
-    HIL_OutAO(0x2002, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__DialPosB);
+    HIL_OutAO(0x2008, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__DialPosB);
     // Generated from the component: (51) AC Inverse Time Overcurrent1.DIAL-POS-C
-    HIL_OutAO(0x2003, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__DialPosC);
+    HIL_OutAO(0x2009, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__DialPosC);
     // Generated from the component: (51) AC Inverse Time Overcurrent1.RESET
     HIL_OutInt32(0xf00402, __51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__Reset != 0x0);
     // Generated from the component: (51) AC Inverse Time Overcurrent1.TRIP
     HIL_OutInt32(0xf00403, __51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__Tripped != 0x0);
     // Generated from the component: Dial_reset
-    XIo_OutFloat(0x5500011c, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__Reset);
+    XIo_OutFloat(0x55000164, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__Reset);
     // Generated from the component: Disj2
-    XIo_OutFloat(0x55000124, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__Tripped);
+    XIo_OutFloat(0x5500016c, (float)__51__ac_inverse_time_overcurrent1_3_phase_inverse_time_3_phase_inverse_time__Tripped);
     // Generated from the component: (51) AC Inverse Time Overcurrent1.Meter Split.extra_input_bus
     __51__ac_inverse_time_overcurrent1_meter_split_extra_input_bus__out = __51__ac_inverse_time_overcurrent1_meter_split_gain__out[0];
     __51__ac_inverse_time_overcurrent1_meter_split_extra_input_bus__out1 = __51__ac_inverse_time_overcurrent1_meter_split_gain__out[1];
@@ -2714,17 +2818,17 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     _meter_split3_extra_input_bus__out10 = _meter_split3_gain__out[10];
     _meter_split3_extra_input_bus__out11 = _meter_split3_gain__out[11];
     // Generated from the component: Linha_Angulo_A
-    XIo_OutFloat(0x5500012c, (float)_three_phase_phasor4__phase1);
+    XIo_OutFloat(0x5500018c, (float)_three_phase_phasor4__phase1);
     // Generated from the component: Linha_Angulo_B
-    XIo_OutFloat(0x55000134, (float)_three_phase_phasor4__phase2);
+    XIo_OutFloat(0x55000194, (float)_three_phase_phasor4__phase2);
     // Generated from the component: Linha_Angulo_C
-    XIo_OutFloat(0x5500013c, (float)_three_phase_phasor4__phase3);
+    XIo_OutFloat(0x5500019c, (float)_three_phase_phasor4__phase3);
     // Generated from the component: Linha_Tensao_A
-    XIo_OutFloat(0x55000144, (float)_three_phase_phasor4__out1);
+    XIo_OutFloat(0x550001a4, (float)_three_phase_phasor4__out1);
     // Generated from the component: Linha_Tensao_B
-    XIo_OutFloat(0x5500014c, (float)_three_phase_phasor4__out2);
+    XIo_OutFloat(0x550001ac, (float)_three_phase_phasor4__out2);
     // Generated from the component: Linha_Tensao_C
-    XIo_OutFloat(0x55000154, (float)_three_phase_phasor4__out3);
+    XIo_OutFloat(0x550001b4, (float)_three_phase_phasor4__out3);
     // Generated from the component: Linha.PLL.PID.Sum5
     _linha_pll_pid_sum5__out = _linha_pll_pid_kp__out + _linha_pll_pid_gain1__out + _linha_pll_pid_integrator1__out;
     // Generated from the component: Meter Split2.POWER_PA
@@ -2813,7 +2917,7 @@ void TimerCounterHandler_0_user_sp_cpu0_dev0() {
     // Generated from the component: (50) Instantaneous Overcurrent1.TRIP-INST
     HIL_OutInt32(0xf00400, __50__instantaneous_overcurrent1_3_phase_over_threshold_lg1__out != 0x0);
     // Generated from the component: Disj1
-    XIo_OutFloat(0x55000120, (float)__50__instantaneous_overcurrent1_3_phase_over_threshold_lg1__out);
+    XIo_OutFloat(0x55000168, (float)__50__instantaneous_overcurrent1_3_phase_over_threshold_lg1__out);
     // Generated from the component: Linha.PLL.PID.Sum6
     _linha_pll_pid_sum6__out =  - _linha_pll_pid_sum5__out + _linha_pll_pid_limit1__out;
     // Generated from the component: Linha.PLL.Rate Limiter1

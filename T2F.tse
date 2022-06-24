@@ -4,10 +4,10 @@ version = 4.2
 // Saved by sw version: 2022.2
 //
 
-model "t2f" {
+model "T2F" {
     configuration {
         hil_device = "HIL402"
-        hil_configuration_id = 5
+        hil_configuration_id = 1
         simulation_method = exact
         simulation_time_step = 1e-6
         simulation_discret_scaling = 1.0
@@ -77,11 +77,12 @@ model "t2f" {
         ]
 
         component "core/Three Phase Two Winding Transformer" Tr1 {
-            Sn = "150e3"
+            Sn = "75e3"
             V1 = "13800/(3**0.5)"
             V2 = "13800/(3**0.5)"
             clock_number = "3"
             current_vals_pu = "[0.16260121958817295, 67.75030486853915]"
+            embedded_cpl = "Ideal Transformer"
             f = "60"
             flux_vals_pu = "[36.90104033375619, 46.74106019765998]"
             input = "pu"
@@ -94,12 +95,12 @@ model "t2f" {
             winding_1_connection = "D"
         }
         [
-            position = 7128, 8240
+            position = 6824, 8240
             size = 126, 256
         ]
 
         component "core/Three Phase Two Winding Transformer" Tr2 {
-            Sn = "112.5e3"
+            Sn = "75e3"
             V1 = "13800/(3**0.5)"
             V2 = "380/(3**0.5)"
             clock_number = "1"
@@ -114,23 +115,23 @@ model "t2f" {
             winding_1_connection = "D"
         }
         [
-            position = 8664, 8240
+            position = 9024, 8248
             size = 126, 256
         ]
 
         component src_ground gnd1 {
         }
         [
-            position = 8952, 8496
+            position = 9136, 8496
         ]
 
         component "core/Constant Impedance Load" "Constant Impedance Load1" {
             SAB = "75000.0/3"
-            SAn = "75000.0/3"
+            SAn = "75e3/3"
             SBC = "75000.0/3"
-            SBn = "75000.0/3"
+            SBn = "75e3/3"
             SCA = "75000.0/3"
-            SCn = "75000.0/3"
+            SCn = "75e3/3"
             Sn_3ph = "75e3"
             VAB = "380"
             VAn = "380/(3**0.5)"
@@ -150,7 +151,7 @@ model "t2f" {
             pf_mode_3ph = "Lead"
         }
         [
-            position = 9392, 8240
+            position = 9576, 8240
             rotation = left
             scale = 1, -1
             size = 184, 152
@@ -161,14 +162,14 @@ model "t2f" {
             init_rms_value = "13800/(3**0.5)"
         }
         [
-            position = 6696, 8240
+            position = 6392, 8240
             size = 62, 256
         ]
 
         component src_ground gnd2 {
         }
         [
-            position = 6600, 8496
+            position = 6768, 8480
         ]
 
         component src_ground gnd3 {
@@ -191,7 +192,7 @@ model "t2f" {
             remove_snubber = "True"
         }
         [
-            position = 8984, 8240
+            position = 9168, 8240
             size = 64, 272
         ]
 
@@ -245,13 +246,13 @@ model "t2f" {
         component msr_phasor_3ph "Three Phase Phasor3" {
         }
         [
-            position = 9200, 7976
+            position = 9384, 7976
         ]
 
         component "core/Meter Split" "Meter Split2" {
         }
         [
-            position = 9072, 8016
+            position = 9256, 8016
             size = 96, 160
         ]
 
@@ -259,56 +260,56 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 9344, 7856
+            position = 9528, 7856
         ]
 
         component gen_scada_output Linha_Tensao_B1 {
             unit = ""
         }
         [
-            position = 9464, 7912
+            position = 9648, 7912
         ]
 
         component gen_scada_output Linha_Tensao_C1 {
             unit = ""
         }
         [
-            position = 9448, 7984
+            position = 9632, 7984
         ]
 
         component gen_scada_output Linha_Angulo_A1 {
             unit = ""
         }
         [
-            position = 9440, 7856
+            position = 9624, 7856
         ]
 
         component gen_scada_output Linha_Angulo_B1 {
             unit = ""
         }
         [
-            position = 9544, 7960
+            position = 9728, 7960
         ]
 
         component gen_scada_output Linha_Angulo_C1 {
             unit = ""
         }
         [
-            position = 9448, 8048
+            position = 9632, 8048
         ]
 
         component pas_resistor R3 {
             resistance = "10"
         }
         [
-            position = 7296, 8416
+            position = 7032, 8336
         ]
 
         component pas_capacitor C3 {
             capacitance = "6.4274e-08"
         }
         [
-            position = 7360, 8192
+            position = 7360, 8200
             rotation = right
         ]
 
@@ -316,7 +317,7 @@ model "t2f" {
             capacitance = "8.5742e-08"
         }
         [
-            position = 7280, 8192
+            position = 7200, 8192
             rotation = right
         ]
 
@@ -324,7 +325,7 @@ model "t2f" {
             capacitance = "1.5002e-07"
         }
         [
-            position = 7392, 8328
+            position = 7312, 8328
             rotation = right
         ]
 
@@ -332,7 +333,7 @@ model "t2f" {
             capacitance = "1.5002e-07"
         }
         [
-            position = 7488, 8304
+            position = 7408, 8304
             rotation = right
         ]
 
@@ -370,11 +371,12 @@ model "t2f" {
 
         component "core/Single Pole Single Throw Contactor" S1 {
             Sa_logic = "active low"
+            enable_fb_out = "True"
             fb_out_type = "int"
             initial_state = "on"
         }
         [
-            position = 7224, 8032
+            position = 7144, 8144
             size = 64, 32
         ]
 
@@ -383,7 +385,7 @@ model "t2f" {
             sig_output = "True"
         }
         [
-            position = 7144, 8032
+            position = 7064, 8144
             size = 64, 32
         ]
 
@@ -447,42 +449,42 @@ model "t2f" {
             execution_rate = "1e-3"
         }
         [
-            position = 9192, 8264
+            position = 9376, 8264
             size = 64, 64
         ]
 
-        component gen_scada_output Fuse_Link_A {
+        component gen_scada_output Fuse_Link_A1 {
             execution_rate = "1e-3"
             unit = ""
         }
         [
-            position = 7192, 7960
+            position = 7120, 7968
         ]
 
         component "core/Four Phase Core Coupling" "Core Coupling 1" {
             snb_type_i = "R1"
         }
         [
-            position = 8800, 8288
+            position = 8664, 8288
             size = 12, 352
         ]
 
         component src_ground gnd5 {
         }
         [
-            position = 8864, 8496
+            position = 8728, 8504
         ]
 
         component src_ground gnd6 {
         }
         [
-            position = 8720, 8496
+            position = 8584, 8504
         ]
 
         component src_ground gnd7 {
         }
         [
-            position = 8616, 8456
+            position = 8976, 8464
         ]
 
         component "core/(50) Instantaneous Overcurrent" "(50) Instantaneous Overcurrent1" {
@@ -565,14 +567,259 @@ model "t2f" {
             position = 7624, 8048
         ]
 
-        junction Junction23 sp
+        component "core/Single Pole Single Throw Contactor" S2 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
         [
-            position = 9160, 7968
+            position = 7136, 8240
+            size = 64, 32
         ]
 
-        junction Junction30 pe
+        component "core/Current RMS" FuseLinkB {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
         [
-            position = 7280, 8240
+            position = 7056, 8240
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_B1 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6968, 8200
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S3 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 6696, 8144
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkA1 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 6568, 8144
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_A {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6488, 8072
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S4 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 6688, 8240
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkB1 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 6560, 8240
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_B {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6488, 8192
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S5 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 6696, 8336
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkB2 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 6552, 8336
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_C {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6496, 8288
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S6 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 8888, 8152
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkA3 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 8808, 8152
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_A2 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 8736, 8088
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S7 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 8880, 8248
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkB5 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 8800, 8248
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_B2 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 8736, 8208
+            rotation = down
+        ]
+
+        component "core/Four Phase Core Coupling" "Core Coupling 2" {
+            snb_type_i = "R1"
+        }
+        [
+            position = 7520, 8288
+            size = 12, 352
+        ]
+
+        component src_ground gnd8 {
+        }
+        [
+            position = 7456, 8512
+        ]
+
+        component src_ground gnd9 {
+        }
+        [
+            position = 7592, 8512
+        ]
+
+        component gen_scada_output S1_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 7208, 8032
+        ]
+
+        component gen_scada_output S2_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 7208, 8088
+        ]
+
+        component gen_scada_output S3_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6792, 7984
+        ]
+
+        component gen_scada_output S4_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6792, 8040
+        ]
+
+        component gen_scada_output S5_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6792, 8088
+        ]
+
+        component gen_scada_output S6_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 9016, 8000
+        ]
+
+        component gen_scada_output S7_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 9016, 8056
+        ]
+
+        junction Junction23 sp
+        [
+            position = 9344, 7968
         ]
 
         junction Junction31 pe
@@ -580,34 +827,9 @@ model "t2f" {
             position = 7360, 8144
         ]
 
-        junction Junction32 pe
-        [
-            position = 7360, 8240
-        ]
-
-        junction Junction33 pe
-        [
-            position = 7392, 8240
-        ]
-
-        junction Junction35 pe
-        [
-            position = 7488, 8144
-        ]
-
         junction Junction48 pe
         [
             position = 7280, 8144
-        ]
-
-        junction Junction73 pe
-        [
-            position = 7392, 8392
-        ]
-
-        junction Junction80 pe
-        [
-            position = 8432, 8240
         ]
 
         junction Junction85 pe
@@ -637,7 +859,7 @@ model "t2f" {
 
         junction Junction92 pe
         [
-            position = 9192, 8432
+            position = 9376, 8432
         ]
 
         junction Junction93 pe
@@ -645,24 +867,9 @@ model "t2f" {
             position = 8432, 8144
         ]
 
-        junction Junction102 pe
-        [
-            position = 8512, 8144
-        ]
-
-        junction Junction103 pe
-        [
-            position = 8528, 8240
-        ]
-
         junction Junction104 pe
         [
-            position = 8984, 8432
-        ]
-
-        junction Junction109 pe
-        [
-            position = 7488, 8392
+            position = 9168, 8432
         ]
 
         junction Junction111 sp
@@ -675,48 +882,84 @@ model "t2f" {
             position = 7504, 7664
         ]
 
-        connect Vs1.a_node Tr1.prm_1 as Connection208
-        connect Tr1.prm_2 Vs1.b_node as Connection209
-        connect Vs1.c_node Tr1.prm_3 as Connection210
+        junction Junction113 pe
+        [
+            position = 7272, 8240
+        ]
+
+        junction Junction116 pe
+        [
+            position = 6768, 8432
+        ]
+
+        junction Junction117 pe
+        [
+            position = 7408, 8416
+        ]
+
+        junction Junction118 pe
+        [
+            position = 7312, 8416
+        ]
+
+        junction Junction119 pe
+        [
+            position = 7488, 8144
+        ]
+
+        junction Junction120 pe
+        [
+            position = 7312, 8240
+        ]
+
+        junction Junction121 pe
+        [
+            position = 7360, 8240
+        ]
+
+        junction Junction124 pe
+        [
+            position = 8512, 8144
+        ]
+
+        junction Junction125 pe
+        [
+            position = 8432, 8240
+        ]
+
+        junction Junction126 pe
+        [
+            position = 8512, 8240
+        ]
+
         connect "Three Phase Phasor3.out1" Linha_Tensao_A1.in as Connection263
         connect Linha_Tensao_B1.in "Three Phase Phasor3.out2" as Connection264
         [
-            breakpoints = 9336, 7912; 9336, 7968; 9240, 7968
+            breakpoints = 9520, 7912; 9520, 7968; 9424, 7968
         ]
         connect "Three Phase Phasor3.out3" Linha_Tensao_C1.in as Connection265
         connect "Three Phase Phasor3.phase1" Linha_Angulo_A1.in as Connection266
         connect Linha_Angulo_B1.in "Three Phase Phasor3.phase2" as Connection267
         [
-            breakpoints = 9392, 7984; 9392, 7984; 9240, 7984; 9240, 7984
+            breakpoints = 9576, 7984; 9576, 7984; 9424, 7984; 9424, 7984
         ]
         connect "Three Phase Phasor3.phase3" Linha_Angulo_C1.in as Connection279
         [
-            breakpoints = 9352, 8016; 9352, 8048
+            breakpoints = 9536, 8016; 9536, 8048
         ]
         connect Consumidor.Out "Meter Split2.Input" as Connection285
         connect "Three Phase Phasor3.in_ref" Junction23 as Connection286
         connect "Meter Split2.VAn" Junction23 as Connection288
         [
-            breakpoints = 9136, 7968; 9160, 7968
+            breakpoints = 9320, 7968; 9344, 7968
         ]
         connect "Meter Split2.VBn" "Three Phase Phasor3.in2" as Connection289
         connect "Meter Split2.VCn" "Three Phase Phasor3.in3" as Connection290
         connect Junction23 "Three Phase Phasor3.in1" as Connection297
         [
-            breakpoints = 9160, 7968; 9160, 7968
+            breakpoints = 9344, 7968; 9344, 7968
         ]
-        connect R3.p_node Tr1.sec_3 as Connection347
-        connect Tr1.sec_2 Junction30 as Connection351
-        connect C4.n_node Junction30 as Connection353
         connect C3.p_node Junction31 as Connection356
-        connect Junction30 Junction32 as Connection357
-        connect C3.n_node Junction32 as Connection359
-        connect Junction32 Junction33 as Connection360
-        connect Junction33 M1.in_2 as Connection361
-        connect C5.p_node Junction33 as Connection362
-        connect M1.in_1 Junction35 as Connection366
-        connect Junction35 Junction31 as Connection367
-        connect C6.p_node Junction35 as Connection368
         connect S1.a_in FuseLinkA.n_node as Connection400
         connect C4.p_node Junction48 as Connection433
         [
@@ -726,9 +969,6 @@ model "t2f" {
         [
             breakpoints = 7280, 8144; 7280, 8144
         ]
-        connect C5.n_node Junction73 as Connection578
-        connect R3.n_node Junction73 as Connection580
-        connect C8.n_node Junction80 as Connection612
         connect "Three Phase Phasor4.out1" Linha_Tensao_A.in as Connection627
         [
             breakpoints = 8304, 7840; 8304, 7752
@@ -796,10 +1036,6 @@ model "t2f" {
         [
             breakpoints = 8136, 8368; 8136, 8144
         ]
-        connect Junction80 Junction90 as Connection684
-        [
-            breakpoints = 8432, 8240
-        ]
         connect Junction90 C9.p_node as Connection685
         [
             breakpoints = 8232, 8256; 8232, 8256
@@ -810,78 +1046,48 @@ model "t2f" {
         ]
         connect "Constant Impedance Load1.N" Junction92 as Connection700
         [
-            breakpoints = 9632, 8240; 9632, 8432
+            breakpoints = 9816, 8240; 9816, 8432
         ]
         connect FaltaConsumidor.P8 Junction92 as Connection702
         connect "Constant Impedance Load1.C" FaltaConsumidor.P7 as Connection703
         connect FaltaConsumidor.P3 Consumidor.C- as Connection704
         [
-            breakpoints = 9144, 8280; 9144, 8352
+            breakpoints = 9328, 8280; 9328, 8352
         ]
         connect FaltaConsumidor.P6 "Constant Impedance Load1.B" as Connection705
         connect FaltaConsumidor.P5 "Constant Impedance Load1.A" as Connection706
         [
-            breakpoints = 9256, 8240
+            breakpoints = 9440, 8240
         ]
         connect Consumidor.A- FaltaConsumidor.P1 as Connection707
         [
-            breakpoints = 9104, 8176; 9104, 8248
+            breakpoints = 9288, 8176; 9288, 8248
         ]
         connect FaltaConsumidor.P2 Consumidor.B- as Connection708
         [
-            breakpoints = 9056, 8264
+            breakpoints = 9240, 8264
         ]
         connect Junction48 S1.a_out as Connection709
         [
             breakpoints = 7280, 8144; 7256, 8144
         ]
-        connect FuseLinkA.p_node Tr1.sec_1 as Connection710
-        [
-            breakpoints = 7208, 8144
-        ]
-        connect FuseLinkA.out Fuse_Link_A.in as Connection711
+        connect FuseLinkA.out Fuse_Link_A1.in as Connection711
         connect C8.p_node Junction93 as Connection732
         connect Junction93 Junction89 as Connection733
         [
             breakpoints = 8432, 8144; 8432, 8144; 8432, 8144; 8304, 8144; 8304, 8144; 8304, 8144
         ]
-        connect C7.p_node Junction102 as Connection823
-        connect Junction102 Junction93 as Connection824
-        [
-            breakpoints = 8512, 8144; 8512, 8144; 8512, 8144; 8512, 8144
-        ]
-        connect Tr2.prm_1 Junction102 as Connection825
-        connect C7.n_node Junction103 as Connection826
-        [
-            breakpoints = 8512, 8240; 8512, 8240; 8512, 8240; 8512, 8240
-        ]
-        connect Junction103 Junction80 as Connection827
-        [
-            breakpoints = 8520, 8240; 8512, 8240; 8432, 8240; 8432, 8240; 8432, 8240
-        ]
-        connect Tr2.prm_2 Junction103 as Connection828
-        connect Tr2.prm_3 R2.n_node as Connection829
         connect Junction92 Junction104 as Connection832
         [
-            breakpoints = 9192, 8432
+            breakpoints = 9376, 8432
         ]
         connect Junction104 Consumidor.GND as Connection833
         [
-            breakpoints = 8984, 8432; 8984, 8432; 8984, 8432
-        ]
-        connect Tr2.sec_1 "Core Coupling 1.a_in" as Connection837
-        connect "Core Coupling 1.a_out" Consumidor.A+ as Connection838
-        connect Consumidor.B+ "Core Coupling 1.b_out" as Connection839
-        connect "Core Coupling 1.b_in" Tr2.sec_2 as Connection840
-        connect "Core Coupling 1.c_out" Consumidor.C+ as Connection841
-        connect "Core Coupling 1.c_in" Tr2.sec_3 as Connection842
-        connect Vs1.n_node gnd2.node as Connection867
-        [
-            breakpoints = 6600, 8240; 6600, 8416; 6600, 8408; 6600, 8416; 6600, 8400; 6600, 8448; 6600, 8432; 6600, 8432; 6600, 8448
+            breakpoints = 9168, 8432; 9168, 8432; 9168, 8432
         ]
         connect Junction104 gnd1.node as Connection869
         [
-            breakpoints = 8984, 8432; 8896, 8432; 8896, 8440
+            breakpoints = 9168, 8432; 9080, 8432; 9080, 8440
         ]
         connect "Core Coupling 1.d_out" gnd5.node as Connection871
         connect gnd6.node "Core Coupling 1.d_in" as Connection872
@@ -896,15 +1102,6 @@ model "t2f" {
         [
             breakpoints = 7712, 8216
         ]
-        connect Junction73 Junction109 as Connection935
-        [
-            breakpoints = 7392, 8392; 7392, 8392; 7392, 8392; 7392, 8392
-        ]
-        connect Junction109 C6.n_node as Connection936
-        [
-            breakpoints = 7496, 8392; 7488, 8392; 7488, 8392; 7488, 8376; 7488, 8384; 7488, 8368; 7488, 8368; 7488, 8376
-        ]
-        connect Linha.C+ Junction109 as Connection937
         connect Linha.A- CB.a_in as Connection938
         connect CB.b_in Linha.B- as Connection939
         connect CB.c_in Linha.C- as Connection940
@@ -948,6 +1145,110 @@ model "t2f" {
             breakpoints = 7568, 8064
         ]
         connect "Logical operator3.out" CB.ctrl_in as Connection973
+        connect Tr1.sec_1 FuseLinkA.p_node as Connection979
+        connect S2.a_in FuseLinkB.n_node as Connection980
+        connect FuseLinkB.out Fuse_Link_B1.in as Connection981
+        connect Junction113 C4.n_node as Connection984
+        [
+            breakpoints = 7280, 8240
+        ]
+        connect S2.a_out Junction113 as Connection985
+        connect FuseLinkB.p_node Tr1.sec_2 as Connection986
+        connect S3.a_in FuseLinkA1.n_node as Connection987
+        connect FuseLinkA1.out Fuse_Link_A.in as Connection988
+        connect S4.a_in FuseLinkB1.n_node as Connection989
+        connect FuseLinkB1.out Fuse_Link_B.in as Connection990
+        connect S5.a_in FuseLinkB2.n_node as Connection991
+        connect FuseLinkB2.out Fuse_Link_C.in as Connection992
+        connect S3.a_out Tr1.prm_1 as Connection993
+        connect Tr1.prm_2 S4.a_out as Connection994
+        connect Tr1.prm_3 S5.a_out as Connection995
+        connect FuseLinkB2.p_node Vs1.c_node as Connection996
+        connect Vs1.b_node FuseLinkB1.p_node as Connection997
+        connect FuseLinkA1.p_node Vs1.a_node as Connection998
+        connect S6.a_in FuseLinkA3.n_node as Connection1010
+        connect FuseLinkA3.out Fuse_Link_A2.in as Connection1011
+        connect S7.a_in FuseLinkB5.n_node as Connection1012
+        connect FuseLinkB5.out Fuse_Link_B2.in as Connection1013
+        connect S7.a_out Tr2.prm_2 as Connection1014
+        connect S6.a_out Tr2.prm_1 as Connection1015
+        connect Vs1.n_node Junction116 as Connection1024
+        [
+            breakpoints = 6280, 8296; 6640, 8432
+        ]
+        connect Junction116 gnd2.node as Connection1025
+        connect Tr1.n2 Junction116 as Connection1026
+        connect Tr1.sec_3 R3.p_node as Connection1027
+        connect "Core Coupling 2.d_in" gnd8.node as Connection1034
+        connect "Core Coupling 2.d_out" gnd9.node as Connection1035
+        connect Linha.C+ "Core Coupling 2.c_out" as Connection1036
+        [
+            breakpoints = 7680, 8384; 7672, 8336
+        ]
+        connect Junction117 "Core Coupling 2.c_in" as Connection1039
+        [
+            breakpoints = 7440, 8336
+        ]
+        connect C6.n_node Junction117 as Connection1040
+        connect R3.n_node Junction118 as Connection1041
+        [
+            breakpoints = 7112, 8344; 7120, 8416
+        ]
+        connect Junction118 Junction117 as Connection1042
+        connect C5.n_node Junction118 as Connection1043
+        connect Junction31 Junction119 as Connection1044
+        [
+            breakpoints = 7360, 8144
+        ]
+        connect Junction119 C6.p_node as Connection1045
+        [
+            breakpoints = 7488, 8144
+        ]
+        connect "Core Coupling 2.a_in" Junction119 as Connection1046
+        connect Junction120 Junction113 as Connection1049
+        connect C5.p_node Junction120 as Connection1050
+        connect C3.n_node Junction121 as Connection1051
+        connect Junction121 Junction120 as Connection1052
+        [
+            breakpoints = 7360, 8240; 7360, 8240
+        ]
+        connect "Core Coupling 2.b_in" Junction121 as Connection1053
+        connect "Core Coupling 2.a_out" M1.in_1 as Connection1054
+        connect M1.in_2 "Core Coupling 2.b_out" as Connection1055
+        connect Tr2.prm_3 "Core Coupling 1.c_out" as Connection1058
+        connect "Core Coupling 1.c_in" R2.n_node as Connection1059
+        connect C7.p_node Junction124 as Connection1071
+        connect Junction124 Junction93 as Connection1072
+        [
+            breakpoints = 8512, 8144; 8512, 8144; 8512, 8144; 8512, 8144; 8512, 8144; 8512, 8144; 8432, 8144
+        ]
+        connect "Core Coupling 1.a_in" Junction124 as Connection1073
+        connect C8.n_node Junction125 as Connection1075
+        connect Junction125 Junction90 as Connection1076
+        [
+            breakpoints = 8432, 8240; 8432, 8240; 8432, 8240
+        ]
+        connect C7.n_node Junction126 as Connection1078
+        connect Junction126 Junction125 as Connection1079
+        connect "Core Coupling 1.b_in" Junction126 as Connection1080
+        connect "Core Coupling 1.a_out" FuseLinkA3.p_node as Connection1081
+        connect FuseLinkB5.p_node "Core Coupling 1.b_out" as Connection1082
+        connect Tr2.sec_1 Consumidor.A+ as Connection1083
+        connect Consumidor.B+ Tr2.sec_2 as Connection1084
+        connect Consumidor.C+ Tr2.sec_3 as Connection1085
+        connect S2.feedback_out S2_feed.in as Connection1086
+        connect S1.feedback_out S1_feed.in as Connection1087
+        connect S5.feedback_out S5_feed.in as Connection1088
+        connect S4.feedback_out S4_feed.in as Connection1089
+        [
+            breakpoints = 6648, 8216; 6648, 8168; 6648, 8120; 6648, 8040
+        ]
+        connect S3.feedback_out S3_feed.in as Connection1090
+        connect S6.feedback_out S6_feed.in as Connection1091
+        connect S7.feedback_out S7_feed.in as Connection1092
+        [
+            breakpoints = 8952, 8216; 8952, 8176
+        ]
     }
 
     default {
@@ -1240,4 +1541,12 @@ model "t2f" {
             k = "0.0"
         }
     }
+
+    CODE model_init
+        # Numpy module is imported as 'np'
+        # Scipy module is imported as 'sp'
+        # The Schematic API is imported as 'mdl'
+        # To get the model file path, use 'mdl.get_model_file_path()'
+        # To print information to the console, use info()
+    ENDCODE
 }

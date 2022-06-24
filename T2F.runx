@@ -18,7 +18,7 @@
                 <device>0</device>
             	<input_type>ThreePhaseInput</input_type>
                 <waveform_type>Sine</waveform_type>
-                <rms>13800.0</rms>
+                <rms>7967.433714816836</rms>
                 <frequency>60.0</frequency>
                 <phase>0.0</phase>
                 <use_harmonics>False</use_harmonics>
@@ -28,6 +28,150 @@
         <pvs>
         </pvs>
         <contactors>
+            <contactor>
+                <name>CB</name>
+                <type>three_phase_breaker</type>
+                <device>0</device>
+                <weight>0</weight>
+                <site>0</site>
+                <is_enabled>False</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>Falta.S1</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>1</weight>
+                <site>0</site>
+                <is_enabled>False</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>Falta.S2</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>2</weight>
+                <site>0</site>
+                <is_enabled>False</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>Falta.S3</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>3</weight>
+                <site>0</site>
+                <is_enabled>False</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>Falta.S4</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>4</weight>
+                <site>0</site>
+                <is_enabled>False</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>FaltaConsumidor.S1</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>0</weight>
+                <site>2</site>
+                <is_enabled>False</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>FaltaConsumidor.S2</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>1</weight>
+                <site>2</site>
+                <is_enabled>False</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>FaltaConsumidor.S3</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>2</weight>
+                <site>2</site>
+                <is_enabled>False</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>FaltaConsumidor.S4</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>3</weight>
+                <site>2</site>
+                <is_enabled>False</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>S1</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>0</weight>
+                <site>1</site>
+                <is_enabled>True</is_enabled>
+                <is_closed>True</is_closed>
+            </contactor>
+            <contactor>
+                <name>S2</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>1</weight>
+                <site>1</site>
+                <is_enabled>True</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>S3</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>2</weight>
+                <site>1</site>
+                <is_enabled>True</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>S4</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>3</weight>
+                <site>1</site>
+                <is_enabled>True</is_enabled>
+                <is_closed>False</is_closed>
+            </contactor>
+            <contactor>
+                <name>S5</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>4</weight>
+                <site>1</site>
+                <is_enabled>True</is_enabled>
+                <is_closed>True</is_closed>
+            </contactor>
+            <contactor>
+                <name>S6</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>4</weight>
+                <site>2</site>
+                <is_enabled>True</is_enabled>
+                <is_closed>True</is_closed>
+            </contactor>
+            <contactor>
+                <name>S7</name>
+                <type>one_phase_breaker</type>
+                <device>0</device>
+                <weight>5</weight>
+                <site>2</site>
+                <is_enabled>True</is_enabled>
+                <is_closed>True</is_closed>
+            </contactor>
         </contactors>
         <dtsm_contactors>
         </dtsm_contactors>
@@ -666,6 +810,26 @@
         <batteries>
         </batteries>
         <scada_inputs>
+            <scada_input>
+                <name>Falta.Fault select</name>
+                <device>0</device>
+                <value>0.0</value>
+            </scada_input>
+            <scada_input>
+                <name>FaltaConsumidor.Fault select</name>
+                <device>0</device>
+                <value>0.0</value>
+            </scada_input>
+            <scada_input>
+                <name>Memoria50</name>
+                <device>0</device>
+                <value>0.0</value>
+            </scada_input>
+            <scada_input>
+                <name>Memoria51</name>
+                <device>0</device>
+                <value>0.0</value>
+            </scada_input>
         </scada_inputs>
         <tunable_parameters>
         </tunable_parameters>
