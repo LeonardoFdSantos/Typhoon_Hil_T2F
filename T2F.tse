@@ -4,15 +4,15 @@ version = 4.2
 // Saved by sw version: 2022.2
 //
 
-model "T2F" {
+model "t2f" {
     configuration {
         hil_device = "HIL402"
-        hil_configuration_id = 1
-        simulation_method = exact
+        hil_configuration_id = 2
+        simulation_method = bilinear
         simulation_time_step = 1e-6
         simulation_discret_scaling = 1.0
         dsp_timer_periods = 100e-6, 50e-3
-        ss_calc_method = "systematic elimination"
+        ss_calc_method = "constraint matrix"
         enb_pole_shift = True
         enb_gds_oversampling = True
         show_modes = False
@@ -20,17 +20,17 @@ model "T2F" {
         reset_analog_outputs_on_sim_stop = True
         reset_digital_outputs_on_sim_stop = True
         vhil_adio_loopback = False
-        cpl_stb = False
+        cpl_stb = True
         enb_dep_sw_detect = False
         code_section = "internal memory"
-        data_section = "internal memory"
+        data_section = "external memory"
         sys_sp_rate_1 = 0.0001
         sys_sp_rate_2 = 0.05
         sys_real_type_precision = "default"
-        user_real_type_precision = "default"
+        user_real_type_precision = "single precision"
         sys_cpu_optimization = "high"
         user_cpu_optimization = "high"
-        user_cpu_part_option = "default"
+        user_cpu_part_option = "execution rate based"
         matrix_based_reduction = True
         cpl_dynamics_analysis = False
         export_ss_to_pickle = False
@@ -45,7 +45,7 @@ model "T2F" {
         cce_custom_type_int = ""
         cce_custom_type_uint = ""
         cce_custom_type_real = ""
-        tunable_params = "on"
+        tunable_params = "off"
         sp_compiler_type = "C compiler"
         sig_stim = "off"
         export_resource_list = ""
@@ -80,9 +80,8 @@ model "T2F" {
             Sn = "75e3"
             V1 = "13800/(3**0.5)"
             V2 = "13800/(3**0.5)"
-            clock_number = "3"
+            clock_number = "1"
             current_vals_pu = "[0.16260121958817295, 67.75030486853915]"
-            embedded_cpl = "Ideal Transformer"
             f = "60"
             flux_vals_pu = "[36.90104033375619, 46.74106019765998]"
             input = "pu"
@@ -103,7 +102,7 @@ model "T2F" {
             Sn = "75e3"
             V1 = "13800/(3**0.5)"
             V2 = "380/(3**0.5)"
-            clock_number = "1"
+            clock_number = "3"
             f = "60"
             input = "pu"
             l1 = "0.018511"
@@ -122,16 +121,16 @@ model "T2F" {
         component src_ground gnd1 {
         }
         [
-            position = 9136, 8496
+            position = 9144, 8512
         ]
 
         component "core/Constant Impedance Load" "Constant Impedance Load1" {
             SAB = "75000.0/3"
-            SAn = "75e3/3"
+            SAn = "75000.0/3"
             SBC = "75000.0/3"
-            SBn = "75e3/3"
+            SBn = "75000.0/3"
             SCA = "75000.0/3"
-            SCn = "75e3/3"
+            SCn = "75000.0/3"
             Sn_3ph = "75e3"
             VAB = "380"
             VAn = "380/(3**0.5)"
@@ -145,10 +144,10 @@ model "T2F" {
             pfB = "0.8"
             pfC = "0.8"
             pf_3ph = "0.8"
-            pf_modeA = "Lead"
-            pf_modeB = "Lead"
-            pf_modeC = "Lead"
-            pf_mode_3ph = "Lead"
+            pf_modeA = "Lag"
+            pf_modeB = "Lag"
+            pf_modeC = "Lag"
+            pf_mode_3ph = "Lag"
         }
         [
             position = 9576, 8240
@@ -162,14 +161,14 @@ model "T2F" {
             init_rms_value = "13800/(3**0.5)"
         }
         [
-            position = 6392, 8240
+            position = 5584, 8240
             size = 62, 256
         ]
 
         component src_ground gnd2 {
         }
         [
-            position = 6768, 8480
+            position = 6856, 8408
         ]
 
         component src_ground gnd3 {
@@ -390,8 +389,8 @@ model "T2F" {
         ]
 
         component "core/Dynamic Grid Fault" Falta {
-            Rph_n = "1e-5"
-            Rph_ph = "1e-5"
+            Rph_n = "40/3"
+            Rph_ph = "40/3"
             execution_rate = "1e-3"
         }
         [
@@ -444,8 +443,8 @@ model "T2F" {
         ]
 
         component "core/Dynamic Grid Fault" FaltaConsumidor {
-            Rph_n = "1e-5"
-            Rph_ph = "1e-5"
+            Rph_n = "40"
+            Rph_ph = "40"
             execution_rate = "1e-3"
         }
         [
@@ -484,24 +483,24 @@ model "T2F" {
         component src_ground gnd7 {
         }
         [
-            position = 8976, 8464
+            position = 9056, 8464
         ]
 
         component "core/(50) Instantaneous Overcurrent" "(50) Instantaneous Overcurrent1" {
-            In = "5"
-            OC_thresh = "14"
+            In = "3"
+            OC_thresh = "10"
             execution_rate = "1e-3"
             phase_trip = "False"
             trip_mem = "False"
         }
         [
-            position = 7656, 7912
+            position = 5880, 7808
             size = 144, 160
         ]
 
         component "core/(51) AC Inverse Time Overcurrent" "(51) AC Inverse Time Overcurrent1" {
             EM_reset = "False"
-            In = "5"
+            In = "3"
             TOC_curve_type = "U4 - Extremely Inverse (US)"
             TOC_thresh = "3"
             TOC_timeDial = "0.8"
@@ -509,7 +508,7 @@ model "T2F" {
             trip_mem = "False"
         }
         [
-            position = 7656, 7728
+            position = 5880, 7624
             size = 144, 160
         ]
 
@@ -518,7 +517,7 @@ model "T2F" {
             unit = ""
         }
         [
-            position = 7880, 7848
+            position = 6016, 7744
         ]
 
         component gen_scada_output Disj2 {
@@ -526,45 +525,53 @@ model "T2F" {
             unit = ""
         }
         [
-            position = 7880, 7664
+            position = 6016, 7560
         ]
 
         component gen_scada_output Dial_reset {
             unit = ""
         }
         [
-            position = 7808, 7728
+            position = 6016, 7624
         ]
 
         component "core/Triple Pole Single Throw Contactor" CB {
             ctrl_src = "Model"
+            execution_rate = "1e-3"
         }
         [
-            position = 7928, 8288
+            position = 6024, 8240
             size = 64, 256
         ]
 
         component src_scada_input Memoria50 {
             execution_rate = "1e-3"
+            format = "int"
+            signal_type = "int"
             unit = ""
         }
         [
-            position = 7504, 8072
+            position = 6240, 7992
+            rotation = down
         ]
 
         component src_scada_input Memoria51 {
             execution_rate = "1e-3"
+            format = "int"
+            signal_type = "int"
             unit = ""
         }
         [
-            position = 7504, 8024
+            position = 6240, 8072
+            rotation = down
         ]
 
         component gen_logic_op "Logical operator3" {
-            operator = "NOR"
+            operator = "NAND"
         }
         [
-            position = 7624, 8048
+            position = 6136, 8032
+            rotation = down
         ]
 
         component "core/Single Pole Single Throw Contactor" S2 {
@@ -603,7 +610,7 @@ model "T2F" {
             initial_state = "on"
         }
         [
-            position = 6696, 8144
+            position = 6576, 8144
             size = 64, 32
         ]
 
@@ -612,7 +619,7 @@ model "T2F" {
             sig_output = "True"
         }
         [
-            position = 6568, 8144
+            position = 6448, 8144
             size = 64, 32
         ]
 
@@ -621,7 +628,7 @@ model "T2F" {
             unit = ""
         }
         [
-            position = 6488, 8072
+            position = 6368, 8072
             rotation = down
         ]
 
@@ -632,7 +639,7 @@ model "T2F" {
             initial_state = "on"
         }
         [
-            position = 6688, 8240
+            position = 6568, 8240
             size = 64, 32
         ]
 
@@ -641,7 +648,7 @@ model "T2F" {
             sig_output = "True"
         }
         [
-            position = 6560, 8240
+            position = 6440, 8240
             size = 64, 32
         ]
 
@@ -650,7 +657,7 @@ model "T2F" {
             unit = ""
         }
         [
-            position = 6488, 8192
+            position = 6368, 8192
             rotation = down
         ]
 
@@ -661,7 +668,7 @@ model "T2F" {
             initial_state = "on"
         }
         [
-            position = 6696, 8336
+            position = 6576, 8336
             size = 64, 32
         ]
 
@@ -670,7 +677,7 @@ model "T2F" {
             sig_output = "True"
         }
         [
-            position = 6552, 8336
+            position = 6432, 8336
             size = 64, 32
         ]
 
@@ -679,7 +686,7 @@ model "T2F" {
             unit = ""
         }
         [
-            position = 6496, 8288
+            position = 6376, 8288
             rotation = down
         ]
 
@@ -782,7 +789,7 @@ model "T2F" {
             unit = ""
         }
         [
-            position = 6792, 7984
+            position = 6672, 7984
         ]
 
         component gen_scada_output S4_feed {
@@ -790,7 +797,7 @@ model "T2F" {
             unit = ""
         }
         [
-            position = 6792, 8040
+            position = 6672, 7928
         ]
 
         component gen_scada_output S5_feed {
@@ -798,7 +805,7 @@ model "T2F" {
             unit = ""
         }
         [
-            position = 6792, 8088
+            position = 6672, 8040
         ]
 
         component gen_scada_output S6_feed {
@@ -815,6 +822,99 @@ model "T2F" {
         }
         [
             position = 9016, 8056
+        ]
+
+        component "core/Three-phase Meter" Rele {
+            I_avg_rms = "True"
+            I_rms = "True"
+            Ts = "1e-3"
+            VAB = "True"
+            VBC = "True"
+            VCA = "True"
+            VLL_rms = "True"
+            VLn_rms = "True"
+            freq = "True"
+            remove_snubber = "True"
+        }
+        [
+            position = 5752, 8240
+            size = 64, 272
+        ]
+
+        component src_ground gnd10 {
+        }
+        [
+            position = 5752, 8448
+        ]
+
+        component src_ground gnd11 {
+        }
+        [
+            position = 5464, 8392
+        ]
+
+        component gen_scada_output ReleA {
+            unit = ""
+        }
+        [
+            position = 6320, 7768
+            rotation = left
+        ]
+
+        component "core/Meter Split" "Meter Split4" {
+            i_rms = "True"
+            ia_rms = "True"
+            ib_rms = "True"
+            ic_rms = "True"
+            van = "False"
+            vbn = "False"
+            vcn = "False"
+        }
+        [
+            position = 6168, 7824
+            size = 96, 96
+        ]
+
+        component gen_scada_output ReleB {
+            unit = ""
+        }
+        [
+            position = 6392, 7768
+            rotation = left
+        ]
+
+        component gen_scada_output ReleC {
+            unit = ""
+        }
+        [
+            position = 6472, 7768
+            rotation = left
+        ]
+
+        component gen_scada_output ReleI {
+            unit = ""
+        }
+        [
+            position = 6552, 7768
+            rotation = left
+        ]
+
+        component gen_scada_output Disj3 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6192, 7928
+            rotation = left
+        ]
+
+        component gen_scada_output Disj4 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6184, 8104
+            rotation = right
         ]
 
         junction Junction23 sp
@@ -872,24 +972,9 @@ model "T2F" {
             position = 9168, 8432
         ]
 
-        junction Junction111 sp
-        [
-            position = 7960, 7896
-        ]
-
-        junction Junction112 sp
-        [
-            position = 7504, 7664
-        ]
-
         junction Junction113 pe
         [
             position = 7272, 8240
-        ]
-
-        junction Junction116 pe
-        [
-            position = 6768, 8432
         ]
 
         junction Junction117 pe
@@ -930,6 +1015,26 @@ model "T2F" {
         junction Junction126 pe
         [
             position = 8512, 8240
+        ]
+
+        junction Junction128 sp
+        [
+            position = 5752, 7744
+        ]
+
+        junction Junction129 sp
+        [
+            position = 5752, 7976
+        ]
+
+        junction Junction130 sp
+        [
+            position = 6192, 8024
+        ]
+
+        junction Junction131 sp
+        [
+            position = 6184, 8040
         ]
 
         connect "Three Phase Phasor3.out1" Linha_Tensao_A1.in as Connection263
@@ -1046,7 +1151,7 @@ model "T2F" {
         ]
         connect "Constant Impedance Load1.N" Junction92 as Connection700
         [
-            breakpoints = 9816, 8240; 9816, 8432
+            breakpoints = 9680, 8240; 9680, 8432
         ]
         connect FaltaConsumidor.P8 Junction92 as Connection702
         connect "Constant Impedance Load1.C" FaltaConsumidor.P7 as Connection703
@@ -1095,56 +1200,11 @@ model "T2F" {
         [
             breakpoints = 8088, 8456; 8088, 8440
         ]
-        connect Tr2.n2 gnd7.node as Connection874
-        connect "(51) AC Inverse Time Overcurrent1.dial_reset" Dial_reset.in as Connection907
         connect M1.out_1 Linha.A+ as Connection933
         connect M1.out_2 Linha.B+ as Connection934
         [
             breakpoints = 7712, 8216
         ]
-        connect Linha.A- CB.a_in as Connection938
-        connect CB.b_in Linha.B- as Connection939
-        connect CB.c_in Linha.C- as Connection940
-        connect CB.c_out Falta.P3 as Connection941
-        [
-            breakpoints = 7960, 8392; 7976, 8392
-        ]
-        connect Falta.P2 CB.b_out as Connection942
-        [
-            breakpoints = 8056, 8384; 8040, 8384; 8016, 8384; 8016, 8288
-        ]
-        connect Falta.P1 CB.a_out as Connection943
-        [
-            breakpoints = 8040, 8368; 8040, 8208; 8040, 8208
-        ]
-        connect Disj2.in "(51) AC Inverse Time Overcurrent1.time_trip" as Connection952
-        [
-            breakpoints = 7840, 7664; 7840, 7664; 7776, 7664
-        ]
-        connect Linha.Out Junction111 as Connection963
-        [
-            breakpoints = 7952, 7896; 7952, 7896; 7952, 7896
-        ]
-        connect Junction111 "Meter Split3.Input" as Connection964
-        connect "(51) AC Inverse Time Overcurrent1.Meas_in" Junction112 as Connection966
-        connect Junction112 Junction111 as Connection967
-        [
-            breakpoints = 7504, 7568; 7952, 7568; 7960, 7568; 7960, 7824; 7960, 7824; 7960, 7896
-        ]
-        connect "(50) Instantaneous Overcurrent1.Meas_in" Junction112 as Connection968
-        [
-            breakpoints = 7504, 7840
-        ]
-        connect "(50) Instantaneous Overcurrent1.trip_inst" Disj1.in as Connection969
-        [
-            breakpoints = 7792, 7848
-        ]
-        connect "Logical operator3.in" Memoria51.out as Connection971
-        connect "Logical operator3.in1" Memoria50.out as Connection972
-        [
-            breakpoints = 7568, 8064
-        ]
-        connect "Logical operator3.out" CB.ctrl_in as Connection973
         connect Tr1.sec_1 FuseLinkA.p_node as Connection979
         connect S2.a_in FuseLinkB.n_node as Connection980
         connect FuseLinkB.out Fuse_Link_B1.in as Connection981
@@ -1163,21 +1223,12 @@ model "T2F" {
         connect S3.a_out Tr1.prm_1 as Connection993
         connect Tr1.prm_2 S4.a_out as Connection994
         connect Tr1.prm_3 S5.a_out as Connection995
-        connect FuseLinkB2.p_node Vs1.c_node as Connection996
-        connect Vs1.b_node FuseLinkB1.p_node as Connection997
-        connect FuseLinkA1.p_node Vs1.a_node as Connection998
         connect S6.a_in FuseLinkA3.n_node as Connection1010
         connect FuseLinkA3.out Fuse_Link_A2.in as Connection1011
         connect S7.a_in FuseLinkB5.n_node as Connection1012
         connect FuseLinkB5.out Fuse_Link_B2.in as Connection1013
         connect S7.a_out Tr2.prm_2 as Connection1014
         connect S6.a_out Tr2.prm_1 as Connection1015
-        connect Vs1.n_node Junction116 as Connection1024
-        [
-            breakpoints = 6280, 8296; 6640, 8432
-        ]
-        connect Junction116 gnd2.node as Connection1025
-        connect Tr1.n2 Junction116 as Connection1026
         connect Tr1.sec_3 R3.p_node as Connection1027
         connect "Core Coupling 2.d_in" gnd8.node as Connection1034
         connect "Core Coupling 2.d_out" gnd9.node as Connection1035
@@ -1241,7 +1292,7 @@ model "T2F" {
         connect S5.feedback_out S5_feed.in as Connection1088
         connect S4.feedback_out S4_feed.in as Connection1089
         [
-            breakpoints = 6648, 8216; 6648, 8168; 6648, 8120; 6648, 8040
+            breakpoints = 6528, 8216; 6528, 8168; 6528, 8120; 6528, 8040
         ]
         connect S3.feedback_out S3_feed.in as Connection1090
         connect S6.feedback_out S6_feed.in as Connection1091
@@ -1249,6 +1300,66 @@ model "T2F" {
         [
             breakpoints = 8952, 8216; 8952, 8176
         ]
+        connect "Meter Split3.Input" Linha.Out as Connection1094
+        [
+            breakpoints = 7960, 7896; 7952, 7896; 7952, 7896; 7952, 7896
+        ]
+        connect FuseLinkA1.p_node CB.a_out as Connection1095
+        connect FuseLinkB2.p_node CB.c_out as Connection1099
+        connect Falta.P1 Linha.A- as Connection1102
+        [
+            breakpoints = 8032, 8368
+        ]
+        connect Linha.B- Falta.P2 as Connection1103
+        [
+            breakpoints = 7968, 8320; 7968, 8376; 7968, 8376
+        ]
+        connect Linha.C- Falta.P3 as Connection1104
+        connect Vs1.b_node Rele.B+ as Connection1106
+        connect Rele.B- CB.b_in as Connection1107
+        connect CB.b_out FuseLinkB1.p_node as Connection1108
+        connect Rele.A- CB.a_in as Connection1112
+        connect Rele.A+ Vs1.a_node as Connection1113
+        connect Rele.C- CB.c_in as Connection1118
+        connect Rele.C+ Vs1.c_node as Connection1119
+        connect "(50) Instantaneous Overcurrent1.Meas_in" Junction128 as Connection1120
+        connect Junction128 "(51) AC Inverse Time Overcurrent1.Meas_in" as Connection1121
+        [
+            breakpoints = 5752, 7736; 5752, 7560
+        ]
+        connect gnd10.node Rele.GND as Connection1124
+        connect Vs1.n_node gnd11.node as Connection1125
+        connect Tr2.n2 gnd7.node as Connection1126
+        [
+            breakpoints = 9064, 8440; 9048, 8440
+        ]
+        connect Tr1.n2 gnd2.node as Connection1127
+        connect "Logical operator3.out" CB.ctrl_in as Connection1128
+        connect "(51) AC Inverse Time Overcurrent1.time_trip" Disj2.in as Connection1129
+        connect Dial_reset.in "(51) AC Inverse Time Overcurrent1.dial_reset" as Connection1130
+        connect Disj1.in "(50) Instantaneous Overcurrent1.trip_inst" as Connection1131
+        connect ReleA.in "Meter Split4.IA_RMS" as Connection1132
+        connect "Meter Split4.IB_RMS" ReleB.in as Connection1133
+        connect ReleC.in "Meter Split4.IC_RMS" as Connection1134
+        connect Rele.Out Junction129 as Connection1135
+        connect Junction129 Junction128 as Connection1136
+        connect "Meter Split4.Input" Junction129 as Connection1137
+        [
+            breakpoints = 6000, 7824; 6000, 7976
+        ]
+        connect "Meter Split4.I_RMS" ReleI.in as Connection1138
+        connect "Logical operator3.in1" Junction130 as Connection1139
+        [
+            breakpoints = 6160, 8024; 6176, 8024
+        ]
+        connect Junction130 Memoria50.out as Connection1140
+        [
+            breakpoints = 6208, 8024; 6208, 7992
+        ]
+        connect Disj3.in Junction130 as Connection1141
+        connect "Logical operator3.in" Junction131 as Connection1142
+        connect Junction131 Memoria51.out as Connection1143
+        connect Disj4.in Junction131 as Connection1144
     }
 
     default {

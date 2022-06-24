@@ -4,7 +4,7 @@
     <hw_properties>
         <revision>3</revision>
         <product_id>HIL402</product_id>
-        <configuration_id>1</configuration_id>
+        <configuration_id>2</configuration_id>
         <device_ao_limit_enable>False</device_ao_limit_enable>
         <device_id>0</device_id>
         <spc_out_mem_size>256</spc_out_mem_size>
@@ -46,15 +46,29 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Core Coupling 2.cpl2.I_msr</name>
-            <address>197</address>
+            <name>Linha.IB</name>
+            <address>15</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Linha.VCn</name>
-            <address>9</address>
+            <name>Linha.VBn</name>
+            <address>7</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Core Coupling 1.cpl3.V_msr</name>
+            <address>202</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.VCA</name>
+            <address>8</address>
             <type>voltage</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
@@ -67,57 +81,8 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Linha.VCA</name>
-            <address>8</address>
-            <type>voltage</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.IA</name>
-            <address>14</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.VAB</name>
-            <address>4</address>
-            <type>voltage</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Core Coupling 2.cpl3.I_msr</name>
-            <address>198</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Core Coupling 2.cpl1.I_msr</name>
-            <address>196</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Core Coupling 1.cpl2.V_msr</name>
-            <address>201</address>
-            <type>voltage</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.VAn</name>
-            <address>5</address>
-            <type>voltage</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.VBn</name>
-            <address>7</address>
+            <name>Core Coupling 1.cpl1.V_msr</name>
+            <address>200</address>
             <type>voltage</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
@@ -130,22 +95,8 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Linha.IC</name>
-            <address>16</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Falta.S2.i</name>
-            <address>11</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Core Coupling 1.cpl1.V_msr</name>
-            <address>200</address>
+            <name>Linha.VAn</name>
+            <address>5</address>
             <type>voltage</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
@@ -158,9 +109,51 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Core Coupling 1.cpl3.V_msr</name>
-            <address>202</address>
+            <name>Core Coupling 2.cpl1.I_msr</name>
+            <address>196</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.IA</name>
+            <address>14</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.VCn</name>
+            <address>9</address>
             <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Falta.S2.i</name>
+            <address>11</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.VAB</name>
+            <address>4</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Core Coupling 2.cpl2.I_msr</name>
+            <address>197</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Core Coupling 2.cpl3.I_msr</name>
+            <address>198</address>
+            <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
@@ -172,9 +165,16 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Linha.IB</name>
-            <address>15</address>
+            <name>Linha.IC</name>
+            <address>16</address>
             <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Core Coupling 1.cpl2.V_msr</name>
+            <address>201</address>
+            <type>voltage</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
@@ -228,36 +228,71 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>S5.i</name>
-            <address>272</address>
+            <name>FuseLinkA1.instantaneous</name>
+            <address>270</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
+            <name>FuseLinkA1.Iinst</name>
+            <address>270</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>S3.i</name>
+            <address>279</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.IC</name>
+            <address>276</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Core Coupling 2.cpl2.V_msr</name>
+            <address>449</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VCn</name>
+            <address>268</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
             <name>FuseLinkA.instantaneous</name>
-            <address>263</address>
+            <address>269</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
             <name>FuseLinkA.Iinst</name>
-            <address>263</address>
+            <address>269</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
-            <name>FuseLinkB2.instantaneous</name>
-            <address>267</address>
+            <name>FuseLinkB.instantaneous</name>
+            <address>271</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
-            <name>FuseLinkB2.Iinst</name>
-            <address>267</address>
+            <name>FuseLinkB.Iinst</name>
+            <address>271</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
@@ -270,16 +305,107 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Core Coupling 2.cpl2.V_msr</name>
-            <address>449</address>
+            <name>Rele.VBC</name>
+            <address>265</address>
             <type>voltage</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
-            <name>S4.i</name>
-            <address>271</address>
+            <name>FuseLinkB1.instantaneous</name>
+            <address>272</address>
             <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkB1.Iinst</name>
+            <address>272</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkB2.instantaneous</name>
+            <address>273</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkB2.Iinst</name>
+            <address>273</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>S1.i</name>
+            <address>277</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VCA</name>
+            <address>267</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VAB</name>
+            <address>263</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.IB</name>
+            <address>275</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>S2.i</name>
+            <address>278</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.IA</name>
+            <address>274</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>S4.i</name>
+            <address>280</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>S5.i</name>
+            <address>281</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VBn</name>
+            <address>266</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VAn</name>
+            <address>264</address>
+            <type>voltage</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
@@ -287,69 +413,6 @@
             <name>Core Coupling 2.cpl3.V_msr</name>
             <address>450</address>
             <type>voltage</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkB1.instantaneous</name>
-            <address>266</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkB1.Iinst</name>
-            <address>266</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>S1.i</name>
-            <address>268</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>S3.i</name>
-            <address>270</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkA1.instantaneous</name>
-            <address>264</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkA1.Iinst</name>
-            <address>264</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>S2.i</name>
-            <address>269</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkB.instantaneous</name>
-            <address>265</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkB.Iinst</name>
-            <address>265</address>
-            <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
@@ -375,23 +438,23 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Constant Impedance Load1.Ca</name>
+            <name>Constant Impedance Load1.La</name>
             <address>512</address>
-            <type>voltage</type>
+            <type>current</type>
             <initial_condition>0.0</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Constant Impedance Load1.Cb</name>
+            <name>Constant Impedance Load1.Lb</name>
             <address>513</address>
-            <type>voltage</type>
+            <type>current</type>
             <initial_condition>0.0</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Constant Impedance Load1.Cc</name>
+            <name>Constant Impedance Load1.Lc</name>
             <address>514</address>
-            <type>voltage</type>
+            <type>current</type>
             <initial_condition>0.0</initial_condition>
             <visible>True</visible>
         </cell>
@@ -438,15 +501,8 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>S7.i</name>
-            <address>537</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.IA</name>
-            <address>527</address>
+            <name>FaltaConsumidor.S2.i</name>
+            <address>531</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
@@ -459,41 +515,6 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>FuseLinkB5.instantaneous</name>
-            <address>535</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkB5.Iinst</name>
-            <address>535</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.VAB</name>
-            <address>521</address>
-            <type>voltage</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>S6.i</name>
-            <address>536</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FaltaConsumidor.S2.i</name>
-            <address>531</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
             <name>Core Coupling 1.cpl1.I_msr</name>
             <address>704</address>
             <type>current</type>
@@ -501,15 +522,15 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Core Coupling 1.cpl3.I_msr</name>
-            <address>706</address>
+            <name>FaltaConsumidor.S3.i</name>
+            <address>532</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Core Coupling 1.cpl2.I_msr</name>
-            <address>705</address>
+            <name>Core Coupling 1.cpl3.I_msr</name>
+            <address>706</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
@@ -536,29 +557,8 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>FaltaConsumidor.S4.i</name>
-            <address>533</address>
-            <type>current</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.VBC</name>
-            <address>523</address>
-            <type>voltage</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.VAn</name>
-            <address>522</address>
-            <type>voltage</type>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.IB</name>
-            <address>528</address>
+            <name>S6.i</name>
+            <address>536</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
@@ -578,6 +578,55 @@
             <visible>True</visible>
         </cell>
         <cell>
+            <name>Consumidor.IA</name>
+            <address>527</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>S7.i</name>
+            <address>537</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Consumidor.VBC</name>
+            <address>523</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FaltaConsumidor.S4.i</name>
+            <address>533</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Consumidor.IB</name>
+            <address>528</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkB5.instantaneous</name>
+            <address>535</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkB5.Iinst</name>
+            <address>535</address>
+            <type>current</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
             <name>Consumidor.VCn</name>
             <address>526</address>
             <type>voltage</type>
@@ -585,8 +634,22 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>FaltaConsumidor.S3.i</name>
-            <address>532</address>
+            <name>Consumidor.VAB</name>
+            <address>521</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Consumidor.VAn</name>
+            <address>522</address>
+            <type>voltage</type>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Core Coupling 1.cpl2.I_msr</name>
+            <address>705</address>
             <type>current</type>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
@@ -857,15 +920,7 @@
             <address>543</address>
         </cell>
         <cell>
-            <name>S1.Sa</name>
-            <address>512</address>
-        </cell>
-        <cell>
             <name>S2.Sa</name>
-            <address>512</address>
-        </cell>
-        <cell>
-            <name>S4.Sa</name>
             <address>512</address>
         </cell>
         <cell>
@@ -873,11 +928,15 @@
             <address>512</address>
         </cell>
         <cell>
-            <name>S3.Sa</name>
+            <name>S1.Sa</name>
             <address>512</address>
         </cell>
         <cell>
-            <name>S6.Sa</name>
+            <name>S4.Sa</name>
+            <address>512</address>
+        </cell>
+        <cell>
+            <name>S3.Sa</name>
             <address>512</address>
         </cell>
         <cell>
@@ -885,84 +944,88 @@
             <address>512</address>
         </cell>
         <cell>
-            <name>CB.feedback</name>
-            <address>1024</address>
-        </cell>
-        <cell>
-            <name>CB_fb</name>
-            <address>1024</address>
+            <name>S6.Sa</name>
+            <address>512</address>
         </cell>
         <cell>
             <name>Falta.S1.feedback</name>
-            <address>1025</address>
+            <address>1024</address>
         </cell>
         <cell>
             <name>Falta.S1_fb</name>
-            <address>1025</address>
+            <address>1024</address>
         </cell>
         <cell>
             <name>Falta.S2.feedback</name>
-            <address>1026</address>
+            <address>1025</address>
         </cell>
         <cell>
             <name>Falta.S2_fb</name>
-            <address>1026</address>
+            <address>1025</address>
         </cell>
         <cell>
             <name>Falta.S3.feedback</name>
-            <address>1027</address>
+            <address>1026</address>
         </cell>
         <cell>
             <name>Falta.S3_fb</name>
-            <address>1027</address>
+            <address>1026</address>
         </cell>
         <cell>
             <name>Falta.S4.feedback</name>
-            <address>1028</address>
+            <address>1027</address>
         </cell>
         <cell>
             <name>Falta.S4_fb</name>
-            <address>1028</address>
+            <address>1027</address>
+        </cell>
+        <cell>
+            <name>CB.feedback</name>
+            <address>1039</address>
+        </cell>
+        <cell>
+            <name>CB_fb</name>
+            <address>1039</address>
         </cell>
         <cell>
             <name>S1.feedback</name>
-            <address>1039</address>
+            <address>1040</address>
         </cell>
         <cell>
             <name>S1_fb</name>
-            <address>1039</address>
+            <address>1040</address>
         </cell>
         <cell>
             <name>S2.feedback</name>
-            <address>1040</address>
+            <address>1041</address>
         </cell>
         <cell>
             <name>S2_fb</name>
-            <address>1040</address>
+            <address>1041</address>
         </cell>
         <cell>
             <name>S3.feedback</name>
-            <address>1041</address>
+            <address>1042</address>
         </cell>
         <cell>
             <name>S3_fb</name>
-            <address>1041</address>
+            <address>1042</address>
         </cell>
         <cell>
             <name>S4.feedback</name>
-            <address>1042</address>
+            <address>1043</address>
         </cell>
         <cell>
             <name>S4_fb</name>
-            <address>1042</address>
+            <address>1043</address>
         </cell>
         <cell>
             <name>S5.feedback</name>
-            <address>1043</address>
+            <address>1044</address>
         </cell>
         <cell>
             <name>S5_fb</name>
-            <address>1043</address>
+            <address>1044</address>
         </cell>
         <cell>
             <name>FaltaConsumidor.S1.feedback</name>
@@ -1030,63 +1093,63 @@
     </batteries>
     <contactors>
         <cell>
-            <name>CB</name>
-            <type>three_phase_breaker</type>
-            <weight>0</weight>
-            <site>0</site>
-        </cell>
-        <cell>
             <name>Falta.S1</name>
             <type>one_phase_breaker</type>
-            <weight>1</weight>
+            <weight>0</weight>
             <site>0</site>
         </cell>
         <cell>
             <name>Falta.S2</name>
             <type>one_phase_breaker</type>
-            <weight>2</weight>
+            <weight>1</weight>
             <site>0</site>
         </cell>
         <cell>
             <name>Falta.S3</name>
             <type>one_phase_breaker</type>
-            <weight>3</weight>
+            <weight>2</weight>
             <site>0</site>
         </cell>
         <cell>
             <name>Falta.S4</name>
             <type>one_phase_breaker</type>
-            <weight>4</weight>
+            <weight>3</weight>
             <site>0</site>
         </cell>
         <cell>
-            <name>S1</name>
-            <type>one_phase_breaker</type>
+            <name>CB</name>
+            <type>three_phase_breaker</type>
             <weight>0</weight>
             <site>1</site>
         </cell>
         <cell>
-            <name>S2</name>
+            <name>S1</name>
             <type>one_phase_breaker</type>
             <weight>1</weight>
             <site>1</site>
         </cell>
         <cell>
-            <name>S3</name>
+            <name>S2</name>
             <type>one_phase_breaker</type>
             <weight>2</weight>
             <site>1</site>
         </cell>
         <cell>
-            <name>S4</name>
+            <name>S3</name>
             <type>one_phase_breaker</type>
             <weight>3</weight>
             <site>1</site>
         </cell>
         <cell>
-            <name>S5</name>
+            <name>S4</name>
             <type>one_phase_breaker</type>
             <weight>4</weight>
+            <site>1</site>
+        </cell>
+        <cell>
+            <name>S5</name>
+            <type>one_phase_breaker</type>
+            <weight>5</weight>
             <site>1</site>
         </cell>
         <cell>
@@ -1142,11 +1205,67 @@
     <model_properties>
         <execution_rates>[[[0.001]]]</execution_rates>
         <sys_real_type_precision>float</sys_real_type_precision>
-        <user_real_type_precision>double</user_real_type_precision>
+        <user_real_type_precision>float</user_real_type_precision>
         <sig_stim>off</sig_stim>
     </model_properties>
 
     <analog_variables>
+        <cell>
+            <name>Consumidor.VCA_RMS</name>
+            <type>generic</type>
+            <address>8211</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VAn_RMS</name>
+            <type>generic</type>
+            <address>8230</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.VBn_RMS</name>
+            <type>generic</type>
+            <address>8221</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.IC_RMS</name>
+            <type>generic</type>
+            <address>8216</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.VCn_RMS</name>
+            <type>generic</type>
+            <address>8223</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Consumidor.VAB_RMS</name>
+            <type>generic</type>
+            <address>8207</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VCA_RMS</name>
+            <type>generic</type>
+            <address>8233</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.IA_RMS</name>
+            <type>generic</type>
+            <address>8214</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
         <cell>
             <name>FuseLinkB5.rms</name>
             <type>current</type>
@@ -1162,121 +1281,9 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>FuseLinkA3.rms</name>
-            <type>current</type>
-            <address>8194</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkA3</name>
-            <type>current</type>
-            <address>8194</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkA.rms</name>
-            <type>current</type>
-            <address>8192</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkA</name>
-            <type>current</type>
-            <address>8192</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.I_RMS</name>
+            <name>Consumidor.VBn_RMS</name>
             <type>generic</type>
-            <address>8206</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.VCA_RMS</name>
-            <type>generic</type>
-            <address>8211</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkB2.rms</name>
-            <type>current</type>
-            <address>8197</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkB2</name>
-            <type>current</type>
-            <address>8197</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.VBC_RMS</name>
-            <type>generic</type>
-            <address>8209</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.VAn_RMS</name>
-            <type>generic</type>
-            <address>8208</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.VBC_RMS</name>
-            <type>generic</type>
-            <address>8220</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.VCn_RMS</name>
-            <type>generic</type>
-            <address>8212</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.VAn_RMS</name>
-            <type>generic</type>
-            <address>8219</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.IC_RMS</name>
-            <type>generic</type>
-            <address>8205</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.IB_RMS</name>
-            <type>generic</type>
-            <address>8215</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Consumidor.IB_RMS</name>
-            <type>generic</type>
-            <address>8204</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>(51) AC Inverse Time Overcurrent1.DIAL-POS-A</name>
-            <type>generic</type>
-            <address>8199</address>
+            <address>8210</address>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
@@ -1295,9 +1302,65 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Linha.VAB_RMS</name>
+            <name>Consumidor.IB_RMS</name>
             <type>generic</type>
-            <address>8218</address>
+            <address>8204</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.IA_RMS</name>
+            <type>generic</type>
+            <address>8225</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkA3.rms</name>
+            <type>current</type>
+            <address>8194</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkA3</name>
+            <type>current</type>
+            <address>8194</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Consumidor.IC_RMS</name>
+            <type>generic</type>
+            <address>8205</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkB2.rms</name>
+            <type>current</type>
+            <address>8197</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkB2</name>
+            <type>current</type>
+            <address>8197</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VCn_RMS</name>
+            <type>generic</type>
+            <address>8234</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.Freq</name>
+            <type>generic</type>
+            <address>8224</address>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
@@ -1309,58 +1372,9 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Consumidor.VBn_RMS</name>
+            <name>Rele.VBC_RMS</name>
             <type>generic</type>
-            <address>8210</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.IA_RMS</name>
-            <type>generic</type>
-            <address>8214</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.VCn_RMS</name>
-            <type>generic</type>
-            <address>8223</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.Freq</name>
-            <type>generic</type>
-            <address>8213</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>Linha.VCA_RMS</name>
-            <type>generic</type>
-            <address>8222</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkA1.rms</name>
-            <type>current</type>
-            <address>8193</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>FuseLinkA1</name>
-            <type>current</type>
-            <address>8193</address>
-            <initial_condition>None</initial_condition>
-            <visible>True</visible>
-        </cell>
-        <cell>
-            <name>(51) AC Inverse Time Overcurrent1.DIAL-POS-B</name>
-            <type>generic</type>
-            <address>8200</address>
+            <address>8231</address>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
@@ -1372,16 +1386,86 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Consumidor.VAB_RMS</name>
+            <name>Consumidor.VBC_RMS</name>
             <type>generic</type>
-            <address>8207</address>
+            <address>8209</address>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Linha.IC_RMS</name>
+            <name>Rele.I_RMS</name>
             <type>generic</type>
-            <address>8216</address>
+            <address>8228</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Consumidor.VAn_RMS</name>
+            <type>generic</type>
+            <address>8208</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Consumidor.I_RMS</name>
+            <type>generic</type>
+            <address>8206</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Consumidor.VCn_RMS</name>
+            <type>generic</type>
+            <address>8212</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.VAB_RMS</name>
+            <type>generic</type>
+            <address>8218</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.IC_RMS</name>
+            <type>generic</type>
+            <address>8227</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkA.rms</name>
+            <type>current</type>
+            <address>8192</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>FuseLinkA</name>
+            <type>current</type>
+            <address>8192</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>(51) AC Inverse Time Overcurrent1.DIAL-POS-B</name>
+            <type>generic</type>
+            <address>8200</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.VCA_RMS</name>
+            <type>generic</type>
+            <address>8222</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.Freq</name>
+            <type>generic</type>
+            <address>8213</address>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
@@ -1400,16 +1484,44 @@
             <visible>True</visible>
         </cell>
         <cell>
-            <name>(51) AC Inverse Time Overcurrent1.DIAL-POS-C</name>
-            <type>generic</type>
-            <address>8201</address>
+            <name>FuseLinkA1.rms</name>
+            <type>current</type>
+            <address>8193</address>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
         <cell>
-            <name>Linha.VBn_RMS</name>
+            <name>FuseLinkA1</name>
+            <type>current</type>
+            <address>8193</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.VAn_RMS</name>
             <type>generic</type>
-            <address>8221</address>
+            <address>8219</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VAB_RMS</name>
+            <type>generic</type>
+            <address>8229</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.VBC_RMS</name>
+            <type>generic</type>
+            <address>8220</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Linha.IB_RMS</name>
+            <type>generic</type>
+            <address>8215</address>
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
@@ -1420,9 +1532,41 @@
             <initial_condition>None</initial_condition>
             <visible>True</visible>
         </cell>
+        <cell>
+            <name>(51) AC Inverse Time Overcurrent1.DIAL-POS-C</name>
+            <type>generic</type>
+            <address>8201</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.IB_RMS</name>
+            <type>generic</type>
+            <address>8226</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>Rele.VBn_RMS</name>
+            <type>generic</type>
+            <address>8232</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
+        <cell>
+            <name>(51) AC Inverse Time Overcurrent1.DIAL-POS-A</name>
+            <type>generic</type>
+            <address>8199</address>
+            <initial_condition>None</initial_condition>
+            <visible>True</visible>
+        </cell>
     </analog_variables>
 
     <digital_variables>
+        <cell>
+            <name>(51) AC Inverse Time Overcurrent1.TRIP-MEM</name>
+            <address>2052</address>
+        </cell>
         <cell>
             <name>(50) Instantaneous Overcurrent1.TRIP-INST</name>
             <address>2048</address>
@@ -1432,16 +1576,12 @@
             <address>2050</address>
         </cell>
         <cell>
-            <name>(51) AC Inverse Time Overcurrent1.TRIP</name>
-            <address>2051</address>
-        </cell>
-        <cell>
-            <name>(51) AC Inverse Time Overcurrent1.TRIP-MEM</name>
-            <address>2052</address>
-        </cell>
-        <cell>
             <name>(50) Instantaneous Overcurrent1.TRIP-MEM</name>
             <address>2049</address>
+        </cell>
+        <cell>
+            <name>(51) AC Inverse Time Overcurrent1.TRIP</name>
+            <address>2051</address>
         </cell>
     </digital_variables>
 <digital_variables>
@@ -1485,8 +1625,8 @@
             <max>1000000.0</max>
             <def_value>0.0</def_value>
             <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
+            <widget_type>int</widget_type>
+            <format>integer</format>
             <size>1</size>
             <param_type>scada input</param_type>
             <cpu_type>user_sp_cpu</cpu_type>
@@ -1500,8 +1640,8 @@
             <max>1000000.0</max>
             <def_value>0.0</def_value>
             <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
+            <widget_type>int</widget_type>
+            <format>integer</format>
             <size>1</size>
             <param_type>scada input</param_type>
             <cpu_type>user_sp_cpu</cpu_type>
@@ -1512,97 +1652,6 @@
 
     <scada_outputs>
         <scada_output>
-            <name>Linha_Tensao_A</name>
-            <addr>1426063780</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Fuse_Link_A1</name>
-            <addr>1426063732</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Linha_Tensao_C1</name>
-            <addr>1426063800</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>S1_feed</name>
-            <addr>1426063804</addr>
-            <unit></unit>
-            <widget_type>int</widget_type>
-            <format>integer</format>
-        </scada_output>
-        <scada_output>
-            <name>Fuse_Link_B1</name>
-            <addr>1426063744</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>S7_feed</name>
-            <addr>1426063828</addr>
-            <unit></unit>
-            <widget_type>int</widget_type>
-            <format>integer</format>
-        </scada_output>
-        <scada_output>
-            <name>S2_feed</name>
-            <addr>1426063808</addr>
-            <unit></unit>
-            <widget_type>int</widget_type>
-            <format>integer</format>
-        </scada_output>
-        <scada_output>
-            <name>Fuse_Link_A2</name>
-            <addr>1426063736</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Fuse_Link_B</name>
-            <addr>1426063740</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Dial_reset</name>
-            <addr>1426063716</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Disj2</name>
-            <addr>1426063724</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Linha_Angulo_C</name>
-            <addr>1426063772</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Linha_Angulo_C1</name>
-            <addr>1426063776</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
             <name>Linha_Angulo_A</name>
             <addr>1426063756</addr>
             <unit></unit>
@@ -1610,92 +1659,15 @@
             <format>real</format>
         </scada_output>
         <scada_output>
-            <name>Linha_Tensao_B</name>
-            <addr>1426063788</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>S5_feed</name>
-            <addr>1426063820</addr>
-            <unit></unit>
-            <widget_type>int</widget_type>
-            <format>integer</format>
-        </scada_output>
-        <scada_output>
-            <name>Disj1</name>
-            <addr>1426063720</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Linha_Tensao_C</name>
-            <addr>1426063796</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Linha_Angulo_B1</name>
-            <addr>1426063768</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>S3_feed</name>
-            <addr>1426063812</addr>
-            <unit></unit>
-            <widget_type>int</widget_type>
-            <format>integer</format>
-        </scada_output>
-        <scada_output>
-            <name>Linha_Angulo_B</name>
-            <addr>1426063764</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Linha_Tensao_B1</name>
-            <addr>1426063792</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>S4_feed</name>
-            <addr>1426063816</addr>
-            <unit></unit>
-            <widget_type>int</widget_type>
-            <format>integer</format>
-        </scada_output>
-        <scada_output>
-            <name>Fuse_Link_C</name>
-            <addr>1426063752</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>Fuse_Link_A</name>
-            <addr>1426063728</addr>
-            <unit></unit>
-            <widget_type>float</widget_type>
-            <format>real</format>
-        </scada_output>
-        <scada_output>
-            <name>S6_feed</name>
-            <addr>1426063824</addr>
-            <unit></unit>
-            <widget_type>int</widget_type>
-            <format>integer</format>
-        </scada_output>
-        <scada_output>
             <name>Fuse_Link_B2</name>
             <addr>1426063748</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Fuse_Link_B1</name>
+            <addr>1426063744</addr>
             <unit></unit>
             <widget_type>float</widget_type>
             <format>real</format>
@@ -1708,11 +1680,207 @@
             <format>real</format>
         </scada_output>
         <scada_output>
+            <name>Dial_reset</name>
+            <addr>1426063716</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Linha_Tensao_B</name>
+            <addr>1426063788</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Linha_Angulo_B</name>
+            <addr>1426063764</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Linha_Angulo_C</name>
+            <addr>1426063772</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>ReleI</name>
+            <addr>1426063816</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Linha_Tensao_A</name>
+            <addr>1426063780</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Disj1</name>
+            <addr>1426063720</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Linha_Angulo_B1</name>
+            <addr>1426063768</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>ReleB</name>
+            <addr>1426063808</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Disj2</name>
+            <addr>1426063724</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
             <name>Linha_Tensao_A1</name>
             <addr>1426063784</addr>
             <unit></unit>
             <widget_type>float</widget_type>
             <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>ReleC</name>
+            <addr>1426063812</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Linha_Tensao_B1</name>
+            <addr>1426063792</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Fuse_Link_A</name>
+            <addr>1426063728</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Fuse_Link_C</name>
+            <addr>1426063752</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>S4_feed</name>
+            <addr>1426063832</addr>
+            <unit></unit>
+            <widget_type>int</widget_type>
+            <format>integer</format>
+        </scada_output>
+        <scada_output>
+            <name>Linha_Tensao_C1</name>
+            <addr>1426063800</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Linha_Tensao_C</name>
+            <addr>1426063796</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Fuse_Link_B</name>
+            <addr>1426063740</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>S7_feed</name>
+            <addr>1426063844</addr>
+            <unit></unit>
+            <widget_type>int</widget_type>
+            <format>integer</format>
+        </scada_output>
+        <scada_output>
+            <name>S6_feed</name>
+            <addr>1426063840</addr>
+            <unit></unit>
+            <widget_type>int</widget_type>
+            <format>integer</format>
+        </scada_output>
+        <scada_output>
+            <name>Fuse_Link_A2</name>
+            <addr>1426063736</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>ReleA</name>
+            <addr>1426063804</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>Fuse_Link_A1</name>
+            <addr>1426063732</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>S5_feed</name>
+            <addr>1426063836</addr>
+            <unit></unit>
+            <widget_type>int</widget_type>
+            <format>integer</format>
+        </scada_output>
+        <scada_output>
+            <name>Linha_Angulo_C1</name>
+            <addr>1426063776</addr>
+            <unit></unit>
+            <widget_type>float</widget_type>
+            <format>real</format>
+        </scada_output>
+        <scada_output>
+            <name>S3_feed</name>
+            <addr>1426063828</addr>
+            <unit></unit>
+            <widget_type>int</widget_type>
+            <format>integer</format>
+        </scada_output>
+        <scada_output>
+            <name>S2_feed</name>
+            <addr>1426063824</addr>
+            <unit></unit>
+            <widget_type>int</widget_type>
+            <format>integer</format>
+        </scada_output>
+        <scada_output>
+            <name>S1_feed</name>
+            <addr>1426063820</addr>
+            <unit></unit>
+            <widget_type>int</widget_type>
+            <format>integer</format>
         </scada_output>
     </scada_outputs>
 

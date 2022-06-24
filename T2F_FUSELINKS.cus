@@ -218,8 +218,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>16</x>
-                    <y>152</y>
+                    <x>16.0</x>
+                    <y>152.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -259,8 +259,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>160</x>
-                    <y>152</y>
+                    <x>160.0</x>
+                    <y>152.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -300,8 +300,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>304</x>
-                    <y>152</y>
+                    <x>304.0</x>
+                    <y>152.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -341,8 +341,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>16</x>
-                    <y>208</y>
+                    <x>16.0</x>
+                    <y>208.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -382,8 +382,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>304</x>
-                    <y>208</y>
+                    <x>304.0</x>
+                    <y>208.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -423,8 +423,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>160</x>
-                    <y>208</y>
+                    <x>160.0</x>
+                    <y>208.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -464,8 +464,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>160</x>
-                    <y>320</y>
+                    <x>160.0</x>
+                    <y>320.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -505,8 +505,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>304</x>
-                    <y>320</y>
+                    <x>304.0</x>
+                    <y>320.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -546,8 +546,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>16</x>
-                    <y>320</y>
+                    <x>16.0</x>
+                    <y>320.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -587,8 +587,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>16</x>
-                    <y>272</y>
+                    <x>16.0</x>
+                    <y>272.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -628,8 +628,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>304</x>
-                    <y>272</y>
+                    <x>304.0</x>
+                    <y>272.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -669,8 +669,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>160</x>
-                    <y>272</y>
+                    <x>160.0</x>
+                    <y>272.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -725,8 +725,8 @@ displayValue = data
                 <execution_rate>None</execution_rate>
                 <background_color>black</background_color>
                 <widget_settings>
-                    <x>1032</x>
-                    <y>376</y>
+                    <x>1032.0</x>
+                    <y>376.0</y>
                     <width>432</width>
                     <height>184</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -819,8 +819,8 @@ displayValue = data
                 <execution_rate>None</execution_rate>
                 <background_color>black</background_color>
                 <widget_settings>
-                    <x>1032</x>
-                    <y>560</y>
+                    <x>1032.0</x>
+                    <y>560.0</y>
                     <width>432</width>
                     <height>184</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -881,8 +881,8 @@ referenceCurves = [refCurveData1]
                 <description><![CDATA[]]></description>
                 <working_mode>windowed</working_mode>
                 <widget_settings>
-                    <x>32</x>
-                    <y>8</y>
+                    <x>32.0</x>
+                    <y>8.0</y>
                     <width>120</width>
                     <height>120</height>
                     <hierarchy_position>1</hierarchy_position>
@@ -1336,8 +1336,8 @@ displayValue = [ ['Tensao A Linha', hil.get_scada_output_value('Linha_Angulo_A')
                 <phasors_data>
                     </phasors_data>
                 <widget_settings>
-                    <x>560</x>
-                    <y>0</y>
+                    <x>560.0</x>
+                    <y>0.0</y>
                     <width>400</width>
                     <height>376</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1380,8 +1380,8 @@ displayValue = [ ['Tensao A Consumidor', hil.get_scada_output_value('Linha_Angul
                 <phasors_data>
                     </phasors_data>
                 <widget_settings>
-                    <x>960</x>
-                    <y>0</y>
+                    <x>960.0</x>
+                    <y>0.0</y>
                     <width>400</width>
                     <height>376</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1466,8 +1466,8 @@ widgetValue = None
                 <availableValues><![CDATA[['Sem Falta', 'Falta ABC', 'Falta AB', 'Falta AC', 'Falta BC']]]></availableValues>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
-                    <x>32</x>
-                    <y>384</y>
+                    <x>32.0</x>
+                    <y>384.0</y>
                     <width>240</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1537,8 +1537,8 @@ widgetValue = None
                 <availableValues><![CDATA[['1H', '2H', '3H', '5H', '8H', '6K', '8K', '10K', '12K', '15K', '20K', '25K', '30K', '40K', '50K', '65K', '80K', '100K']]]></availableValues>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
-                    <x>16</x>
-                    <y>432</y>
+                    <x>16.0</x>
+                    <y>432.0</y>
                     <width>256</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1639,8 +1639,8 @@ widgetValue = None
                 <availableValues><![CDATA[['Sem Falta', 'Falta ABC', 'Falta ABC-N', 'Falta AB', 'Falta ABN', 'Falta AC', 'Falta ACN', 'Falta BC', 'Falta BCN', 'Falta AN', 'Falta BN', 'Falta CN']]]></availableValues>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
-                    <x>280</x>
-                    <y>384</y>
+                    <x>280.0</x>
+                    <y>384.0</y>
                     <width>256</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1675,8 +1675,8 @@ displayValue = hil.get_scada_output_value('Fuse_Link_A')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>560</x>
-                    <y>392</y>
+                    <x>560.0</x>
+                    <y>392.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1750,8 +1750,8 @@ widgetValue = None
                 <availableValues><![CDATA[['1H', '2H', '3H', '5H', '8H', '6K', '8K', '10K', '12K', '15K', '20K', '25K', '30K', '40K', '50K', '65K', '80K', '100K']]]></availableValues>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
-                    <x>16</x>
-                    <y>472</y>
+                    <x>16.0</x>
+                    <y>472.0</y>
                     <width>256</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1819,8 +1819,8 @@ widgetValue = None
                 <availableValues><![CDATA[['1H', '2H', '3H', '5H', '8H', '6K', '8K', '10K', '12K', '15K', '20K', '25K', '30K', '40K', '50K', '65K', '80K', '100K']]]></availableValues>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
-                    <x>16</x>
-                    <y>512</y>
+                    <x>16.0</x>
+                    <y>512.0</y>
                     <width>256</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1855,8 +1855,8 @@ displayValue = hil.get_scada_output_value('Fuse_Link_B')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>560</x>
-                    <y>448</y>
+                    <x>560.0</x>
+                    <y>448.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1897,8 +1897,8 @@ displayValue = hil.get_scada_output_value('Fuse_Link_B')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>560</x>
-                    <y>504</y>
+                    <x>560.0</x>
+                    <y>504.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1939,8 +1939,8 @@ displayValue = hil.get_scada_output_value('Fuse_Link_B1')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>704</x>
-                    <y>448</y>
+                    <x>704.0</x>
+                    <y>448.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1981,8 +1981,8 @@ displayValue = hil.get_scada_output_value('Fuse_Link_A1')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>704</x>
-                    <y>392</y>
+                    <x>704.0</x>
+                    <y>392.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2023,8 +2023,8 @@ displayValue = hil.get_scada_output_value('Fuse_Link_B2')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>848</x>
-                    <y>448</y>
+                    <x>848.0</x>
+                    <y>448.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2065,8 +2065,8 @@ displayValue = hil.get_scada_output_value('Fuse_Link_A2')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>848</x>
-                    <y>392</y>
+                    <x>848.0</x>
+                    <y>392.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2107,8 +2107,8 @@ else: displayValue = False
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>680</x>
-                    <y>568</y>
+                    <x>680.0</x>
+                    <y>568.0</y>
                     <width>120</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2143,8 +2143,8 @@ else: displayValue = False
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>680</x>
-                    <y>600</y>
+                    <x>680.0</x>
+                    <y>600.0</y>
                     <width>120</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2179,8 +2179,8 @@ else: displayValue = False
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>560</x>
-                    <y>632</y>
+                    <x>560.0</x>
+                    <y>632.0</y>
                     <width>120</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2215,8 +2215,8 @@ else: displayValue = False
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>560</x>
-                    <y>600</y>
+                    <x>560.0</x>
+                    <y>600.0</y>
                     <width>120</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2251,8 +2251,8 @@ else: displayValue = False
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>560</x>
-                    <y>568</y>
+                    <x>560.0</x>
+                    <y>568.0</y>
                     <width>120</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2287,8 +2287,8 @@ else: displayValue = False
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>800</x>
-                    <y>568</y>
+                    <x>800.0</x>
+                    <y>568.0</y>
                     <width>120</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2323,8 +2323,8 @@ else: displayValue = False
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>800</x>
-                    <y>600</y>
+                    <x>800.0</x>
+                    <y>600.0</y>
                     <width>120</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2427,8 +2427,8 @@ elif (capturaCorrenteB2 >= 2.5*elos[scm.TipoB2]['IoIn']):
 
 ]]></on_stop_code>
                 <widget_settings>
-                    <x>312</x>
-                    <y>480</y>
+                    <x>312.0</x>
+                    <y>480.0</y>
                     <width>144</width>
                     <height>40</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2463,8 +2463,8 @@ displayValue = scm.TempoB1
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>160</x>
-                    <y>608</y>
+                    <x>160.0</x>
+                    <y>608.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2505,8 +2505,8 @@ displayValue = scm.TempoA
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>16</x>
-                    <y>552</y>
+                    <x>16.0</x>
+                    <y>552.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2547,8 +2547,8 @@ displayValue = scm.TempoC
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>16</x>
-                    <y>664</y>
+                    <x>16.0</x>
+                    <y>664.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2589,8 +2589,8 @@ displayValue = scm.TempoA1
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>160</x>
-                    <y>552</y>
+                    <x>160.0</x>
+                    <y>552.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2631,8 +2631,8 @@ displayValue = scm.TempoB
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>16</x>
-                    <y>608</y>
+                    <x>16.0</x>
+                    <y>608.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2673,8 +2673,8 @@ displayValue = scm.TempoA2
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>304</x>
-                    <y>552</y>
+                    <x>304.0</x>
+                    <y>552.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2715,8 +2715,8 @@ displayValue = scm.TempoB2
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>304</x>
-                    <y>608</y>
+                    <x>304.0</x>
+                    <y>608.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2731,6 +2731,270 @@ displayValue = scm.TempoB2
                     <orange_range>(0, 0, 0, 0)</orange_range>
                     <red_range>(0, 0, 0, 0)</red_range>
                 </advance_widget_settings>
+            </component_data>
+        <component_data>
+                <id>d784cdb8f3bb11ec873018c04df853b6</id>
+                <name><![CDATA[Potência Isolador]]></name>
+                <type>ComboBoxMacro</type>
+                <description><![CDATA[]]></description>
+                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+# NOTE: entered value is available through variable 'inputValue'
+
+if inputValue == 25:
+    scm.PotenciaTransformadorIsolador = 25e3
+elif inputValue == 30:
+    scm.PotenciaTransformadorIsolador = 30e3
+elif inputValue == 37.5:
+    scm.PotenciaTransformadorIsolador = 37.5e3
+elif inputValue == 45:
+    scm.PotenciaTransformadorIsolador = 45e3
+elif inputValue == 50:
+    scm.PotenciaTransformadorIsolador = 50e3
+elif inputValue == 75:
+    scm.PotenciaTransformadorIsolador = 75e3
+elif inputValue == 100:
+    scm.PotenciaTransformadorIsolador = 100e3
+elif inputValue == 112.5:
+    scm.PotenciaTransformadorIsolador = 112.5e3
+elif inputValue == 150:
+    scm.PotenciaTransformadorIsolador = 150e3
+elif inputValue == 200:
+    scm.PotenciaTransformadorIsolador = 200e3
+elif inputValue == 225:
+    scm.PotenciaTransformadorIsolador = 225e3
+elif inputValue == 250:
+    scm.PotenciaTransformadorIsolador = 250e3
+elif inputValue == 300:
+    scm.PotenciaTransformadorIsolador = 300e3
+elif inputValue == 400:
+    scm.PotenciaTransformadorIsolador = 400e3
+elif inputValue == 500:
+    scm.PotenciaTransformadorIsolador = 500e3
+elif inputValue == 600:
+    scm.PotenciaTransformadorIsolador = 600e3]]></on_use_code>
+                <on_start_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_start_code>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_stop_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
+# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_timer_code>
+                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
+                <inputValue><![CDATA[75]]></inputValue>
+                <availableValues><![CDATA[['25', '30', '37.5', '45', '50', '75', '100', '112.5', '150', '200', '225', '250', '300', '400', '500', '600']]]></availableValues>
+                <unit><![CDATA[]]></unit>
+                <widget_settings>
+                    <x>192</x>
+                    <y>16</y>
+                    <width>288</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>d784f4c5f3bb11ec9e3e18c04df853b6</id>
+                <name><![CDATA[Potência Consumidor]]></name>
+                <type>ComboBoxMacro</type>
+                <description><![CDATA[]]></description>
+                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+# NOTE: entered value is available through variable 'inputValue'
+
+if inputValue == 25:
+    scm.PotenciaTransformadorConsumidor = 25e3
+elif inputValue == 30:
+    scm.PotenciaTransformadorConsumidor = 30e3
+elif inputValue == 37.5:
+    scm.PotenciaTransformadorConsumidor = 37.5e3
+elif inputValue == 45:
+    scm.PotenciaTransformadorConsumidor = 45e3
+elif inputValue == 50:
+    scm.PotenciaTransformadorConsumidor = 50e3
+elif inputValue == 75:
+    scm.PotenciaTransformadorConsumidor = 75e3
+elif inputValue == 100:
+    scm.PotenciaTransformadorConsumidor = 100e3
+elif inputValue == 112.5:
+    scm.PotenciaTransformadorConsumidor = 112.5e3
+elif inputValue == 150:
+    scm.PotenciaTransformadorConsumidor = 150e3
+elif inputValue == 200:
+    scm.PotenciaTransformadorConsumidor = 200e3
+elif inputValue == 225:
+    scm.PotenciaTransformadorConsumidor = 225e3
+elif inputValue == 250:
+    scm.PotenciaTransformadorConsumidor = 250e3
+elif inputValue == 300:
+    scm.PotenciaTransformadorConsumidor = 300e3
+elif inputValue == 400:
+    scm.PotenciaTransformadorConsumidor = 400e3
+elif inputValue == 500:
+    scm.PotenciaTransformadorConsumidor = 500e3
+elif inputValue == 600:
+    scm.PotenciaTransformadorConsumidor = 600e3]]></on_use_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_start_code>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_stop_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
+# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_timer_code>
+                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
+                <inputValue><![CDATA[75]]></inputValue>
+                <availableValues><![CDATA[['25', '30', '37.5', '45', '50', '75', '100', '112.5', '150', '200', '225', '250', '300', '400', '500', '600']]]></availableValues>
+                <unit><![CDATA[]]></unit>
+                <widget_settings>
+                    <x>192</x>
+                    <y>48</y>
+                    <width>288</width>
+                    <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>d784f4c6f3bb11ecbd7818c04df853b6</id>
+                <name><![CDATA[FP]]></name>
+                <type>SliderMacro</type>
+                <description><![CDATA[]]></description>
+                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+# NOTE: entered value is available through variable 'inputValue'
+
+scm.FP = inputValue]]></on_use_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_start_code>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_stop_code>
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
+# HIL API is imported as 'hil'
+# NOTE: Only read functions are available from the HIL API
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+# Change widget value by setting this variable.
+# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
+# widget value won't be changed.
+widgetValue = None
+]]></on_timer_code>
+                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
+                <inputValue><![CDATA[0.8]]></inputValue>
+                <min>0.8</min>
+                <max>1.0</max>
+                <step>0.01</step>
+                <widget_settings>
+                    <x>192</x>
+                    <y>88</y>
+                    <width>288</width>
+                    <height>48</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
             </component_data>
         </components>
 </ui_settings>
