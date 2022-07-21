@@ -1,6 +1,6 @@
 GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1XCgLqaA==
 {
-  "compilation_timestamp": "2022-06-24 16:16:13",
+  "compilation_timestamp": "2022-07-15 10:50:40",
   "sw_version": "2022.2",
   "devices": [
     {
@@ -83,5 +83,5 @@ GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1X
   ]
 }
 -----BEGIN SIGNATURE-----
-HXAnZPVeTOImXMt7gDCySJfiv8n0Y4bBOFntFX+56NljmJ2zuIn1ALZlPkAuJauKEgVqXjlL7Npb3aronyQ0hsi16dZAqfYWzyOXALNS1OUOXCK40sbkn03Ldd5Zm7xPlnv+pRwiTHuEK1EwjWniQ82QHTFXcjeIMgaJmBeQBVoyaFt/tX/srcUFvOS6eihh+X8wI032iS2Ht5mcDaNFlT6X2+V9nHz0r76VFFFrwlNocj4TBBYu/czlvNyLl3kpP2N16l2g/Tav3kEegVK3xIzlnIKGRyPUrzKr8vIwsGCEXBXQZQwe/2sjkoPIpr8FTkR8mBm+q5jff93nPtMgrQ==
+TKfYMMEO+XutrLDIXSAiQ1zsTEpMtvryZyKMgHWRbntlq+00qs6l4yJEIH88tgETxYm1J0iqhsYBOEJ/wFjVlhm8HKZpJNuP0ExIA++oblywLnNABDYUbG8JGiLnAMcrnhPquiVu89hd1RdJlklog2AwNSczKUqqV8vrSJUcoeLeAZpLHVrGY98xeJrI0gP02SsQ56Yp4OnQ58wVtlXSFlKgyg5APpC23Ia/2ATIbSsli0NYv759iyDhd9iWZFOe0W1dRcaLOibuSi4H044pJy4gQUl5lVMfF+kIowlktJqK2GFTr/ezNumLpg6Z6nIdLKCjyZJXYZ/43Q/9Fm+scw==
 -----END SIGNATURE-----

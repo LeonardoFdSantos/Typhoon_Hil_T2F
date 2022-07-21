@@ -599,8 +599,8 @@ displayValue = 0.0
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>16</x>
-                    <y>272</y>
+                    <x>16.0</x>
+                    <y>272.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -831,8 +831,8 @@ displayValue = data
                 <execution_rate>None</execution_rate>
                 <background_color>black</background_color>
                 <widget_settings>
-                    <x>1000.0</x>
-                    <y>560.0</y>
+                    <x>1000</x>
+                    <y>560</y>
                     <width>432</width>
                     <height>184</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -1603,14 +1603,14 @@ widgetValue = None
 # 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
 # This object can be used as an argument in SCADA API functions.
 ]]></on_click_code>
-                <on_start_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
 # HIL API is imported as 'hil'
 # SCADA API is imported as 'panel'
 # SCADA API constants are imported as 'api_const'
 # 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
 # This object can be used as an argument in SCADA API functions.
 ]]></on_start_code>
-                <on_timer_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
 # NOTE: Variables specified here will be available in other handlers.
 # HIL API is imported as 'hil'
 # SCADA API is imported as 'panel'
@@ -3034,8 +3034,8 @@ widgetValue = None
                 <availableValues><![CDATA[['1H', '2H', '3H', '5H', '8H', '6K', '8K', '10K', '12K', '15K', '20K', '25K', '30K', '40K', '50K', '65K', '80K', '100K']]]></availableValues>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
-                    <x>16</x>
-                    <y>456</y>
+                    <x>16.0</x>
+                    <y>456.0</y>
                     <width>256</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3210,8 +3210,8 @@ widgetValue = None
                 <inputValueType>float</inputValueType>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
-                    <x>296</x>
-                    <y>448</y>
+                    <x>296.0</x>
+                    <y>448.0</y>
                     <width>216</width>
                     <height>32</height>
                     <inputWidgetWidth>80</inputWidgetWidth>
@@ -3278,8 +3278,8 @@ widgetValue = None
                 <max>15.0</max>
                 <step>1.0</step>
                 <widget_settings>
-                    <x>296</x>
-                    <y>544</y>
+                    <x>296.0</x>
+                    <y>544.0</y>
                     <width>216</width>
                     <height>48</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3436,8 +3436,8 @@ widgetValue = None
                 <availableValues><![CDATA[['IEC Standard Inverse', 'IEC Very Inverse', 'IEC Long Time Inverse', 'IEC Extremely Inverse', 'IEC Ultra Inverse']]]></availableValues>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
-                    <x>296</x>
-                    <y>640</y>
+                    <x>296.0</x>
+                    <y>640.0</y>
                     <width>216</width>
                     <height>40</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3643,8 +3643,8 @@ widgetValue = None
                 <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
                 <inputValue><![CDATA[False]]></inputValue>
                 <widget_settings>
-                    <x>192</x>
-                    <y>576</y>
+                    <x>192.0</x>
+                    <y>576.0</y>
                     <width>80</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3714,8 +3714,8 @@ widgetValue = None
                 <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
                 <inputValue><![CDATA[True]]></inputValue>
                 <widget_settings>
-                    <x>192</x>
-                    <y>608</y>
+                    <x>192.0</x>
+                    <y>608.0</y>
                     <width>80</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3767,8 +3767,8 @@ hil.set_scada_input_value('Memoria50', 0)]]></on_start_code>
 
 ]]></on_stop_code>
                 <widget_settings>
-                    <x>144</x>
-                    <y>640</y>
+                    <x>144.0</x>
+                    <y>640.0</y>
                     <width>128</width>
                     <height>40</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3821,8 +3821,8 @@ hil.set_scada_input_value('Memoria51', 0)]]></on_start_code>
 
 ]]></on_stop_code>
                 <widget_settings>
-                    <x>144</x>
-                    <y>680</y>
+                    <x>144.0</x>
+                    <y>680.0</y>
                     <width>128</width>
                     <height>40</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3856,8 +3856,8 @@ displayValue = hil.get_scada_output_value('ReleI')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>128</x>
-                    <y>744</y>
+                    <x>128.0</x>
+                    <y>744.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3897,8 +3897,8 @@ displayValue = hil.get_scada_output_value('ReleA')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>128</x>
-                    <y>800</y>
+                    <x>128.0</x>
+                    <y>800.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3938,8 +3938,8 @@ displayValue = hil.get_scada_output_value('ReleB')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>272</x>
-                    <y>800</y>
+                    <x>272.0</x>
+                    <y>800.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3979,8 +3979,8 @@ displayValue = hil.get_scada_output_value('ReleC')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>416</x>
-                    <y>800</y>
+                    <x>416.0</x>
+                    <y>800.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -4059,10 +4059,68 @@ else: displayValue = False
 ]]></code>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>296</x>
-                    <y>752</y>
+                    <x>296.0</x>
+                    <y>752.0</y>
                     <width>216</width>
                     <height>32</height>
+                    <appearance><![CDATA[Raised]]></appearance>
+                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
+                    <is_background><![CDATA[False]]></is_background>
+                    <label><![CDATA[]]></label>
+                    <use_label>False</use_label>
+                </widget_settings>
+            </component_data>
+        <component_data>
+                <id>acaa9637fbad11eca63d18c04df853b6</id>
+                <name><![CDATA[Controle 50-51]]></name>
+                <type>Macro</type>
+                <description><![CDATA[]]></description>
+                <on_click_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+DestravaTudo = 0]]></on_click_code>
+                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
+# NOTE: Variables specified here will be available in other handlers.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+DestravaTudo = 0]]></on_start_code>
+                <on_timer_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on timer event.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+if DestravaTudo == 0:
+    if hil.get_scada_output_value('Disj1') == 1:
+        DestravaTudo = 1
+        hil.set_scada_input_value('Memoria50', 1)
+    
+    elif hil.get_scada_output_value('Disj2') == 1:
+        DestravaTudo = 1
+        hil.set_scada_input_value('Memoria51', 1)]]></on_timer_code>
+                <run_each>1000</run_each>
+                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
+# HIL API is imported as 'hil'
+# SCADA API is imported as 'panel'
+# SCADA API constants are imported as 'api_const'
+# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
+# This object can be used as an argument in SCADA API functions.
+
+]]></on_stop_code>
+                <widget_settings>
+                    <x>1032</x>
+                    <y>744</y>
+                    <width>160</width>
+                    <height>40</height>
                     <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>

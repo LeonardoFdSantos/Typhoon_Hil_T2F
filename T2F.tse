@@ -499,7 +499,6 @@ model "t2f" {
         ]
 
         component "core/(51) AC Inverse Time Overcurrent" "(51) AC Inverse Time Overcurrent1" {
-            EM_reset = "False"
             In = "3"
             TOC_curve_type = "U4 - Extremely Inverse (US)"
             TOC_thresh = "3"
@@ -567,7 +566,7 @@ model "t2f" {
         ]
 
         component gen_logic_op "Logical operator3" {
-            operator = "NAND"
+            operator = "NOR"
         }
         [
             position = 6136, 8032
@@ -1238,7 +1237,7 @@ model "t2f" {
         ]
         connect Junction117 "Core Coupling 2.c_in" as Connection1039
         [
-            breakpoints = 7440, 8336
+            breakpoints = 7440, 8416; 7496, 8416
         ]
         connect C6.n_node Junction117 as Connection1040
         connect R3.n_node Junction118 as Connection1041
