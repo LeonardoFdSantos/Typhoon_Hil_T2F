@@ -18,6 +18,14 @@ REM External SFP Link
 rtds_write 0x00000007 0x00000000
 
 
+REM Egston SFP Link Send
+rtds_write 0x00000076 0x00000000
+rtds_write 0x00000007 0x00000001
+
+
+REM Egston User SFP Sources Receive
+
+
 REM Serial setup
 
 

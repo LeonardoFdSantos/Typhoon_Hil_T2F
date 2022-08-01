@@ -1,14 +1,14 @@
 version = 4.2
 
 //
-// Saved by sw version: 2022.2
+// Saved by sw version: 2022.3
 //
 
 model "t2f" {
     configuration {
         hil_device = "HIL402"
         hil_configuration_id = 2
-        simulation_method = bilinear
+        simulation_method = exact
         simulation_time_step = 1e-6
         simulation_discret_scaling = 1.0
         dsp_timer_periods = 100e-6, 50e-3
@@ -94,7 +94,7 @@ model "t2f" {
             winding_1_connection = "D"
         }
         [
-            position = 6824, 8240
+            position = 6648, 8240
             size = 126, 256
         ]
 
@@ -161,14 +161,14 @@ model "t2f" {
             init_rms_value = "13800/(3**0.5)"
         }
         [
-            position = 5584, 8240
+            position = 5264, 8240
             size = 62, 256
         ]
 
         component src_ground gnd2 {
         }
         [
-            position = 6856, 8408
+            position = 6680, 8408
         ]
 
         component src_ground gnd3 {
@@ -301,14 +301,14 @@ model "t2f" {
             resistance = "10"
         }
         [
-            position = 7032, 8336
+            position = 6856, 8336
         ]
 
         component pas_capacitor C3 {
             capacitance = "6.4274e-08"
         }
         [
-            position = 7360, 8200
+            position = 7184, 8200
             rotation = right
         ]
 
@@ -316,7 +316,7 @@ model "t2f" {
             capacitance = "8.5742e-08"
         }
         [
-            position = 7200, 8192
+            position = 7064, 8184
             rotation = right
         ]
 
@@ -324,7 +324,7 @@ model "t2f" {
             capacitance = "1.5002e-07"
         }
         [
-            position = 7312, 8328
+            position = 7136, 8328
             rotation = right
         ]
 
@@ -332,7 +332,7 @@ model "t2f" {
             capacitance = "1.5002e-07"
         }
         [
-            position = 7408, 8304
+            position = 7232, 8304
             rotation = right
         ]
 
@@ -375,7 +375,7 @@ model "t2f" {
             initial_state = "on"
         }
         [
-            position = 7144, 8144
+            position = 6968, 8144
             size = 64, 32
         ]
 
@@ -384,7 +384,7 @@ model "t2f" {
             sig_output = "True"
         }
         [
-            position = 7064, 8144
+            position = 6888, 8144
             size = 64, 32
         ]
 
@@ -457,7 +457,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 7120, 7968
+            position = 6944, 7968
         ]
 
         component "core/Four Phase Core Coupling" "Core Coupling 1" {
@@ -494,7 +494,7 @@ model "t2f" {
             trip_mem = "False"
         }
         [
-            position = 5880, 7808
+            position = 5560, 7808
             size = 144, 160
         ]
 
@@ -507,7 +507,7 @@ model "t2f" {
             trip_mem = "False"
         }
         [
-            position = 5880, 7624
+            position = 5560, 7624
             size = 144, 160
         ]
 
@@ -516,7 +516,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6016, 7744
+            position = 5696, 7744
         ]
 
         component gen_scada_output Disj2 {
@@ -524,14 +524,14 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6016, 7560
+            position = 5696, 7560
         ]
 
         component gen_scada_output Dial_reset {
             unit = ""
         }
         [
-            position = 6016, 7624
+            position = 5696, 7624
         ]
 
         component "core/Triple Pole Single Throw Contactor" CB {
@@ -539,7 +539,7 @@ model "t2f" {
             execution_rate = "1e-3"
         }
         [
-            position = 6024, 8240
+            position = 5704, 8240
             size = 64, 256
         ]
 
@@ -550,7 +550,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6240, 7992
+            position = 5920, 7992
             rotation = down
         ]
 
@@ -561,7 +561,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6240, 8072
+            position = 5920, 8072
             rotation = down
         ]
 
@@ -569,7 +569,7 @@ model "t2f" {
             operator = "NOR"
         }
         [
-            position = 6136, 8032
+            position = 5816, 8032
             rotation = down
         ]
 
@@ -580,7 +580,7 @@ model "t2f" {
             initial_state = "on"
         }
         [
-            position = 7136, 8240
+            position = 6960, 8240
             size = 64, 32
         ]
 
@@ -589,7 +589,7 @@ model "t2f" {
             sig_output = "True"
         }
         [
-            position = 7056, 8240
+            position = 6880, 8240
             size = 64, 32
         ]
 
@@ -598,7 +598,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6968, 8200
+            position = 6792, 8200
             rotation = down
         ]
 
@@ -609,7 +609,7 @@ model "t2f" {
             initial_state = "on"
         }
         [
-            position = 6576, 8144
+            position = 6256, 8144
             size = 64, 32
         ]
 
@@ -618,7 +618,7 @@ model "t2f" {
             sig_output = "True"
         }
         [
-            position = 6448, 8144
+            position = 6128, 8144
             size = 64, 32
         ]
 
@@ -627,7 +627,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6368, 8072
+            position = 6048, 8072
             rotation = down
         ]
 
@@ -638,7 +638,7 @@ model "t2f" {
             initial_state = "on"
         }
         [
-            position = 6568, 8240
+            position = 6248, 8240
             size = 64, 32
         ]
 
@@ -647,7 +647,7 @@ model "t2f" {
             sig_output = "True"
         }
         [
-            position = 6440, 8240
+            position = 6120, 8240
             size = 64, 32
         ]
 
@@ -656,7 +656,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6368, 8192
+            position = 6048, 8192
             rotation = down
         ]
 
@@ -667,7 +667,7 @@ model "t2f" {
             initial_state = "on"
         }
         [
-            position = 6576, 8336
+            position = 6256, 8336
             size = 64, 32
         ]
 
@@ -676,7 +676,7 @@ model "t2f" {
             sig_output = "True"
         }
         [
-            position = 6432, 8336
+            position = 6112, 8336
             size = 64, 32
         ]
 
@@ -685,7 +685,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6376, 8288
+            position = 6056, 8288
             rotation = down
         ]
 
@@ -751,20 +751,20 @@ model "t2f" {
             snb_type_i = "R1"
         }
         [
-            position = 7520, 8288
+            position = 7408, 8288
             size = 12, 352
         ]
 
         component src_ground gnd8 {
         }
         [
-            position = 7456, 8512
+            position = 7344, 8512
         ]
 
         component src_ground gnd9 {
         }
         [
-            position = 7592, 8512
+            position = 7480, 8512
         ]
 
         component gen_scada_output S1_feed {
@@ -772,7 +772,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 7208, 8032
+            position = 7032, 8032
         ]
 
         component gen_scada_output S2_feed {
@@ -780,7 +780,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 7208, 8088
+            position = 7032, 8088
         ]
 
         component gen_scada_output S3_feed {
@@ -788,7 +788,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6672, 7984
+            position = 6352, 7984
         ]
 
         component gen_scada_output S4_feed {
@@ -796,7 +796,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6672, 7928
+            position = 6352, 7928
         ]
 
         component gen_scada_output S5_feed {
@@ -804,7 +804,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6672, 8040
+            position = 6352, 8040
         ]
 
         component gen_scada_output S6_feed {
@@ -836,27 +836,27 @@ model "t2f" {
             remove_snubber = "True"
         }
         [
-            position = 5752, 8240
+            position = 5432, 8240
             size = 64, 272
         ]
 
         component src_ground gnd10 {
         }
         [
-            position = 5752, 8448
+            position = 5432, 8448
         ]
 
         component src_ground gnd11 {
         }
         [
-            position = 5464, 8392
+            position = 5176, 8384
         ]
 
         component gen_scada_output ReleA {
             unit = ""
         }
         [
-            position = 6320, 7768
+            position = 6000, 7768
             rotation = left
         ]
 
@@ -870,7 +870,7 @@ model "t2f" {
             vcn = "False"
         }
         [
-            position = 6168, 7824
+            position = 5848, 7824
             size = 96, 96
         ]
 
@@ -878,7 +878,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6392, 7768
+            position = 6072, 7768
             rotation = left
         ]
 
@@ -886,7 +886,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6472, 7768
+            position = 6152, 7768
             rotation = left
         ]
 
@@ -894,7 +894,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6552, 7768
+            position = 6232, 7768
             rotation = left
         ]
 
@@ -903,7 +903,7 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6192, 7928
+            position = 5872, 7928
             rotation = left
         ]
 
@@ -912,23 +912,13 @@ model "t2f" {
             unit = ""
         }
         [
-            position = 6184, 8104
+            position = 5864, 8104
             rotation = right
         ]
 
         junction Junction23 sp
         [
             position = 9344, 7968
-        ]
-
-        junction Junction31 pe
-        [
-            position = 7360, 8144
-        ]
-
-        junction Junction48 pe
-        [
-            position = 7280, 8144
         ]
 
         junction Junction85 pe
@@ -971,34 +961,19 @@ model "t2f" {
             position = 9168, 8432
         ]
 
-        junction Junction113 pe
-        [
-            position = 7272, 8240
-        ]
-
-        junction Junction117 pe
-        [
-            position = 7408, 8416
-        ]
-
         junction Junction118 pe
         [
-            position = 7312, 8416
-        ]
-
-        junction Junction119 pe
-        [
-            position = 7488, 8144
+            position = 7136, 8416
         ]
 
         junction Junction120 pe
         [
-            position = 7312, 8240
+            position = 7136, 8240
         ]
 
         junction Junction121 pe
         [
-            position = 7360, 8240
+            position = 7184, 8240
         ]
 
         junction Junction124 pe
@@ -1018,22 +993,47 @@ model "t2f" {
 
         junction Junction128 sp
         [
-            position = 5752, 7744
+            position = 5432, 7744
         ]
 
         junction Junction129 sp
         [
-            position = 5752, 7976
+            position = 5432, 7976
         ]
 
         junction Junction130 sp
         [
-            position = 6192, 8024
+            position = 5872, 8024
         ]
 
         junction Junction131 sp
         [
-            position = 6184, 8040
+            position = 5864, 8040
+        ]
+
+        junction Junction133 pe
+        [
+            position = 7064, 8144
+        ]
+
+        junction Junction134 pe
+        [
+            position = 7064, 8240
+        ]
+
+        junction Junction135 pe
+        [
+            position = 7184, 8144
+        ]
+
+        junction Junction136 pe
+        [
+            position = 7232, 8240
+        ]
+
+        junction Junction137 pe
+        [
+            position = 7232, 8416
         ]
 
         connect "Three Phase Phasor3.out1" Linha_Tensao_A1.in as Connection263
@@ -1063,16 +1063,7 @@ model "t2f" {
         [
             breakpoints = 9344, 7968; 9344, 7968
         ]
-        connect C3.p_node Junction31 as Connection356
         connect S1.a_in FuseLinkA.n_node as Connection400
-        connect C4.p_node Junction48 as Connection433
-        [
-            breakpoints = 7280, 8152
-        ]
-        connect Junction48 Junction31 as Connection434
-        [
-            breakpoints = 7280, 8144; 7280, 8144
-        ]
         connect "Three Phase Phasor4.out1" Linha_Tensao_A.in as Connection627
         [
             breakpoints = 8304, 7840; 8304, 7752
@@ -1171,10 +1162,6 @@ model "t2f" {
         [
             breakpoints = 9240, 8264
         ]
-        connect Junction48 S1.a_out as Connection709
-        [
-            breakpoints = 7280, 8144; 7256, 8144
-        ]
         connect FuseLinkA.out Fuse_Link_A1.in as Connection711
         connect C8.p_node Junction93 as Connection732
         connect Junction93 Junction89 as Connection733
@@ -1207,11 +1194,6 @@ model "t2f" {
         connect Tr1.sec_1 FuseLinkA.p_node as Connection979
         connect S2.a_in FuseLinkB.n_node as Connection980
         connect FuseLinkB.out Fuse_Link_B1.in as Connection981
-        connect Junction113 C4.n_node as Connection984
-        [
-            breakpoints = 7280, 8240
-        ]
-        connect S2.a_out Junction113 as Connection985
         connect FuseLinkB.p_node Tr1.sec_2 as Connection986
         connect S3.a_in FuseLinkA1.n_node as Connection987
         connect FuseLinkA1.out Fuse_Link_A.in as Connection988
@@ -1233,36 +1215,19 @@ model "t2f" {
         connect "Core Coupling 2.d_out" gnd9.node as Connection1035
         connect Linha.C+ "Core Coupling 2.c_out" as Connection1036
         [
-            breakpoints = 7680, 8384; 7672, 8336
+            breakpoints = 7680, 8384; 7672, 8320; 7432, 8320
         ]
-        connect Junction117 "Core Coupling 2.c_in" as Connection1039
-        [
-            breakpoints = 7440, 8416; 7496, 8416
-        ]
-        connect C6.n_node Junction117 as Connection1040
         connect R3.n_node Junction118 as Connection1041
         [
-            breakpoints = 7112, 8344; 7120, 8416
+            breakpoints = 6936, 8344; 6944, 8416
         ]
-        connect Junction118 Junction117 as Connection1042
         connect C5.n_node Junction118 as Connection1043
-        connect Junction31 Junction119 as Connection1044
-        [
-            breakpoints = 7360, 8144
-        ]
-        connect Junction119 C6.p_node as Connection1045
-        [
-            breakpoints = 7488, 8144
-        ]
-        connect "Core Coupling 2.a_in" Junction119 as Connection1046
-        connect Junction120 Junction113 as Connection1049
         connect C5.p_node Junction120 as Connection1050
         connect C3.n_node Junction121 as Connection1051
         connect Junction121 Junction120 as Connection1052
         [
-            breakpoints = 7360, 8240; 7360, 8240
+            breakpoints = 7184, 8240; 7184, 8240
         ]
-        connect "Core Coupling 2.b_in" Junction121 as Connection1053
         connect "Core Coupling 2.a_out" M1.in_1 as Connection1054
         connect M1.in_2 "Core Coupling 2.b_out" as Connection1055
         connect Tr2.prm_3 "Core Coupling 1.c_out" as Connection1058
@@ -1291,7 +1256,7 @@ model "t2f" {
         connect S5.feedback_out S5_feed.in as Connection1088
         connect S4.feedback_out S4_feed.in as Connection1089
         [
-            breakpoints = 6528, 8216; 6528, 8168; 6528, 8120; 6528, 8040
+            breakpoints = 6208, 8216; 6208, 8168; 6208, 8120; 6208, 8040
         ]
         connect S3.feedback_out S3_feed.in as Connection1090
         connect S6.feedback_out S6_feed.in as Connection1091
@@ -1324,7 +1289,7 @@ model "t2f" {
         connect "(50) Instantaneous Overcurrent1.Meas_in" Junction128 as Connection1120
         connect Junction128 "(51) AC Inverse Time Overcurrent1.Meas_in" as Connection1121
         [
-            breakpoints = 5752, 7736; 5752, 7560
+            breakpoints = 5432, 7736; 5432, 7560
         ]
         connect gnd10.node Rele.GND as Connection1124
         connect Vs1.n_node gnd11.node as Connection1125
@@ -1344,21 +1309,47 @@ model "t2f" {
         connect Junction129 Junction128 as Connection1136
         connect "Meter Split4.Input" Junction129 as Connection1137
         [
-            breakpoints = 6000, 7824; 6000, 7976
+            breakpoints = 5680, 7824; 5680, 7976
         ]
         connect "Meter Split4.I_RMS" ReleI.in as Connection1138
         connect "Logical operator3.in1" Junction130 as Connection1139
         [
-            breakpoints = 6160, 8024; 6176, 8024
+            breakpoints = 5840, 8024; 5856, 8024
         ]
         connect Junction130 Memoria50.out as Connection1140
         [
-            breakpoints = 6208, 8024; 6208, 7992
+            breakpoints = 5888, 8024; 5888, 7992
         ]
         connect Disj3.in Junction130 as Connection1141
         connect "Logical operator3.in" Junction131 as Connection1142
         connect Junction131 Memoria51.out as Connection1143
         connect Disj4.in Junction131 as Connection1144
+        connect S1.a_out Junction133 as Connection1150
+        connect C4.p_node Junction133 as Connection1152
+        connect S2.a_out Junction134 as Connection1154
+        connect Junction134 Junction120 as Connection1155
+        [
+            breakpoints = 7064, 8240
+        ]
+        connect C4.n_node Junction134 as Connection1156
+        connect C3.p_node Junction135 as Connection1159
+        connect Junction135 Junction133 as Connection1160
+        [
+            breakpoints = 7184, 8144
+        ]
+        connect "Core Coupling 2.a_in" Junction135 as Connection1161
+        connect "Core Coupling 2.b_in" Junction136 as Connection1162
+        connect Junction136 Junction121 as Connection1163
+        connect C6.p_node Junction136 as Connection1164
+        connect C6.n_node Junction137 as Connection1165
+        connect Junction137 Junction118 as Connection1166
+        [
+            breakpoints = 7232, 8416
+        ]
+        connect "Core Coupling 2.c_in" Junction137 as Connection1167
+        [
+            breakpoints = 7344, 8352
+        ]
     }
 
     default {
@@ -1548,6 +1539,7 @@ model "t2f" {
             on_delay = "0"
             off_delay = "0"
             switching = "any current"
+            hide_int_meas = "False"
         }
 
         "core/Three Phase Two Winding Transformer" {

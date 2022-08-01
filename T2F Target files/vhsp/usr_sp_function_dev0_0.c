@@ -34,7 +34,18 @@ extern "C" {
 
 // Header files from additional sources (Advanced C Function)
 
+// ----------------------------------------------------------------------------------------                // generated using template:generic_macros.template-----------------------------------------
+/*********************** Macros (Inline Functions) Definitions ***************************/
+
 // ----------------------------------------------------------------------------------------
+
+#ifndef MAX
+#define MAX(value, limit) (((value) > (limit)) ? (value) : (limit))
+#endif
+#ifndef MIN
+#define MIN(value, limit) (((value) < (limit)) ? (value) : (limit))
+#endif
+
 // generated using template: VirtualHIL/custom_defines.template----------------------------
 
 typedef unsigned char X_UnInt8;
@@ -1395,6 +1406,7 @@ void *tunable_params_dev0_cpu0_ptr = &tunable_params;
 
 
 
+
 // generated using template: virtual_hil/custom_functions.template---------------------------------
 void ReInit_user_sp_cpu0_dev0() {
 #if DEBUG_MODE
@@ -1645,18 +1657,7 @@ void load_fmi_libraries_user_sp_cpu0_dev0(void) {
 
 void ReInit_sp_scope_user_sp_cpu0_dev0() {
     // initialise SP Scope buffer pointer
-}              // generated using template:generic_macros.template-----------------------------------------
-/*********************** Macros (Inline Functions) Definitions ***************************/
-
-// ----------------------------------------------------------------------------------------
-
-#ifndef MAX
-#define MAX(value, limit) (((value) > (limit)) ? (value) : (limit))
-#endif
-#ifndef MIN
-#define MIN(value, limit) (((value) < (limit)) ? (value) : (limit))
-#endif
-
+}
 // generated using template: common_timer_counter_handler.template-------------------------
 
 /*****************************************************************************************/

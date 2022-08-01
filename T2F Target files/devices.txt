@@ -1,7 +1,7 @@
-GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1XCgLqaA==
+BiQFeCycD3BFU4GiZ0isjtQzyXypOZXs3F+obmU14HxdRfd1tg8v7ASnniaqWx0HRrVgr2ZFnFHMovQK0qhrkQ==
 {
-  "compilation_timestamp": "2022-07-15 10:50:40",
-  "sw_version": "2022.2",
+  "compilation_timestamp": "2022-07-21 11:52:14",
+  "sw_version": "2022.3",
   "devices": [
     {
       "device_type": "HIL402",
@@ -10,8 +10,9 @@ GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1X
       "serial_no": "00402-02-00027",
       "license_expiry": "2115-07-12",
       "maintenance_expiry": null,
-      "supported": true,
-      "not_supported_reason": null,
+      "access_type": "Full",
+      "paralleling": "Master",
+      "not_supported": null,
       "toolboxes": []
     },
     {
@@ -21,8 +22,9 @@ GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1X
       "serial_no": "00402-02-00068",
       "license_expiry": "2116-04-25",
       "maintenance_expiry": null,
-      "supported": true,
-      "not_supported_reason": null,
+      "access_type": "Full",
+      "paralleling": "Master",
+      "not_supported": null,
       "toolboxes": []
     },
     {
@@ -32,8 +34,9 @@ GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1X
       "serial_no": "00402-02-00201",
       "license_expiry": "2118-04-18",
       "maintenance_expiry": null,
-      "supported": true,
-      "not_supported_reason": null,
+      "access_type": "Full",
+      "paralleling": "Master",
+      "not_supported": null,
       "toolboxes": []
     },
     {
@@ -43,8 +46,9 @@ GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1X
       "serial_no": "00604-00-00132",
       "license_expiry": "2118-06-11",
       "maintenance_expiry": null,
-      "supported": true,
-      "not_supported_reason": null,
+      "access_type": "Full",
+      "paralleling": "Master",
+      "not_supported": null,
       "toolboxes": []
     },
     {
@@ -54,8 +58,9 @@ GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1X
       "serial_no": "00604-00-00133",
       "license_expiry": "2118-06-11",
       "maintenance_expiry": null,
-      "supported": true,
-      "not_supported_reason": null,
+      "access_type": "Full",
+      "paralleling": "Master",
+      "not_supported": null,
       "toolboxes": []
     },
     {
@@ -65,8 +70,9 @@ GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1X
       "serial_no": "00404-00-00094",
       "license_expiry": "2120-08-05",
       "maintenance_expiry": null,
-      "supported": true,
-      "not_supported_reason": null,
+      "access_type": "Full",
+      "paralleling": "Master",
+      "not_supported": null,
       "toolboxes": []
     },
     {
@@ -76,12 +82,13 @@ GiEoYRndHzCf8DFIE2q6neG/vEKvE87AAezrfwSkdXspZai2ErGUZKSj7AnfpyLGxhbuUoJ6xR5xVX1X
       "serial_no": "00604-00-00154",
       "license_expiry": "2120-08-06",
       "maintenance_expiry": null,
-      "supported": true,
-      "not_supported_reason": null,
+      "access_type": "Full",
+      "paralleling": "Master",
+      "not_supported": null,
       "toolboxes": []
     }
   ]
 }
 -----BEGIN SIGNATURE-----
-TKfYMMEO+XutrLDIXSAiQ1zsTEpMtvryZyKMgHWRbntlq+00qs6l4yJEIH88tgETxYm1J0iqhsYBOEJ/wFjVlhm8HKZpJNuP0ExIA++oblywLnNABDYUbG8JGiLnAMcrnhPquiVu89hd1RdJlklog2AwNSczKUqqV8vrSJUcoeLeAZpLHVrGY98xeJrI0gP02SsQ56Yp4OnQ58wVtlXSFlKgyg5APpC23Ia/2ATIbSsli0NYv759iyDhd9iWZFOe0W1dRcaLOibuSi4H044pJy4gQUl5lVMfF+kIowlktJqK2GFTr/ezNumLpg6Z6nIdLKCjyZJXYZ/43Q/9Fm+scw==
+JU6zPLrT6Xs3g2SNUBjwwX5Gv2V6b/kydc0/AniVz7pTqSzaMAqiSgzGPotxKgzyUga7SW8ZM+lXc0btHFB1hP9Cn25BpZgwzCLcXTwmhAFFmpn4wX9J2sFB7slDmJqJylbNrLwbGOU4PlcVq44Uj/KwV4z63ZfwJu0Ux8NyChx7RP+9D75Duv6sy7WNkwZaQ17DHdI/ecTP0hVsvbqgsg/L31XZ0Kvsp2Ym+7XElWQbRy+9bPixHY70zZ5koqEVTzqyvdIuDe8LuDKXlIucDxf+UJwVjs9RDukOm6+bSGHJtvV1IRrYwTVEbirK2LHuAuCidnCwVfrdcQbW6qrcRg==
 -----END SIGNATURE-----
