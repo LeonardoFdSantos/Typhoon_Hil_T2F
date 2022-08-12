@@ -1,0 +1,708 @@
+// generated using template: cop_main.template---------------------------------------------
+/******************************************************************************************
+**
+**  Module Name: cop_main.c
+**  NOTE: Automatically generated file. DO NOT MODIFY!
+**  Description:
+**            Main file
+**
+******************************************************************************************/
+// generated using template: arm/custom_include.template-----------------------------------
+
+#ifdef __cplusplus
+#include <limits>
+
+extern "C" {
+#endif
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+#include <stdint.h>
+#include <complex.h>
+
+// x86 libraries:
+#include "../include/sp_functions_dev0.h"
+
+#ifdef __cplusplus
+}
+#endif
+
+// H files from Advanced C Function components
+
+
+// Header files from additional sources (Advanced C Function)
+
+// ----------------------------------------------------------------------------------------                // generated using template:generic_macros.template-----------------------------------------
+/*********************** Macros (Inline Functions) Definitions ***************************/
+
+// ----------------------------------------------------------------------------------------
+
+#ifndef MAX
+#define MAX(value, limit) (((value) > (limit)) ? (value) : (limit))
+#endif
+#ifndef MIN
+#define MIN(value, limit) (((value) < (limit)) ? (value) : (limit))
+#endif
+
+// generated using template: VirtualHIL/custom_defines.template----------------------------
+
+typedef unsigned char X_UnInt8;
+typedef char X_Int8;
+typedef signed short X_Int16;
+typedef unsigned short X_UnInt16;
+typedef int X_Int32;
+typedef unsigned int X_UnInt32;
+typedef unsigned int uint;
+typedef double real;
+
+// ----------------------------------------------------------------------------------------
+// generated using template: custom_consts.template----------------------------------------
+
+// arithmetic constants
+#define C_SQRT_2                    1.4142135623730950488016887242097f
+#define C_SQRT_3                    1.7320508075688772935274463415059f
+#define C_PI                        3.1415926535897932384626433832795f
+#define C_E                         2.7182818284590452353602874713527f
+#define C_2PI                       6.283185307179586476925286766559f
+
+//@cmp.def.start
+//component defines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//@cmp.def.end
+
+
+//-----------------------------------------------------------------------------------------
+// generated using template: common_variables.template-------------------------------------
+// true global variables
+
+
+//@cmp.var.start
+// variables
+double _fuselink1_fuselinka_instantaneous__out;
+double _fuselink2_fuselinka_instantaneous__out;
+double _fuselink3_fuselinka_instantaneous__out;
+double _fuselink4_fuselinka_instantaneous__out;
+double _fuselink5_fuselinka_instantaneous__out;
+double _fuselink6_fuselinka_instantaneous__out;
+double _fuselink7_fuselinka_instantaneous__out;
+double _fuselink1_fuselinka_rms_calc_fast__var_eff_s;
+double _fuselink1_fuselinka_rms_calc_fast__period;
+X_UnInt8 _fuselink1_fuselinka_rms_calc_fast__var_zc;
+double _fuselink1_fuselinka_rms_calc_fast__var_filt_old;
+double _fuselink1_fuselinka_rms_calc_slow__var_rms;
+double _fuselink2_fuselinka_rms_calc_fast__var_eff_s;
+double _fuselink2_fuselinka_rms_calc_fast__period;
+X_UnInt8 _fuselink2_fuselinka_rms_calc_fast__var_zc;
+double _fuselink2_fuselinka_rms_calc_fast__var_filt_old;
+double _fuselink2_fuselinka_rms_calc_slow__var_rms;
+double _fuselink3_fuselinka_rms_calc_fast__var_eff_s;
+double _fuselink3_fuselinka_rms_calc_fast__period;
+X_UnInt8 _fuselink3_fuselinka_rms_calc_fast__var_zc;
+double _fuselink3_fuselinka_rms_calc_fast__var_filt_old;
+double _fuselink3_fuselinka_rms_calc_slow__var_rms;
+double _fuselink4_fuselinka_rms_calc_fast__var_eff_s;
+double _fuselink4_fuselinka_rms_calc_fast__period;
+X_UnInt8 _fuselink4_fuselinka_rms_calc_fast__var_zc;
+double _fuselink4_fuselinka_rms_calc_fast__var_filt_old;
+double _fuselink4_fuselinka_rms_calc_slow__var_rms;
+double _fuselink5_fuselinka_rms_calc_fast__var_eff_s;
+double _fuselink5_fuselinka_rms_calc_fast__period;
+X_UnInt8 _fuselink5_fuselinka_rms_calc_fast__var_zc;
+double _fuselink5_fuselinka_rms_calc_fast__var_filt_old;
+double _fuselink5_fuselinka_rms_calc_slow__var_rms;
+double _fuselink6_fuselinka_rms_calc_fast__var_eff_s;
+double _fuselink6_fuselinka_rms_calc_fast__period;
+X_UnInt8 _fuselink6_fuselinka_rms_calc_fast__var_zc;
+double _fuselink6_fuselinka_rms_calc_fast__var_filt_old;
+double _fuselink6_fuselinka_rms_calc_slow__var_rms;
+double _fuselink7_fuselinka_rms_calc_fast__var_eff_s;
+double _fuselink7_fuselinka_rms_calc_fast__period;
+X_UnInt8 _fuselink7_fuselinka_rms_calc_fast__var_zc;
+double _fuselink7_fuselinka_rms_calc_fast__var_filt_old;
+double _fuselink7_fuselinka_rms_calc_slow__var_rms;
+//@cmp.var.end
+
+//@cmp.svar.start
+// state variables
+double _fuselink1_fuselinka_rt1_output__out =  0.0;
+double _fuselink1_fuselinka_rt2_output__out =  0.0;
+double _fuselink2_fuselinka_rt1_output__out =  0.0;
+double _fuselink2_fuselinka_rt2_output__out =  0.0;
+double _fuselink3_fuselinka_rt1_output__out =  0.0;
+double _fuselink3_fuselinka_rt2_output__out =  0.0;
+double _fuselink4_fuselinka_rt1_output__out =  0.0;
+double _fuselink4_fuselinka_rt2_output__out =  0.0;
+double _fuselink5_fuselinka_rt1_output__out =  0.0;
+double _fuselink5_fuselinka_rt2_output__out =  0.0;
+double _fuselink6_fuselinka_rt1_output__out =  0.0;
+double _fuselink6_fuselinka_rt2_output__out =  0.0;
+double _fuselink7_fuselinka_rt1_output__out =  0.0;
+double _fuselink7_fuselinka_rt2_output__out =  0.0;
+double _fuselink1_fuselinka_rms_calc_fast__v_sq_sum_state;
+X_UnInt32 _fuselink1_fuselinka_rms_calc_fast__pc_cnt_1_state;
+double _fuselink1_fuselinka_rms_calc_fast__var_filt;
+double _fuselink2_fuselinka_rms_calc_fast__v_sq_sum_state;
+X_UnInt32 _fuselink2_fuselinka_rms_calc_fast__pc_cnt_1_state;
+double _fuselink2_fuselinka_rms_calc_fast__var_filt;
+double _fuselink3_fuselinka_rms_calc_fast__v_sq_sum_state;
+X_UnInt32 _fuselink3_fuselinka_rms_calc_fast__pc_cnt_1_state;
+double _fuselink3_fuselinka_rms_calc_fast__var_filt;
+double _fuselink4_fuselinka_rms_calc_fast__v_sq_sum_state;
+X_UnInt32 _fuselink4_fuselinka_rms_calc_fast__pc_cnt_1_state;
+double _fuselink4_fuselinka_rms_calc_fast__var_filt;
+double _fuselink5_fuselinka_rms_calc_fast__v_sq_sum_state;
+X_UnInt32 _fuselink5_fuselinka_rms_calc_fast__pc_cnt_1_state;
+double _fuselink5_fuselinka_rms_calc_fast__var_filt;
+double _fuselink6_fuselinka_rms_calc_fast__v_sq_sum_state;
+X_UnInt32 _fuselink6_fuselinka_rms_calc_fast__pc_cnt_1_state;
+double _fuselink6_fuselinka_rms_calc_fast__var_filt;
+double _fuselink7_fuselinka_rms_calc_fast__v_sq_sum_state;
+X_UnInt32 _fuselink7_fuselinka_rms_calc_fast__pc_cnt_1_state;
+double _fuselink7_fuselinka_rms_calc_fast__var_filt;
+//@cmp.svar.end
+
+
+// Dll function pointers
+#if defined(_WIN64)
+#else
+// Define handles for loading dlls
+#endif
+
+
+
+
+
+
+
+
+// generated using template: virtual_hil/custom_functions.template---------------------------------
+void ReInit_sys_sp_cpu0_dev0() {
+#if DEBUG_MODE
+    printf("\n\rReInitTimer");
+#endif
+    //@cmp.init.block.start
+    _fuselink1_fuselinka_rt1_output__out =  0.0;
+    _fuselink1_fuselinka_rt2_output__out =  0.0;
+    _fuselink2_fuselinka_rt1_output__out =  0.0;
+    _fuselink2_fuselinka_rt2_output__out =  0.0;
+    _fuselink3_fuselinka_rt1_output__out =  0.0;
+    _fuselink3_fuselinka_rt2_output__out =  0.0;
+    _fuselink4_fuselinka_rt1_output__out =  0.0;
+    _fuselink4_fuselinka_rt2_output__out =  0.0;
+    _fuselink5_fuselinka_rt1_output__out =  0.0;
+    _fuselink5_fuselinka_rt2_output__out =  0.0;
+    _fuselink6_fuselinka_rt1_output__out =  0.0;
+    _fuselink6_fuselinka_rt2_output__out =  0.0;
+    _fuselink7_fuselinka_rt1_output__out =  0.0;
+    _fuselink7_fuselinka_rt2_output__out =  0.0;
+    _fuselink1_fuselinka_rms_calc_fast__var_eff_s = 0;
+    _fuselink1_fuselinka_rms_calc_fast__period = 0.0f;
+    _fuselink1_fuselinka_rms_calc_fast__var_filt = 0.0f;
+    _fuselink1_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    _fuselink1_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    _fuselink2_fuselinka_rms_calc_fast__var_eff_s = 0;
+    _fuselink2_fuselinka_rms_calc_fast__period = 0.0f;
+    _fuselink2_fuselinka_rms_calc_fast__var_filt = 0.0f;
+    _fuselink2_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    _fuselink2_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    _fuselink3_fuselinka_rms_calc_fast__var_eff_s = 0;
+    _fuselink3_fuselinka_rms_calc_fast__period = 0.0f;
+    _fuselink3_fuselinka_rms_calc_fast__var_filt = 0.0f;
+    _fuselink3_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    _fuselink3_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    _fuselink4_fuselinka_rms_calc_fast__var_eff_s = 0;
+    _fuselink4_fuselinka_rms_calc_fast__period = 0.0f;
+    _fuselink4_fuselinka_rms_calc_fast__var_filt = 0.0f;
+    _fuselink4_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    _fuselink4_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    _fuselink5_fuselinka_rms_calc_fast__var_eff_s = 0;
+    _fuselink5_fuselinka_rms_calc_fast__period = 0.0f;
+    _fuselink5_fuselinka_rms_calc_fast__var_filt = 0.0f;
+    _fuselink5_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    _fuselink5_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    _fuselink6_fuselinka_rms_calc_fast__var_eff_s = 0;
+    _fuselink6_fuselinka_rms_calc_fast__period = 0.0f;
+    _fuselink6_fuselinka_rms_calc_fast__var_filt = 0.0f;
+    _fuselink6_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    _fuselink6_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    _fuselink7_fuselinka_rms_calc_fast__var_eff_s = 0;
+    _fuselink7_fuselinka_rms_calc_fast__period = 0.0f;
+    _fuselink7_fuselinka_rms_calc_fast__var_filt = 0.0f;
+    _fuselink7_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    _fuselink7_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    XIo_OutFloat(0x55000100, 0.0f);
+    HIL_OutAO(0x4000, 0.0f);
+    XIo_OutFloat(0x55000104, 0.0f);
+    HIL_OutAO(0x4001, 0.0f);
+    XIo_OutFloat(0x55000108, 0.0f);
+    HIL_OutAO(0x4002, 0.0f);
+    XIo_OutFloat(0x5500010c, 0.0f);
+    HIL_OutAO(0x4003, 0.0f);
+    XIo_OutFloat(0x55000110, 0.0f);
+    HIL_OutAO(0x4004, 0.0f);
+    XIo_OutFloat(0x55000114, 0.0f);
+    HIL_OutAO(0x4005, 0.0f);
+    XIo_OutFloat(0x55000118, 0.0f);
+    HIL_OutAO(0x4006, 0.0f);
+    //@cmp.init.block.end
+}
+
+
+// Dll function pointers and dll reload function
+#if defined(_WIN64)
+// Define method for reloading dll functions
+void ReloadDllFunctions_sys_sp_cpu0_dev0(void) {
+    // Load each library and setup function pointers
+}
+
+void FreeDllFunctions_sys_sp_cpu0_dev0(void) {
+}
+
+#else
+// Define method for reloading dll functions
+void ReloadDllFunctions_sys_sp_cpu0_dev0(void) {
+    // Load each library and setup function pointers
+}
+
+void FreeDllFunctions_sys_sp_cpu0_dev0(void) {
+}
+#endif
+
+void load_fmi_libraries_sys_sp_cpu0_dev0(void) {
+#if defined(_WIN64)
+#else
+#endif
+}
+
+
+void ReInit_sp_scope_sys_sp_cpu0_dev0() {
+    // initialise SP Scope buffer pointer
+}
+// generated using template: common_timer_counter_handler.template-------------------------
+
+/*****************************************************************************************/
+/**
+* This function is the handler which performs processing for the timer counter.
+* It is called from an interrupt context such that the amount of processing
+* performed should be minimized.  It is called when the timer counter expires
+* if interrupts are enabled.
+*
+*
+* @param    None
+*
+* @return   None
+*
+* @note     None
+*
+*****************************************************************************************/
+
+void TimerCounterHandler_0_sys_sp_cpu0_dev0() {
+#if DEBUG_MODE
+    printf("\n\rTimerCounterHandler_0");
+#endif
+    //////////////////////////////////////////////////////////////////////////
+    // Set tunable parameters
+    //////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////
+    // Output block
+    //////////////////////////////////////////////////////////////////////////
+    //@cmp.out.block.start
+    // Generated from the component: FuseLink1.FuseLinkA.instantaneous
+    _fuselink1_fuselinka_instantaneous__out = (HIL_InFloat(0xc80000 + 0x12));
+    // Generated from the component: FuseLink2.FuseLinkA.instantaneous
+    _fuselink2_fuselinka_instantaneous__out = (HIL_InFloat(0xc80000 + 0x14));
+    // Generated from the component: FuseLink3.FuseLinkA.instantaneous
+    _fuselink3_fuselinka_instantaneous__out = (HIL_InFloat(0xc80000 + 0x16));
+    // Generated from the component: FuseLink4.FuseLinkA.instantaneous
+    _fuselink4_fuselinka_instantaneous__out = (HIL_InFloat(0xc80000 + 0x18));
+    // Generated from the component: FuseLink5.FuseLinkA.instantaneous
+    _fuselink5_fuselinka_instantaneous__out = (HIL_InFloat(0xc80000 + 0x1a));
+    // Generated from the component: FuseLink6.FuseLinkA.instantaneous
+    _fuselink6_fuselinka_instantaneous__out = (HIL_InFloat(0xc80000 + 0x216));
+    // Generated from the component: FuseLink7.FuseLinkA.instantaneous
+    _fuselink7_fuselinka_instantaneous__out = (HIL_InFloat(0xc80000 + 0x218));
+    // Generated from the component: FuseLink1.FuseLinkA.rms_calc_fast
+    _fuselink1_fuselinka_rms_calc_fast__v_sq_sum_state = _fuselink1_fuselinka_rms_calc_fast__v_sq_sum_state + _fuselink1_fuselinka_instantaneous__out * _fuselink1_fuselinka_instantaneous__out;
+    _fuselink1_fuselinka_rms_calc_fast__var_filt_old = _fuselink1_fuselinka_rms_calc_fast__var_filt;
+    _fuselink1_fuselinka_rms_calc_fast__var_filt = (_fuselink1_fuselinka_rms_calc_fast__var_filt_old * 0.909 + _fuselink1_fuselinka_instantaneous__out * 0.0909);
+    if((_fuselink1_fuselinka_rms_calc_fast__var_filt >= 0.0f) && (_fuselink1_fuselinka_rms_calc_fast__var_filt_old < 0.0f)) {
+        _fuselink1_fuselinka_rms_calc_fast__var_zc = 1;
+    }
+    else {
+        _fuselink1_fuselinka_rms_calc_fast__var_zc = 0;
+    }
+    //square sum and period update on signal zero cross
+    if ((_fuselink1_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink1_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink1_fuselinka_rms_calc_fast__var_eff_s = _fuselink1_fuselinka_rms_calc_fast__v_sq_sum_state;
+        _fuselink1_fuselinka_rms_calc_fast__period = (double)_fuselink1_fuselinka_rms_calc_fast__pc_cnt_1_state;
+        _fuselink1_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    }
+    // Generated from the component: FuseLink1.FuseLinkA.sys1
+    // Generated from the component: FuseLink2.FuseLinkA.rms_calc_fast
+    _fuselink2_fuselinka_rms_calc_fast__v_sq_sum_state = _fuselink2_fuselinka_rms_calc_fast__v_sq_sum_state + _fuselink2_fuselinka_instantaneous__out * _fuselink2_fuselinka_instantaneous__out;
+    _fuselink2_fuselinka_rms_calc_fast__var_filt_old = _fuselink2_fuselinka_rms_calc_fast__var_filt;
+    _fuselink2_fuselinka_rms_calc_fast__var_filt = (_fuselink2_fuselinka_rms_calc_fast__var_filt_old * 0.909 + _fuselink2_fuselinka_instantaneous__out * 0.0909);
+    if((_fuselink2_fuselinka_rms_calc_fast__var_filt >= 0.0f) && (_fuselink2_fuselinka_rms_calc_fast__var_filt_old < 0.0f)) {
+        _fuselink2_fuselinka_rms_calc_fast__var_zc = 1;
+    }
+    else {
+        _fuselink2_fuselinka_rms_calc_fast__var_zc = 0;
+    }
+    //square sum and period update on signal zero cross
+    if ((_fuselink2_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink2_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink2_fuselinka_rms_calc_fast__var_eff_s = _fuselink2_fuselinka_rms_calc_fast__v_sq_sum_state;
+        _fuselink2_fuselinka_rms_calc_fast__period = (double)_fuselink2_fuselinka_rms_calc_fast__pc_cnt_1_state;
+        _fuselink2_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    }
+    // Generated from the component: FuseLink2.FuseLinkA.sys1
+    // Generated from the component: FuseLink3.FuseLinkA.rms_calc_fast
+    _fuselink3_fuselinka_rms_calc_fast__v_sq_sum_state = _fuselink3_fuselinka_rms_calc_fast__v_sq_sum_state + _fuselink3_fuselinka_instantaneous__out * _fuselink3_fuselinka_instantaneous__out;
+    _fuselink3_fuselinka_rms_calc_fast__var_filt_old = _fuselink3_fuselinka_rms_calc_fast__var_filt;
+    _fuselink3_fuselinka_rms_calc_fast__var_filt = (_fuselink3_fuselinka_rms_calc_fast__var_filt_old * 0.909 + _fuselink3_fuselinka_instantaneous__out * 0.0909);
+    if((_fuselink3_fuselinka_rms_calc_fast__var_filt >= 0.0f) && (_fuselink3_fuselinka_rms_calc_fast__var_filt_old < 0.0f)) {
+        _fuselink3_fuselinka_rms_calc_fast__var_zc = 1;
+    }
+    else {
+        _fuselink3_fuselinka_rms_calc_fast__var_zc = 0;
+    }
+    //square sum and period update on signal zero cross
+    if ((_fuselink3_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink3_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink3_fuselinka_rms_calc_fast__var_eff_s = _fuselink3_fuselinka_rms_calc_fast__v_sq_sum_state;
+        _fuselink3_fuselinka_rms_calc_fast__period = (double)_fuselink3_fuselinka_rms_calc_fast__pc_cnt_1_state;
+        _fuselink3_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    }
+    // Generated from the component: FuseLink3.FuseLinkA.sys1
+    // Generated from the component: FuseLink4.FuseLinkA.rms_calc_fast
+    _fuselink4_fuselinka_rms_calc_fast__v_sq_sum_state = _fuselink4_fuselinka_rms_calc_fast__v_sq_sum_state + _fuselink4_fuselinka_instantaneous__out * _fuselink4_fuselinka_instantaneous__out;
+    _fuselink4_fuselinka_rms_calc_fast__var_filt_old = _fuselink4_fuselinka_rms_calc_fast__var_filt;
+    _fuselink4_fuselinka_rms_calc_fast__var_filt = (_fuselink4_fuselinka_rms_calc_fast__var_filt_old * 0.909 + _fuselink4_fuselinka_instantaneous__out * 0.0909);
+    if((_fuselink4_fuselinka_rms_calc_fast__var_filt >= 0.0f) && (_fuselink4_fuselinka_rms_calc_fast__var_filt_old < 0.0f)) {
+        _fuselink4_fuselinka_rms_calc_fast__var_zc = 1;
+    }
+    else {
+        _fuselink4_fuselinka_rms_calc_fast__var_zc = 0;
+    }
+    //square sum and period update on signal zero cross
+    if ((_fuselink4_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink4_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink4_fuselinka_rms_calc_fast__var_eff_s = _fuselink4_fuselinka_rms_calc_fast__v_sq_sum_state;
+        _fuselink4_fuselinka_rms_calc_fast__period = (double)_fuselink4_fuselinka_rms_calc_fast__pc_cnt_1_state;
+        _fuselink4_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    }
+    // Generated from the component: FuseLink4.FuseLinkA.sys1
+    // Generated from the component: FuseLink5.FuseLinkA.rms_calc_fast
+    _fuselink5_fuselinka_rms_calc_fast__v_sq_sum_state = _fuselink5_fuselinka_rms_calc_fast__v_sq_sum_state + _fuselink5_fuselinka_instantaneous__out * _fuselink5_fuselinka_instantaneous__out;
+    _fuselink5_fuselinka_rms_calc_fast__var_filt_old = _fuselink5_fuselinka_rms_calc_fast__var_filt;
+    _fuselink5_fuselinka_rms_calc_fast__var_filt = (_fuselink5_fuselinka_rms_calc_fast__var_filt_old * 0.909 + _fuselink5_fuselinka_instantaneous__out * 0.0909);
+    if((_fuselink5_fuselinka_rms_calc_fast__var_filt >= 0.0f) && (_fuselink5_fuselinka_rms_calc_fast__var_filt_old < 0.0f)) {
+        _fuselink5_fuselinka_rms_calc_fast__var_zc = 1;
+    }
+    else {
+        _fuselink5_fuselinka_rms_calc_fast__var_zc = 0;
+    }
+    //square sum and period update on signal zero cross
+    if ((_fuselink5_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink5_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink5_fuselinka_rms_calc_fast__var_eff_s = _fuselink5_fuselinka_rms_calc_fast__v_sq_sum_state;
+        _fuselink5_fuselinka_rms_calc_fast__period = (double)_fuselink5_fuselinka_rms_calc_fast__pc_cnt_1_state;
+        _fuselink5_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    }
+    // Generated from the component: FuseLink5.FuseLinkA.sys1
+    // Generated from the component: FuseLink6.FuseLinkA.rms_calc_fast
+    _fuselink6_fuselinka_rms_calc_fast__v_sq_sum_state = _fuselink6_fuselinka_rms_calc_fast__v_sq_sum_state + _fuselink6_fuselinka_instantaneous__out * _fuselink6_fuselinka_instantaneous__out;
+    _fuselink6_fuselinka_rms_calc_fast__var_filt_old = _fuselink6_fuselinka_rms_calc_fast__var_filt;
+    _fuselink6_fuselinka_rms_calc_fast__var_filt = (_fuselink6_fuselinka_rms_calc_fast__var_filt_old * 0.909 + _fuselink6_fuselinka_instantaneous__out * 0.0909);
+    if((_fuselink6_fuselinka_rms_calc_fast__var_filt >= 0.0f) && (_fuselink6_fuselinka_rms_calc_fast__var_filt_old < 0.0f)) {
+        _fuselink6_fuselinka_rms_calc_fast__var_zc = 1;
+    }
+    else {
+        _fuselink6_fuselinka_rms_calc_fast__var_zc = 0;
+    }
+    //square sum and period update on signal zero cross
+    if ((_fuselink6_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink6_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink6_fuselinka_rms_calc_fast__var_eff_s = _fuselink6_fuselinka_rms_calc_fast__v_sq_sum_state;
+        _fuselink6_fuselinka_rms_calc_fast__period = (double)_fuselink6_fuselinka_rms_calc_fast__pc_cnt_1_state;
+        _fuselink6_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    }
+    // Generated from the component: FuseLink6.FuseLinkA.sys1
+    // Generated from the component: FuseLink7.FuseLinkA.rms_calc_fast
+    _fuselink7_fuselinka_rms_calc_fast__v_sq_sum_state = _fuselink7_fuselinka_rms_calc_fast__v_sq_sum_state + _fuselink7_fuselinka_instantaneous__out * _fuselink7_fuselinka_instantaneous__out;
+    _fuselink7_fuselinka_rms_calc_fast__var_filt_old = _fuselink7_fuselinka_rms_calc_fast__var_filt;
+    _fuselink7_fuselinka_rms_calc_fast__var_filt = (_fuselink7_fuselinka_rms_calc_fast__var_filt_old * 0.909 + _fuselink7_fuselinka_instantaneous__out * 0.0909);
+    if((_fuselink7_fuselinka_rms_calc_fast__var_filt >= 0.0f) && (_fuselink7_fuselinka_rms_calc_fast__var_filt_old < 0.0f)) {
+        _fuselink7_fuselinka_rms_calc_fast__var_zc = 1;
+    }
+    else {
+        _fuselink7_fuselinka_rms_calc_fast__var_zc = 0;
+    }
+    //square sum and period update on signal zero cross
+    if ((_fuselink7_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink7_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink7_fuselinka_rms_calc_fast__var_eff_s = _fuselink7_fuselinka_rms_calc_fast__v_sq_sum_state;
+        _fuselink7_fuselinka_rms_calc_fast__period = (double)_fuselink7_fuselinka_rms_calc_fast__pc_cnt_1_state;
+        _fuselink7_fuselinka_rms_calc_fast__v_sq_sum_state = 0.0f;
+    }
+    // Generated from the component: FuseLink7.FuseLinkA.sys1
+    // Generated from the component: FuseLink1.FuseLinkA.rt1.Input
+    _fuselink1_fuselinka_rt1_output__out = _fuselink1_fuselinka_rms_calc_fast__var_eff_s;
+    // Generated from the component: FuseLink1.FuseLinkA.rt2.Input
+    _fuselink1_fuselinka_rt2_output__out = _fuselink1_fuselinka_rms_calc_fast__period;
+    // Generated from the component: FuseLink1.FuseLinkA.t1
+    // Generated from the component: FuseLink2.FuseLinkA.rt1.Input
+    _fuselink2_fuselinka_rt1_output__out = _fuselink2_fuselinka_rms_calc_fast__var_eff_s;
+    // Generated from the component: FuseLink2.FuseLinkA.rt2.Input
+    _fuselink2_fuselinka_rt2_output__out = _fuselink2_fuselinka_rms_calc_fast__period;
+    // Generated from the component: FuseLink2.FuseLinkA.t1
+    // Generated from the component: FuseLink3.FuseLinkA.rt1.Input
+    _fuselink3_fuselinka_rt1_output__out = _fuselink3_fuselinka_rms_calc_fast__var_eff_s;
+    // Generated from the component: FuseLink3.FuseLinkA.rt2.Input
+    _fuselink3_fuselinka_rt2_output__out = _fuselink3_fuselinka_rms_calc_fast__period;
+    // Generated from the component: FuseLink3.FuseLinkA.t1
+    // Generated from the component: FuseLink4.FuseLinkA.rt1.Input
+    _fuselink4_fuselinka_rt1_output__out = _fuselink4_fuselinka_rms_calc_fast__var_eff_s;
+    // Generated from the component: FuseLink4.FuseLinkA.rt2.Input
+    _fuselink4_fuselinka_rt2_output__out = _fuselink4_fuselinka_rms_calc_fast__period;
+    // Generated from the component: FuseLink4.FuseLinkA.t1
+    // Generated from the component: FuseLink5.FuseLinkA.rt1.Input
+    _fuselink5_fuselinka_rt1_output__out = _fuselink5_fuselinka_rms_calc_fast__var_eff_s;
+    // Generated from the component: FuseLink5.FuseLinkA.rt2.Input
+    _fuselink5_fuselinka_rt2_output__out = _fuselink5_fuselinka_rms_calc_fast__period;
+    // Generated from the component: FuseLink5.FuseLinkA.t1
+    // Generated from the component: FuseLink6.FuseLinkA.rt1.Input
+    _fuselink6_fuselinka_rt1_output__out = _fuselink6_fuselinka_rms_calc_fast__var_eff_s;
+    // Generated from the component: FuseLink6.FuseLinkA.rt2.Input
+    _fuselink6_fuselinka_rt2_output__out = _fuselink6_fuselinka_rms_calc_fast__period;
+    // Generated from the component: FuseLink6.FuseLinkA.t1
+    // Generated from the component: FuseLink7.FuseLinkA.rt1.Input
+    _fuselink7_fuselinka_rt1_output__out = _fuselink7_fuselinka_rms_calc_fast__var_eff_s;
+    // Generated from the component: FuseLink7.FuseLinkA.rt2.Input
+    _fuselink7_fuselinka_rt2_output__out = _fuselink7_fuselinka_rms_calc_fast__period;
+    // Generated from the component: FuseLink7.FuseLinkA.t1
+    //@cmp.out.block.end
+    //////////////////////////////////////////////////////////////////////////
+    // Update block
+    //////////////////////////////////////////////////////////////////////////
+    //@cmp.update.block.start
+    // Generated from the component: FuseLink1.FuseLinkA.rms_calc_fast
+    if ((_fuselink1_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink1_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink1_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    }
+    _fuselink1_fuselinka_rms_calc_fast__pc_cnt_1_state ++;
+    // Generated from the component: FuseLink2.FuseLinkA.rms_calc_fast
+    if ((_fuselink2_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink2_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink2_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    }
+    _fuselink2_fuselinka_rms_calc_fast__pc_cnt_1_state ++;
+    // Generated from the component: FuseLink3.FuseLinkA.rms_calc_fast
+    if ((_fuselink3_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink3_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink3_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    }
+    _fuselink3_fuselinka_rms_calc_fast__pc_cnt_1_state ++;
+    // Generated from the component: FuseLink4.FuseLinkA.rms_calc_fast
+    if ((_fuselink4_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink4_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink4_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    }
+    _fuselink4_fuselinka_rms_calc_fast__pc_cnt_1_state ++;
+    // Generated from the component: FuseLink5.FuseLinkA.rms_calc_fast
+    if ((_fuselink5_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink5_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink5_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    }
+    _fuselink5_fuselinka_rms_calc_fast__pc_cnt_1_state ++;
+    // Generated from the component: FuseLink6.FuseLinkA.rms_calc_fast
+    if ((_fuselink6_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink6_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink6_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    }
+    _fuselink6_fuselinka_rms_calc_fast__pc_cnt_1_state ++;
+    // Generated from the component: FuseLink7.FuseLinkA.rms_calc_fast
+    if ((_fuselink7_fuselinka_rms_calc_fast__var_zc == 1) || (5000 == _fuselink7_fuselinka_rms_calc_fast__pc_cnt_1_state)) {
+        _fuselink7_fuselinka_rms_calc_fast__pc_cnt_1_state = 0;
+    }
+    _fuselink7_fuselinka_rms_calc_fast__pc_cnt_1_state ++;
+    //@cmp.update.block.end
+}
+void TimerCounterHandler_1_sys_sp_cpu0_dev0() {
+#if DEBUG_MODE
+    printf("\n\rTimerCounterHandler_1");
+#endif
+    //////////////////////////////////////////////////////////////////////////
+    // Set tunable parameters
+    //////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////
+    // Output block
+    //////////////////////////////////////////////////////////////////////////
+    //@cmp.out.block.start
+    // Generated from the component: FuseLink1.FuseLinkA.rms_calc_slow
+    if(_fuselink1_fuselinka_rt2_output__out > 0.0f) {
+        _fuselink1_fuselinka_rms_calc_slow__var_rms = sqrt(_fuselink1_fuselinka_rt1_output__out / _fuselink1_fuselinka_rt2_output__out);
+    }
+    else {
+        _fuselink1_fuselinka_rms_calc_slow__var_rms = 0.0f;
+    }
+    // Generated from the component: FuseLink2.FuseLinkA.rms_calc_slow
+    if(_fuselink2_fuselinka_rt2_output__out > 0.0f) {
+        _fuselink2_fuselinka_rms_calc_slow__var_rms = sqrt(_fuselink2_fuselinka_rt1_output__out / _fuselink2_fuselinka_rt2_output__out);
+    }
+    else {
+        _fuselink2_fuselinka_rms_calc_slow__var_rms = 0.0f;
+    }
+    // Generated from the component: FuseLink3.FuseLinkA.rms_calc_slow
+    if(_fuselink3_fuselinka_rt2_output__out > 0.0f) {
+        _fuselink3_fuselinka_rms_calc_slow__var_rms = sqrt(_fuselink3_fuselinka_rt1_output__out / _fuselink3_fuselinka_rt2_output__out);
+    }
+    else {
+        _fuselink3_fuselinka_rms_calc_slow__var_rms = 0.0f;
+    }
+    // Generated from the component: FuseLink4.FuseLinkA.rms_calc_slow
+    if(_fuselink4_fuselinka_rt2_output__out > 0.0f) {
+        _fuselink4_fuselinka_rms_calc_slow__var_rms = sqrt(_fuselink4_fuselinka_rt1_output__out / _fuselink4_fuselinka_rt2_output__out);
+    }
+    else {
+        _fuselink4_fuselinka_rms_calc_slow__var_rms = 0.0f;
+    }
+    // Generated from the component: FuseLink5.FuseLinkA.rms_calc_slow
+    if(_fuselink5_fuselinka_rt2_output__out > 0.0f) {
+        _fuselink5_fuselinka_rms_calc_slow__var_rms = sqrt(_fuselink5_fuselinka_rt1_output__out / _fuselink5_fuselinka_rt2_output__out);
+    }
+    else {
+        _fuselink5_fuselinka_rms_calc_slow__var_rms = 0.0f;
+    }
+    // Generated from the component: FuseLink6.FuseLinkA.rms_calc_slow
+    if(_fuselink6_fuselinka_rt2_output__out > 0.0f) {
+        _fuselink6_fuselinka_rms_calc_slow__var_rms = sqrt(_fuselink6_fuselinka_rt1_output__out / _fuselink6_fuselinka_rt2_output__out);
+    }
+    else {
+        _fuselink6_fuselinka_rms_calc_slow__var_rms = 0.0f;
+    }
+    // Generated from the component: FuseLink7.FuseLinkA.rms_calc_slow
+    if(_fuselink7_fuselinka_rt2_output__out > 0.0f) {
+        _fuselink7_fuselinka_rms_calc_slow__var_rms = sqrt(_fuselink7_fuselinka_rt1_output__out / _fuselink7_fuselinka_rt2_output__out);
+    }
+    else {
+        _fuselink7_fuselinka_rms_calc_slow__var_rms = 0.0f;
+    }
+    // Generated from the component: FuseLink1.FuseLinkA.cpu_trans.Input
+    XIo_OutFloat(0x55000100, _fuselink1_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink1.FuseLinkA.rms
+    HIL_OutAO(0x4000, (float)_fuselink1_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink1.FuseLinkA.sys2
+    // Generated from the component: FuseLink2.FuseLinkA.cpu_trans.Input
+    XIo_OutFloat(0x55000104, _fuselink2_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink2.FuseLinkA.rms
+    HIL_OutAO(0x4001, (float)_fuselink2_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink2.FuseLinkA.sys2
+    // Generated from the component: FuseLink3.FuseLinkA.cpu_trans.Input
+    XIo_OutFloat(0x55000108, _fuselink3_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink3.FuseLinkA.rms
+    HIL_OutAO(0x4002, (float)_fuselink3_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink3.FuseLinkA.sys2
+    // Generated from the component: FuseLink4.FuseLinkA.cpu_trans.Input
+    XIo_OutFloat(0x5500010c, _fuselink4_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink4.FuseLinkA.rms
+    HIL_OutAO(0x4003, (float)_fuselink4_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink4.FuseLinkA.sys2
+    // Generated from the component: FuseLink5.FuseLinkA.cpu_trans.Input
+    XIo_OutFloat(0x55000110, _fuselink5_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink5.FuseLinkA.rms
+    HIL_OutAO(0x4004, (float)_fuselink5_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink5.FuseLinkA.sys2
+    // Generated from the component: FuseLink6.FuseLinkA.cpu_trans.Input
+    XIo_OutFloat(0x55000114, _fuselink6_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink6.FuseLinkA.rms
+    HIL_OutAO(0x4005, (float)_fuselink6_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink6.FuseLinkA.sys2
+    // Generated from the component: FuseLink7.FuseLinkA.cpu_trans.Input
+    XIo_OutFloat(0x55000118, _fuselink7_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink7.FuseLinkA.rms
+    HIL_OutAO(0x4006, (float)_fuselink7_fuselinka_rms_calc_slow__var_rms);
+    // Generated from the component: FuseLink7.FuseLinkA.sys2
+    //@cmp.out.block.end
+    //////////////////////////////////////////////////////////////////////////
+    // Update block
+    //////////////////////////////////////////////////////////////////////////
+    //@cmp.update.block.start
+    //@cmp.update.block.end
+}
+// ----------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------

@@ -1,0 +1,67 @@
+# Analysis of Directional Elements from SEL-351
+# Equations from SEL Application Guide AG2016-01
+# Application Guide can be downloaded from SEL website 
+#
+# SEL-351 Directional Elements
+#
+# Enter Relay Settings
+CTR = 120
+CTRN = 120
+PTR = 180
+Z1MAG = 2.14
+Z1ANG = 68.86
+Z0ANG = 72.47 # For SEL-351 with E32 = Y, use Z0MTA
+Z2F = 1.08
+Z2R = 1.28
+Z0F = 3.2
+Z0R = 3.4
+INMTA = 0 # IF KGN = Off, INMTA is hidden and equals 0
+Channel_IN_Nominal = 5
+Channel_P_Nominal = 5
+Z_Limit = 5
+#
+# Assign Phasors to Secondary Variables
+# Modify Phasor assignments for other relay models as necessary
+V1_SEC = V1_KV.Phasor * 1000 / PTR
+V2_SEC = V2_KV.Phasor * 1000 / PTR
+V0_SEC = V0_KV.Phasor * 1000 / PTR
+I1_SEC = I1.Phasor / CTR
+I2_SEC = I2.Phasor / CTR
+I0_SEC = I0.Phasor / CTR
+IN_SEC = IN.Phasor / CTRN
+#
+# Equations - Positive-Sequence Directional Element - Angle Check
+# Plots Z1 in secondary ohms
+Z1 = V1_SEC / I1_SEC
+Z1AngT1.Phasor = Complex_MA(1,90+Z1Ang)
+Z1AngT2.Phasor = Complex_MA(1, 270+Z1Ang)
+#
+# Equations - Negative-Sequence Voltage-Polarized Directional Element
+# Plots Z2 in secondary ohms
+Z2 = (Real((V2_SEC) * (conj(I2_SEC * (complex_ma(1,Z1ANG)))))) / (Mag(I2_SEC) * Mag(I2_SEC))
+Z2FT = If((Z2F <= 0),(.75 * Z2F - (.25 * mag(V2_SEC / I2_SEC))),(1.25 * Z2F - (.25 * mag(V2_SEC / I2_SEC))))
+Z2RT = If((Z2R >= 0),(.75 * Z2R + (.25 * mag(V2_SEC / I2_SEC))),(1.25 * Z2R + (.25 * mag(V2_SEC / I2_SEC))))
+# To create Limits to help with Y axis auto scale - in this case limited to -5 to +5
+Z2LIM = limit(Z2,-Z_Limit,Z_Limit)
+Z2FTLIM = Limit(Z2FT,-Z_Limit, Z_Limit)
+Z2RTLIM = Limit(Z2Rt,-Z_Limit, Z_Limit)
+#
+# Equations - Zero-Sequence Voltage-Polarized Direction Element
+# Plots Z0 in secondary ohms
+Z0 = (Real((V0_SEC * 3) * (conj(3 * I0_SEC * (complex_ma(1,Z0ANG)))))) / (Mag(3*I0_SEC) * Mag(3*I0_SEC))
+Z0FT = If((Z0F <= 0),(.75 * Z0F - (.25 * mag(V0_SEC / I0_SEC))),(1.25 * Z0F - (.25 * mag(V0_SEC / I0_SEC))))
+Z0RT = If((Z0R >= 0),(.75 * Z0R + (.25 * mag(V0_SEC / I0_SEC))),(1.25 * Z0R + (.25 * mag(V0_SEC / I0_SEC))))
+#To create Limits to help with Y axis auto scale - in this case limited to -5 to +5
+Z0LIM = limit(Z0,-Z_Limit,Z_Limit)
+Z0FTLIM = Limit(Z0FT,-Z_Limit, Z_Limit)
+Z0RTLIM = Limit(Z0RT,-Z_Limit, Z_Limit)
+#
+# Equations - Channel IN Current-Polarized Directional Element
+I0Dir = (Real((3 * I0_SEC) * (conj(IN_SEC * (complex_ma(1,INMTA))))))
+I0DirFT = Channel_IN_Nominal * Channel_P_Nominal * .05 * .05
+I0DirRT = -(Channel_IN_Nominal * Channel_P_Nominal * .05 * .05)
+#To create Limits to help with Y axis auto scale - in this case limited to -5 to +5
+I0DirLIM = limit(I0Dir,-Z_Limit,Z_Limit)
+I0DirFTLIM = Limit(I0DirFT,-Z_Limit, Z_Limit)
+I0DirRTLIM = Limit(I0DirRt,-Z_Limit, Z_Limit)
+

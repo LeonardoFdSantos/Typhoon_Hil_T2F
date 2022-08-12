@@ -1,0 +1,422 @@
+version = 4.2
+
+//
+// Saved by sw version: 2022.2
+//
+
+model "T2F_Not_SCADA" {
+    configuration {
+        hil_device = "HIL402"
+        hil_configuration_id = 1
+        simulation_method = exact
+        simulation_time_step = auto
+        simulation_discret_scaling = 1.0
+        dsp_timer_periods = 100e-6, 50e-3
+        ss_calc_method = "systematic elimination"
+        enb_pole_shift = True
+        enb_gds_oversampling = True
+        show_modes = False
+        device_ao_limit_enable = False
+        reset_analog_outputs_on_sim_stop = True
+        reset_digital_outputs_on_sim_stop = True
+        vhil_adio_loopback = False
+        cpl_stb = False
+        enb_dep_sw_detect = False
+        code_section = "internal memory"
+        data_section = "internal memory"
+        sys_sp_rate_1 = 0.0001
+        sys_sp_rate_2 = 0.05
+        sys_real_type_precision = "default"
+        user_real_type_precision = "default"
+        sys_cpu_optimization = "medium"
+        user_cpu_optimization = "high"
+        user_cpu_part_option = "default"
+        matrix_based_reduction = True
+        cpl_dynamics_analysis = False
+        export_ss_to_pickle = False
+        ground_scope_core = True
+        dss_num_tol = 1e-15
+        cce_platform = "generic"
+        cce_use_relative_names = False
+        cce_type_mapping_real = "double"
+        cce_type_mapping_uint = "unsigned int"
+        cce_type_mapping_int = "int"
+        cce_directory = ""
+        cce_custom_type_int = ""
+        cce_custom_type_uint = ""
+        cce_custom_type_real = ""
+        tunable_params = "component defined"
+        sp_compiler_type = "C compiler"
+        sig_stim = "off"
+        export_resource_list = ""
+        export_dependency_list = ""
+        export_out_file = ""
+        export_lock_top_level = True
+        export_encrypt_library = True
+        export_encrypt_resources = True
+    }
+
+    component Subsystem Root {
+        component "core/Two Coupled Inductors" M1 {
+            L1 = "0.1503"
+            L2 = "0.1503"
+            R1 = "69.6731"
+            R2 = "69.6731"
+            k = "0.5"
+        }
+        [
+            position = 7616, 8176
+            size = 64, 128
+        ]
+
+        component pas_resistor R2 {
+            resistance = "20"
+        }
+        [
+            position = 8216, 8400
+        ]
+
+        component "core/Series RLC Branch" "Series RLC Branch1" {
+            branch_type = "RL"
+            inductance = "1e-10"
+            resistance = "20"
+        }
+        [
+            position = 7312, 8400
+            size = 128, 100
+        ]
+
+        component "core/Three Phase Two Winding Transformer" Tr1 {
+            Sn = "150e3"
+            V1 = "13800"
+            V2 = "13800"
+            clock_number = "1"
+            f = "60"
+            input = "pu"
+            l1 = "0.003663149595524042"
+            l2 = "1.758311805853322e-05"
+            lm = "30.852656669362187"
+            r1 = "0.0012050629463348035"
+            r2 = "5.784302142407057e-06"
+            rm = "57.076061843100184"
+            winding_1_connection = "D"
+        }
+        [
+            position = 7128, 8240
+            size = 126, 256
+        ]
+
+        component "core/Three Phase Two Winding Transformer" Tr2 {
+            Sn = "112.5e3"
+            V1 = "13800"
+            V2 = "380"
+            clock_number = "1"
+            f = "60"
+            input = "pu"
+            l1 = "0.0027473621966430314"
+            l2 = "0.017391944268007616"
+            lm = "23.139492502021643"
+            r1 = "0.0009037972097511027"
+            r2 = "0.005721411876731302"
+            rm = "42.80704638232514"
+            winding_1_connection = "D"
+        }
+        [
+            position = 8600, 8240
+            size = 126, 256
+        ]
+
+        component src_ground gnd1 {
+        }
+        [
+            position = 8632, 8536
+        ]
+
+        component "core/Constant Impedance Load" "Constant Impedance Load1" {
+            SAB = "15000.0/3"
+            SAn = "15000.0/3"
+            SBC = "15000.0/3"
+            SBn = "15000.0/3"
+            SCA = "15000.0/3"
+            SCn = "15000.0/3"
+            Sn_3ph = "15e3"
+            VAB = "380"
+            VAn = "380/(3**0.5)"
+            VBC = "380"
+            VBn = "380/(3**0.5)"
+            VCA = "380"
+            VCn = "380/(3**0.5)"
+            Vn_3ph = "380"
+            enable_neutral = "True"
+            pfA = "0.92"
+            pfB = "0.92"
+            pfC = "0.92"
+            pf_3ph = "0.92"
+            pf_modeA = "Lead"
+            pf_modeB = "Lead"
+            pf_modeC = "Lead"
+            pf_mode_3ph = "Lead"
+        }
+        [
+            position = 9392, 8240
+            rotation = left
+            scale = 1, -1
+            size = 184, 152
+        ]
+
+        component "core/Three Phase Voltage Source" Vs1 {
+            init_frequency = "60"
+            init_rms_value = "13800"
+        }
+        [
+            position = 6952, 8240
+            size = 62, 256
+        ]
+
+        component src_ground gnd2 {
+        }
+        [
+            position = 6856, 8496
+        ]
+
+        component src_ground gnd3 {
+        }
+        [
+            position = 7976, 8520
+        ]
+
+        component "core/Three-phase Meter" Linha {
+            I_avg_rms = "True"
+            I_rms = "True"
+            P_meas = "True"
+            Ts = "1e-6"
+            VAB = "True"
+            VBC = "True"
+            VCA = "True"
+            VLL_avg_rms = "True"
+            VLL_rms = "True"
+            VLn_avg_rms = "True"
+            VLn_rms = "True"
+            enable_out = "False"
+            freq = "True"
+            n_cycles = "3"
+            remove_snubber = "True"
+        }
+        [
+            position = 7976, 8272
+            size = 56, 296
+        ]
+
+        component "core/Three-phase Meter" Consumidor {
+            I_avg_rms = "True"
+            I_rms = "True"
+            P_meas = "True"
+            Ts = "1e-6"
+            VAB = "True"
+            VBC = "True"
+            VCA = "True"
+            VLL_avg_rms = "True"
+            VLL_rms = "True"
+            VLn_avg_rms = "True"
+            VLn_rms = "True"
+            enable_out = "False"
+            freq = "True"
+            remove_snubber = "True"
+        }
+        [
+            position = 8984, 8240
+            size = 64, 272
+        ]
+
+        component src_ground gnd4 {
+        }
+        [
+            position = 8984, 8480
+        ]
+
+        junction Junction16 pe
+        [
+            position = 6856, 8432
+        ]
+
+        junction Junction26 pe
+        [
+            position = 8984, 8440
+        ]
+
+        connect gnd2.node Junction16 as Connection147
+        connect Junction16 Vs1.n_node as Connection148
+        [
+            breakpoints = 6856, 8432; 6856, 8240
+        ]
+        connect Tr1.n2 Junction16 as Connection149
+        [
+            breakpoints = 7160, 8424; 6856, 8424
+        ]
+        connect "Series RLC Branch1.P1_neg" Linha.C+ as Connection153
+        connect Linha.GND gnd3.node as Connection156
+        connect "Series RLC Branch1.P1_pos" Tr1.sec_3 as Connection157
+        [
+            breakpoints = 7216, 8400; 7216, 8336
+        ]
+        connect Consumidor.A- "Constant Impedance Load1.A" as Connection161
+        connect Consumidor.B- "Constant Impedance Load1.B" as Connection162
+        connect Consumidor.C- "Constant Impedance Load1.C" as Connection164
+        connect Vs1.a_node Tr1.prm_1 as Connection208
+        connect Tr1.prm_2 Vs1.b_node as Connection209
+        connect Vs1.c_node Tr1.prm_3 as Connection210
+        connect Linha.A+ M1.out_1 as Connection257
+        connect M1.out_2 Linha.B+ as Connection258
+        connect M1.in_1 Tr1.sec_1 as Connection259
+        connect Tr1.sec_2 M1.in_2 as Connection260
+        connect R2.p_node Linha.C- as Connection313
+        connect Linha.A- Tr2.prm_1 as Connection320
+        connect Linha.B- Tr2.prm_2 as Connection321
+        connect Tr2.prm_3 R2.n_node as Connection322
+        connect Tr2.n2 gnd1.node as Connection325
+        connect Consumidor.GND Junction26 as Connection326
+        connect Junction26 "Constant Impedance Load1.N" as Connection327
+        [
+            breakpoints = 8984, 8432; 8984, 8432; 9632, 8432; 9632, 8240
+        ]
+        connect gnd4.node Junction26 as Connection328
+        connect Tr2.sec_1 Consumidor.A+ as Connection329
+        connect Consumidor.B+ Tr2.sec_2 as Connection330
+        connect Tr2.sec_3 Consumidor.C+ as Connection331
+    }
+
+    default {
+        pas_resistor {
+            resistance = "1"
+            param_set = ""
+        }
+
+        "core/Constant Impedance Load" {
+            fn = "60"
+            conn_type = "Y"
+            enable_neutral = "False"
+            set_balanced = "True"
+            Vn_3ph = "480"
+            Sn_3ph = "1.0e6"
+            pf_mode_3ph = "Unit"
+            pf_3ph = "0.9"
+            VAn = "480/(3**0.5)"
+            VAB = "480"
+            SAn = "1.0e6/3"
+            SAB = "1.0e6/3"
+            pf_modeA = "Unit"
+            pfA = "0.9"
+            VBn = "480/(3**0.5)"
+            VBC = "480"
+            SBn = "1.0e6/3"
+            SBC = "1.0e6/3"
+            pf_modeB = "Unit"
+            pfB = "0.9"
+            VCn = "480/(3**0.5)"
+            VCA = "480"
+            SCn = "1.0e6/3"
+            SCA = "1.0e6/3"
+            pf_modeC = "Unit"
+            pfC = "0.9"
+        }
+
+        "core/Series RLC Branch" {
+            num_phases = "Single-Phase"
+            branch_type = "RLC"
+            resistance = "10"
+            inductance = "10e-3"
+            initial_current = "0"
+            capacitance = "10e-6"
+            initial_voltage = "0"
+        }
+
+        "core/Three Phase Two Winding Transformer" {
+            input = "SC and OC tests"
+            Sn = "160000.0"
+            f = "50.0"
+            V1 = "10000.0"
+            V2 = "400.0"
+            usc1 = "4.0"
+            Psc1 = "2350.0"
+            R1 = "4.58984375"
+            L1 = ".0370093710364"
+            R2 = ".00734375"
+            L2 = "5.92149936583e-05"
+            r1 = ".00734375"
+            l1 = ".0186029389059"
+            r2 = ".00734375"
+            l2 = ".0186029389059"
+            core_model = "Linear"
+            ioc1 = "0.7"
+            Poc1 = "460.0"
+            Rm = "217391.304348"
+            Lm = "311.709196788"
+            flux_vals_SI = "[1910.3, 2419.7]"
+            current_vals_SI = "[0.66653, 277.72]"
+            rm = "347.826086957"
+            lm = "156.68213163"
+            flux_vals_pu = "[1.2, 1.52]"
+            current_vals_pu = "[0.0024, 1]"
+            flux_vals_SCOC = "[1.2, 1.52]"
+            current_vals_SCOC = "[0.0024, 1]"
+            import_from_SI2SCOC = "Import from SI"
+            import_from_pu2SCOC = "Import from PU"
+            import_from_SCOC2SI = "Import from SC OC"
+            import_from_pu2SI = "Import from PU"
+            import_from_SCOC2pu = "Import from SC OC"
+            import_from_SI2pu = "Import from SI"
+            winding_1_connection = "Y"
+            winding_2_connection = "Y"
+            clock_number = "0"
+            embedded_cpl = "None"
+            coupling_type = "core"
+            ratio_type = "Automatic"
+            ratio = "0.1"
+            Rshunt = "inf"
+        }
+
+        "core/Three Phase Voltage Source" {
+            init_rms_value = "0.0"
+            init_frequency = "50.0"
+            init_phase = "0.0"
+        }
+
+        "core/Three-phase Meter" {
+            R = "1e5"
+            n_cycles = "1"
+            Ts = "100e-6"
+            enable_probes = "True"
+            enable_out = "True"
+            remove_snubber = "False"
+            VAn = "True"
+            VBn = "True"
+            VCn = "True"
+            VAB = "False"
+            VBC = "False"
+            VCA = "False"
+            IA = "True"
+            IB = "True"
+            IC = "True"
+            freq = "False"
+            VLn_rms = "False"
+            VLL_rms = "False"
+            VLn_avg_rms = "False"
+            VLL_avg_rms = "False"
+            I_rms = "False"
+            I_avg_rms = "False"
+            P_method = "alpha-beta"
+            enable_extra_out = "False"
+            P_meas = "False"
+        }
+
+        "core/Two Coupled Inductors" {
+            L1 = "0.001"
+            I1_0 = "0.0"
+            R1 = "0.01"
+            L2 = "0.001"
+            I2_0 = "0.0"
+            R2 = "0.01"
+            k = "0.0"
+        }
+    }
+}

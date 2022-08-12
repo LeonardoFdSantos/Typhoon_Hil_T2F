@@ -1,5 +1,5 @@
 <ui_settings>
-    <version>2.7</version>
+    <version>2.8</version>
     <model_locked>False</model_locked>
     <canvas_bg_color>#353535</canvas_bg_color>
     <initialization_code><![CDATA[
@@ -831,8 +831,8 @@ displayValue = data
                 <execution_rate>None</execution_rate>
                 <background_color>black</background_color>
                 <widget_settings>
-                    <x>1000</x>
-                    <y>560</y>
+                    <x>1000.0</x>
+                    <y>560.0</y>
                     <width>432</width>
                     <height>184</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -916,11 +916,13 @@ referenceCurves = [refCurveData1]
                             </analog_signals>
                             <digital_signals>
                             </digital_signals>
+                            <virtual_signals>
+                            </virtual_signals>
                             <trigger>
                                 <device>-1</device>
                                 <is_force>False</is_force>
                                 <type>Analog</type>
-                                <source>None</source>
+                                <source><![CDATA[None]]></source>
                                 <edge>Rising edge</edge>
                                 <treshold>0.0</treshold>
                                 <offset>0.0</offset>
@@ -939,162 +941,174 @@ referenceCurves = [refCurveData1]
                             <decimation>6</decimation>
                             <time_base>0.01</time_base>
                             <analog_signals>
-                            <analog>
-                            <channel>0</channel>
-                            <name><![CDATA[Consumidor.VAn]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>1</channel>
-                            <name><![CDATA[Consumidor.VBn]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>2</channel>
-                            <name><![CDATA[Consumidor.VCn]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>3</channel>
-                            <name><![CDATA[Consumidor.IA]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>4</channel>
-                            <name><![CDATA[Consumidor.IB]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>5</channel>
-                            <name><![CDATA[Consumidor.IC]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>6</channel>
-                            <name><![CDATA[Linha.VAB]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>7</channel>
-                            <name><![CDATA[Linha.VBC]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>8</channel>
-                            <name><![CDATA[Linha.VCA]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>9</channel>
-                            <name><![CDATA[Linha.IA]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>10</channel>
-                            <name><![CDATA[Linha.IB]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            <analog>
-                            <channel>11</channel>
-                            <name><![CDATA[Linha.IC]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                <analog>
+                                    <channel>0</channel>
+                                    <name><![CDATA[Consumidor.VAn]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>0</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>1</channel>
+                                    <name><![CDATA[Consumidor.VBn]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>1</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>2</channel>
+                                    <name><![CDATA[Consumidor.VCn]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>2</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>3</channel>
+                                    <name><![CDATA[Consumidor.IA]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>3</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>4</channel>
+                                    <name><![CDATA[Consumidor.IB]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>4</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>5</channel>
+                                    <name><![CDATA[Consumidor.IC]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>5</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>6</channel>
+                                    <name><![CDATA[Linha.VAB]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>6</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>7</channel>
+                                    <name><![CDATA[Linha.VBC]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>7</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>8</channel>
+                                    <name><![CDATA[Linha.VCA]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>8</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>9</channel>
+                                    <name><![CDATA[Linha.IA]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>9</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>10</channel>
+                                    <name><![CDATA[Linha.IB]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>10</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                                <analog>
+                                    <channel>11</channel>
+                                    <name><![CDATA[Linha.IC]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>11</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             </analog_signals>
                             <digital_signals>
                             </digital_signals>
@@ -1124,15 +1138,11 @@ referenceCurves = [refCurveData1]
                             <offset>0.0</offset>
                             <useFirstTrigger>False</useFirstTrigger>
                         </trigger>
-
                         <analog_signals>
-                            </analog_signals>
-
+                        </analog_signals>
                          <digital_signals>
-                            </digital_signals>
-
+                         </digital_signals>
                     </capture>
-
                     <scope>
                         <time_base>0.01 </time_base>
                         <background_color>black</background_color>
@@ -1146,169 +1156,178 @@ referenceCurves = [refCurveData1]
                             <treshold>-92.945</treshold>
                             <offset>35.199999999999996</offset>
                         </trigger>
-
                          <analog_signals>
                             <analog>
-                            <channel>0</channel>
-                            <name><![CDATA[Consumidor.VAn]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>0</channel>
+                                    <name><![CDATA[Consumidor.VAn]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>0</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>1</channel>
-                            <name><![CDATA[Consumidor.VBn]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>1</channel>
+                                    <name><![CDATA[Consumidor.VBn]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>1</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>2</channel>
-                            <name><![CDATA[Consumidor.VCn]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>2</channel>
+                                    <name><![CDATA[Consumidor.VCn]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>2</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>3</channel>
-                            <name><![CDATA[Consumidor.IA]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>3</channel>
+                                    <name><![CDATA[Consumidor.IA]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>3</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>4</channel>
-                            <name><![CDATA[Consumidor.IB]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>4</channel>
+                                    <name><![CDATA[Consumidor.IB]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>4</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>5</channel>
-                            <name><![CDATA[Consumidor.IC]]></name>
-                            <is_locked>True</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>1</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>5</channel>
+                                    <name><![CDATA[Consumidor.IC]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>5</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>1</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>6</channel>
-                            <name><![CDATA[Linha.VAB]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>6</channel>
+                                    <name><![CDATA[Linha.VAB]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>6</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>7</channel>
-                            <name><![CDATA[Linha.VBC]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>7</channel>
+                                    <name><![CDATA[Linha.VBC]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>7</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>8</channel>
-                            <name><![CDATA[Linha.VCA]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>8</channel>
+                                    <name><![CDATA[Linha.VCA]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>8</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>9</channel>
-                            <name><![CDATA[Linha.IA]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>9</channel>
+                                    <name><![CDATA[Linha.IA]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>9</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>10</channel>
-                            <name><![CDATA[Linha.IB]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
+                                    <channel>10</channel>
+                                    <name><![CDATA[Linha.IB]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>10</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
                             <analog>
-                            <channel>11</channel>
-                            <name><![CDATA[Linha.IC]]></name>
-                            <is_locked>False</is_locked>
-                            <vertical_scale>Auto</vertical_scale>
-                            <vertical_offset>0.0</vertical_offset>
-                            <coupling>False</coupling>
-                            <viewports>
-                                
-                                <num_viewport>2</num_viewport>
-                                
-                           </viewports>
-                        </analog>
-                            </analog_signals>
-
+                                    <channel>11</channel>
+                                    <name><![CDATA[Linha.IC]]></name>
+                                    <is_locked>False</is_locked>
+                                    <vertical_scale>Auto</vertical_scale>
+                                    <vertical_offset>0.0</vertical_offset>
+                                    <coupling>False</coupling>
+                                    <row>11</row>
+                                    <viewports>
+                                        
+                                        <num_viewport>2</num_viewport>
+                                        
+                                   </viewports>
+                               </analog>
+                        </analog_signals>
                         <digital_signals>
-                            </digital_signals>
-
+                        </digital_signals>
                     </scope>
                     <plotting_options in_use="False">
                     
@@ -1503,40 +1522,28 @@ widgetValue = None
 
 if inputValue == 'Sem Falta':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 0)
-    pass
 elif inputValue == 'Falta ABC':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 10)
-    pass
 elif inputValue == 'Falta AB':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 8)
-    pass
 elif inputValue == 'Falta AC':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 6)
-    pass
 elif inputValue == 'Falta BC':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 3)
-    pass
 elif inputValue == 'Falta ABCN':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 11)
-    pass
 elif inputValue == 'Falta ABN':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 9)
-    pass
 elif inputValue == 'Falta ACN':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 7)
-    pass
 elif inputValue == 'Falta BCN':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 4)
-    pass
 elif inputValue == 'Falta AN':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 5)
-    pass
 elif inputValue == 'Falta BN':
     hil.set_scada_input_value('FaltaConsumidor.Fault select', 2)
-    pass
 elif inputValue == 'Falta CN':
-    hil.set_scada_input_value('FaltaConsumidor.Fault select', 1)
-    pass]]></on_use_code>
+    hil.set_scada_input_value('FaltaConsumidor.Fault select', 1)]]></on_use_code>
                 <on_start_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
 # NOTE: Variables specified here will be available in other handlers.
 # HIL API is imported as 'hil'
@@ -1584,87 +1591,6 @@ widgetValue = None
                     <y>384.0</y>
                     <width>256</width>
                     <height>32</height>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>7d8c4c49f32e11ecacd118c04df853b6</id>
-                <name><![CDATA[Control Rele]]></name>
-                <type>Macro</type>
-                <description><![CDATA[]]></description>
-                <on_click_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-]]></on_click_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-]]></on_start_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-TC = hil.get_scada_output_value('ReleI')/(scm.TCPrimario/scm.TCSecundario)
-PickupInst = scm.PS*(scm.TCSecundario)*(scm.MultiplicadorInst)
-PickupTimer = scm.PS*(scm.TCSecundario)
-
-timetrip50 = None
-timetrip51 = None
-
-# Function ANSI 50
-if (scm.Estado50 == 0) & (TC > PickupInst):
-    timetrip50 = hil.get_sim_time()
-    scm.Estado50 = 1
-
-    if (hil.get_sim_time() > trimetrip50) & (scm.Estado50 == 1):
-        hil.set_scada_input_value('Memoria50', 1)
-        scm.trimetrip50 = hil.get_sim_time()
-
-# Function ANSI 51
-if (scm.Estado51 == 0) & (TC > PickupTimer):
-    PickupTime = hil.get_sim_time()
-    scm.Estado51 = 1
-
-elif (scm.Estado51 == 1) & (hil.get_sim_time() > PickupTime):
-    if (scm.k == 0):
-        OperationTime50 = scm.TDS
-    else:
-        PMS = TC/PickupTime
-        OperationTime50 = ((scm.k/((PMS**scm.alpha)-1))+scm.B)*(scm.TMS)
-    timetrip51 = PickupTime + OperationTime50
-    scm.Estado51 = 2
-    
-    if (hil.get_sim_time() > timetrip51) & (scm.Estado51 == 2):
-        hil.set_scada_input_value('Memoria51', 1)
-        scm.timetrip51 = hil.get_sim_time()]]></on_timer_code>
-                <run_each>1000</run_each>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-]]></on_stop_code>
-                <widget_settings>
-                    <x>296</x>
-                    <y>680</y>
-                    <width>216</width>
-                    <height>40</height>
                     <appearance><![CDATA[Raised]]></appearance>
                     <hierarchy_position><![CDATA[1]]></hierarchy_position>
                     <is_background><![CDATA[False]]></is_background>
@@ -2547,8 +2473,8 @@ displayValue = scm.TempoA2
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>856.0</x>
-                    <y>768.0</y>
+                    <x>328.0</x>
+                    <y>696.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2590,8 +2516,8 @@ displayValue = scm.TempoA1
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>712.0</x>
-                    <y>768.0</y>
+                    <x>184.0</x>
+                    <y>696.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2632,8 +2558,8 @@ displayValue = scm.TempoA
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>568.0</x>
-                    <y>768.0</y>
+                    <x>40.0</x>
+                    <y>696.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2674,8 +2600,8 @@ displayValue = scm.TempoB2
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>856.0</x>
-                    <y>824.0</y>
+                    <x>328.0</x>
+                    <y>752.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2696,7 +2622,7 @@ displayValue = scm.TempoB2
                 <name><![CDATA[Fusivel]]></name>
                 <type>Macro</type>
                 <description><![CDATA[]]></description>
-                <on_click_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
+                <on_click_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
 # HIL API is imported as 'hil'
 # SCADA API is imported as 'panel'
 # SCADA API constants are imported as 'api_const'
@@ -2733,7 +2659,7 @@ scm.TempoB = 0
 scm.TempoB1 = 0
 scm.TempoB2 = 0
 scm.TempoC = 0]]></on_start_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on timer event.
+                <on_timer_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on timer event.
 # HIL API is imported as 'hil'
 # SCADA API is imported as 'panel'
 # SCADA API constants are imported as 'api_const'
@@ -2916,8 +2842,8 @@ displayValue = scm.TempoC
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>568.0</x>
-                    <y>880.0</y>
+                    <x>40.0</x>
+                    <y>808.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -2958,8 +2884,8 @@ displayValue = scm.TempoB
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>568.0</x>
-                    <y>824.0</y>
+                    <x>40.0</x>
+                    <y>752.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3030,7 +2956,7 @@ widgetValue = None
 widgetValue = None
 ]]></on_timer_code>
                 <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[3H]]></inputValue>
+                <inputValue><![CDATA[1H]]></inputValue>
                 <availableValues><![CDATA[['1H', '2H', '3H', '5H', '8H', '6K', '8K', '10K', '12K', '15K', '20K', '25K', '30K', '40K', '50K', '65K', '80K', '100K']]]></availableValues>
                 <unit><![CDATA[]]></unit>
                 <widget_settings>
@@ -3070,8 +2996,8 @@ displayValue = scm.TempoB1
                 <decimals><![CDATA[4]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>712.0</x>
-                    <y>824.0</y>
+                    <x>184.0</x>
+                    <y>752.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3086,751 +3012,6 @@ displayValue = scm.TempoB1
                     <orange_range>(0, 0, 0, 0)</orange_range>
                     <red_range>(0, 0, 0, 0)</red_range>
                 </advance_widget_settings>
-            </component_data>
-        <component_data>
-                <id>a6770e02f3db11ecb73818c04df853b6</id>
-                <name><![CDATA[TC Primário]]></name>
-                <type>TextBoxMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-
-scm.TCPrimario = inputValue]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[5.0]]></inputValue>
-                <inputValueType>float</inputValueType>
-                <unit><![CDATA[]]></unit>
-                <widget_settings>
-                    <x>296.0</x>
-                    <y>416.0</y>
-                    <width>216</width>
-                    <height>32</height>
-                    <inputWidgetWidth>80</inputWidgetWidth>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position>1</hierarchy_position>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>c4b9e3a9f3db11eca1e418c04df853b6</id>
-                <name><![CDATA[TC Secundário]]></name>
-                <type>TextBoxMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-
-scm.TCSecundario = inputValue]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[2.5]]></inputValue>
-                <inputValueType>float</inputValueType>
-                <unit><![CDATA[]]></unit>
-                <widget_settings>
-                    <x>296.0</x>
-                    <y>448.0</y>
-                    <width>216</width>
-                    <height>32</height>
-                    <inputWidgetWidth>80</inputWidgetWidth>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position>1</hierarchy_position>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>48a4857df3dc11ec865618c04df853b6</id>
-                <name><![CDATA[Mult de Corrente 50]]></name>
-                <type>SliderMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-
-scm.MultiplicadorInst = inputValue]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[10.0]]></inputValue>
-                <min>1.0</min>
-                <max>15.0</max>
-                <step>1.0</step>
-                <widget_settings>
-                    <x>296.0</x>
-                    <y>544.0</y>
-                    <width>216</width>
-                    <height>48</height>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>2bd284b7f3e311ec8e1f18c04df853b6</id>
-                <name><![CDATA[Plug Settings]]></name>
-                <type>SliderMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-
-scm.PS = inputValue]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[1.25]]></inputValue>
-                <min>0.25</min>
-                <max>2.0</max>
-                <step>0.25</step>
-                <widget_settings>
-                    <x>296.0</x>
-                    <y>592.0</y>
-                    <width>216</width>
-                    <height>48</height>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>6209bfa3f3e611ecae0818c04df853b6</id>
-                <name><![CDATA[Curva 51]]></name>
-                <type>ComboBoxMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-
-scm.PickupTime = 0
-scm.timetrip51 = 0
-
-if inputValue == 'IEC Standard Inverse':
-    scm.k = 0.14
-    scm.alpha = 0.02
-    scm.B = 0
-elif inputValue == 'IEC Very Inverse':
-    scm.k = 13.5
-    scm.alpha = 1
-    scm.B = 0
-elif inputValue == 'IEC Long Time Inverse':
-    scm.k = 120
-    scm.alpha = 1
-    scm.B = 0
-elif inputValue == 'IEC Extremely Inverse':
-    scm.k = 80
-    scm.alpha = 2
-    scm.B = 0
-elif inputValue == 'IEC Ultra Inverse':
-    scm.k = 315.2
-    scm.alpha = 2.5
-    scm.B = 0
-]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[IEC Extremely Inverse]]></inputValue>
-                <availableValues><![CDATA[['IEC Standard Inverse', 'IEC Very Inverse', 'IEC Long Time Inverse', 'IEC Extremely Inverse', 'IEC Ultra Inverse']]]></availableValues>
-                <unit><![CDATA[]]></unit>
-                <widget_settings>
-                    <x>296.0</x>
-                    <y>640.0</y>
-                    <width>216</width>
-                    <height>40</height>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>4f6d7cb1f3e711ec8ae818c04df853b6</id>
-                <name><![CDATA[TDS]]></name>
-                <type>TextBoxMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-
-scm.TDS = inputValue]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[0.5]]></inputValue>
-                <inputValueType>float</inputValueType>
-                <unit><![CDATA[]]></unit>
-                <widget_settings>
-                    <x>296.0</x>
-                    <y>512.0</y>
-                    <width>216</width>
-                    <height>32</height>
-                    <inputWidgetWidth>80</inputWidgetWidth>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position>1</hierarchy_position>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>b2e7a290f3e711ec9f0418c04df853b6</id>
-                <name><![CDATA[TMS]]></name>
-                <type>TextBoxMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-
-scm.TMS = inputValue]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[0.5]]></inputValue>
-                <inputValueType>float</inputValueType>
-                <unit><![CDATA[]]></unit>
-                <widget_settings>
-                    <x>296.0</x>
-                    <y>480.0</y>
-                    <width>216</width>
-                    <height>32</height>
-                    <inputWidgetWidth>80</inputWidgetWidth>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position>1</hierarchy_position>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>ff412c45f3ea11ecb4f318c04df853b6</id>
-                <name><![CDATA[Ativa 50]]></name>
-                <type>CheckBoxMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-scm.timetrip50 = 0
-
-if inputValue:
-    scm.Estado50 = 0
-    hil.set_scada_input_value('Memoria50', 0)
-else:
-    scm.Estado50 = 1
-    
-
-]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[False]]></inputValue>
-                <widget_settings>
-                    <x>192.0</x>
-                    <y>576.0</y>
-                    <width>80</width>
-                    <height>32</height>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>18c30c48f3eb11ecbb0918c04df853b6</id>
-                <name><![CDATA[Ativa 51]]></name>
-                <type>CheckBoxMacro</type>
-                <description><![CDATA[]]></description>
-                <on_use_code active="True"><![CDATA[# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-# NOTE: entered value is available through variable 'inputValue'
-
-if inputValue:
-    scm.Estado51 = 0
-    hil.set_scada_input_value('Memoria51', 0)
-else:
-    scm.Estado51 = 1
-
-]]></on_use_code>
-                <on_start_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_start_code>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_stop_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed periodically each 1000ms.
-# HIL API is imported as 'hil'
-# NOTE: Only read functions are available from the HIL API
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-# Change widget value by setting this variable.
-# NOTE: If you not specify 'widgetValue' variable or assign 'None' to it, 
-# widget value won't be changed.
-widgetValue = None
-]]></on_timer_code>
-                <on_start_code_source><![CDATA[Macro code]]></on_start_code_source>
-                <inputValue><![CDATA[True]]></inputValue>
-                <widget_settings>
-                    <x>192.0</x>
-                    <y>608.0</y>
-                    <width>80</width>
-                    <height>32</height>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>50f13406f3eb11ec922218c04df853b6</id>
-                <name><![CDATA[Reset 50]]></name>
-                <type>Macro</type>
-                <description><![CDATA[]]></description>
-                <on_click_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on button click.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-scm.Estado50 = 0
-hil.set_scada_input_value('Memoria50', 0)]]></on_click_code>
-                <on_start_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-scm.Estado50 = 0
-hil.set_scada_input_value('Memoria50', 0)]]></on_start_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on timer event.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-]]></on_timer_code>
-                <run_each>250</run_each>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-]]></on_stop_code>
-                <widget_settings>
-                    <x>144.0</x>
-                    <y>640.0</y>
-                    <width>128</width>
-                    <height>40</height>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
-            </component_data>
-        <component_data>
-                <id>5fe7e773f3eb11ec9d8418c04df853b6</id>
-                <name><![CDATA[Reset 51]]></name>
-                <type>Macro</type>
-                <description><![CDATA[]]></description>
-                <on_click_code active="True"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-scm.Estado51 = 0
-hil.set_scada_input_value('Memoria51', 0)]]></on_click_code>
-                <on_start_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on simulation start.
-# NOTE: Variables specified here will be available in other handlers.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-scm.Estado51 = 0
-hil.set_scada_input_value('Memoria51', 0)]]></on_start_code>
-                <on_timer_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed on timer event.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-]]></on_timer_code>
-                <run_each>250</run_each>
-                <on_stop_code active="False"><![CDATA[# NOTE: The code specified in this handler will be executed after simulation is stopped.
-# HIL API is imported as 'hil'
-# SCADA API is imported as 'panel'
-# SCADA API constants are imported as 'api_const'
-# 'WIDGET_HANDLE' constant holds the WidgetHandle object of this widget.
-# This object can be used as an argument in SCADA API functions.
-
-]]></on_stop_code>
-                <widget_settings>
-                    <x>144.0</x>
-                    <y>680.0</y>
-                    <width>128</width>
-                    <height>40</height>
-                    <appearance><![CDATA[Raised]]></appearance>
-                    <hierarchy_position><![CDATA[1]]></hierarchy_position>
-                    <is_background><![CDATA[False]]></is_background>
-                    <label><![CDATA[]]></label>
-                    <use_label>False</use_label>
-                </widget_settings>
             </component_data>
         <component_data>
                 <id>b50a47dff3ed11ecbc6618c04df853b6</id>
@@ -3856,8 +3037,8 @@ displayValue = hil.get_scada_output_value('ReleI')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>128.0</x>
-                    <y>744.0</y>
+                    <x>40.0</x>
+                    <y>568.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3897,8 +3078,8 @@ displayValue = hil.get_scada_output_value('ReleA')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>128.0</x>
-                    <y>800.0</y>
+                    <x>40.0</x>
+                    <y>632.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3938,8 +3119,8 @@ displayValue = hil.get_scada_output_value('ReleB')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>272.0</x>
-                    <y>800.0</y>
+                    <x>184.0</x>
+                    <y>632.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -3979,8 +3160,8 @@ displayValue = hil.get_scada_output_value('ReleC')
                 <decimals><![CDATA[2]]></decimals>
                 <updateRate>500</updateRate>
                 <widget_settings>
-                    <x>416.0</x>
-                    <y>800.0</y>
+                    <x>328.0</x>
+                    <y>632.0</y>
                     <width>144</width>
                     <height>56</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -4023,7 +3204,7 @@ else: displayValue = False
                 <updateRate>500</updateRate>
                 <widget_settings>
                     <x>296</x>
-                    <y>720</y>
+                    <y>416</y>
                     <width>216</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -4060,7 +3241,7 @@ else: displayValue = False
                 <updateRate>500</updateRate>
                 <widget_settings>
                     <x>296.0</x>
-                    <y>752.0</y>
+                    <y>448.0</y>
                     <width>216</width>
                     <height>32</height>
                     <appearance><![CDATA[Raised]]></appearance>
@@ -4103,7 +3284,6 @@ if DestravaTudo == 0:
     if hil.get_scada_output_value('Disj1') == 1:
         DestravaTudo = 1
         hil.set_scada_input_value('Memoria50', 1)
-    
     elif hil.get_scada_output_value('Disj2') == 1:
         DestravaTudo = 1
         hil.set_scada_input_value('Memoria51', 1)]]></on_timer_code>
@@ -4117,8 +3297,8 @@ if DestravaTudo == 0:
 
 ]]></on_stop_code>
                 <widget_settings>
-                    <x>1032</x>
-                    <y>744</y>
+                    <x>296</x>
+                    <y>480</y>
                     <width>160</width>
                     <height>40</height>
                     <appearance><![CDATA[Raised]]></appearance>

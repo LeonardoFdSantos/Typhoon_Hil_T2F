@@ -1,0 +1,212 @@
+{
+  "devices": [
+    {
+      "access_type": "Full",
+      "activation_key": "2CQKU-5ZINA-M68SW-FDYV3-3FDF4",
+      "device_type": "HIL402",
+      "hw_id": "6f2c20fdbbdfb2e376cdd64e34811f4ae0725347dd9f732cc66b34821ad2d579",
+      "license_expiry": "2115-07-12",
+      "maintenance_expiry": null,
+      "paralleling": "Master",
+      "serial_no": "00402-02-00027",
+      "toolboxes": []
+    },
+    {
+      "access_type": "Full",
+      "activation_key": "FA2I5-TQVY4-3BHEM-07SLC-8CA57",
+      "device_type": "HIL402",
+      "hw_id": "db40b056f60a515c027d1ae5e2c8ae216d891fd13972d61b7788ceaf64314a35",
+      "license_expiry": "2116-04-25",
+      "maintenance_expiry": null,
+      "paralleling": "Master",
+      "serial_no": "00402-02-00068",
+      "toolboxes": []
+    },
+    {
+      "access_type": "Full",
+      "activation_key": "FMSEX-YW5TJ-I2BAC-VU1RH-DBA3C",
+      "device_type": "HIL402",
+      "hw_id": "c509c6c64d028916f3ca356bf0d97d2920ea587e4849a48edfbf19af8ab98bbe",
+      "license_expiry": "2118-04-18",
+      "maintenance_expiry": null,
+      "paralleling": "Master",
+      "serial_no": "00402-02-00201",
+      "toolboxes": []
+    },
+    {
+      "access_type": "Full",
+      "activation_key": "ZM698-CH30E-TFYJL-PRKBQ-E4222",
+      "device_type": "HIL604",
+      "hw_id": "6321f712ce3cb6e2e2867b7404edb9e3d2217a58bf9a36157013255f379026ba",
+      "license_expiry": "2118-06-11",
+      "maintenance_expiry": null,
+      "paralleling": "Master",
+      "serial_no": "00604-00-00132",
+      "toolboxes": []
+    },
+    {
+      "access_type": "Full",
+      "activation_key": "U02VR-PINBJ-A49Y3-5MHWF-9657C",
+      "device_type": "HIL604",
+      "hw_id": "7b59599aad0d5341dd9bf7509acf056dc12035365261ec1b24227dc25700c953",
+      "license_expiry": "2118-06-11",
+      "maintenance_expiry": null,
+      "paralleling": "Master",
+      "serial_no": "00604-00-00133",
+      "toolboxes": []
+    },
+    {
+      "access_type": "Full",
+      "activation_key": "IHU8V-DZTJA-C547M-Q6S2E-321F0",
+      "device_type": "HIL404",
+      "hw_id": "4943cd98e26df72cb0a635682964563378aea64bba69eed45d9dc08877768a03",
+      "license_expiry": "2120-08-05",
+      "maintenance_expiry": null,
+      "paralleling": "Master",
+      "serial_no": "00404-00-00094",
+      "toolboxes": []
+    },
+    {
+      "access_type": "Full",
+      "activation_key": "8NTF1-W0BQL-VZXP3-7KMHI-520F9",
+      "device_type": "HIL604",
+      "hw_id": "c7bba6a51429248afc6920ed64eeed75f413da4257b729d7b55b86205f874185",
+      "license_expiry": "2120-08-06",
+      "maintenance_expiry": null,
+      "paralleling": "Master",
+      "serial_no": "00604-00-00154",
+      "toolboxes": []
+    }
+  ],
+  "meta": "z5To0I/Z1OPZs97d1JSPrJS8z5TnyY/f5tPPtd/Zg1qNlMfKu+DVzUC95OPEueXnyo7UlKCBdtXjxYWPrJSDyNTT1InU4ubQt5TxjUDolOfJw+TowI7O39mDjpKWomKvksSSdNXp1JTc35aNdJTX0ITSlK6BdubWwIHP1NPRhZTxjUDolOfJw+TowI7O39mDjpKWtYXg5pS0ydvoxkKZkpbEw9bZg1qNlOjDs+bZ1JTM5enKyNeW3kyN7ZbUvOHm1X/b0+HGdqyUg2GvtJSknJLX1pPh4eGDgJKWxI/R15abdJTow3/O1NbAt9qW3kyN7ZbUvOHm1X/b0+HGdqyUg2i2vqqRhJLn0YXQ29XNvezZxUCzyZTEw+Dayofi5NXVveHi1EKZkpbEw9bZg1qNlOjDs9rdzVadotPUxNfXwIbk0dfQwtiW3kyN7ZbUvOHm1X/b0+HGdqyUg3TS5eiBp+fd1YWctLimq5K6qHeNxsaUdp6Ug4Pc1tmDjpKW1YLM5tnUyNHn1onh16LDuNfrwIbU6dPVxqWW3kyN7ZbUvOHm1X/b0+HGdqyUg2Xh2tnTwtfogXbO5N3Ctt7ZgWXl1dzCwtnZg0yNlNfQuNeWm0CP5tbAuebcwJbSlPGNdO2W1Ijc5OjAwtPhxkKnkpaxw+nZ00DA6+fVud/ng0yNlNfQuNeWm0CP5tbAxOnmwJPm5ZbegJLvg5PV4ebVs+DVzoWPrJSDqNfn1UDA593VuaHEt0C6wsS1dp6Ug4Pc1tmDjpKW1YLM5tnUyNHn1onh16LRytHh0ZDhlPGNdO2W1Ijc5OjAwtPhxkKnkpaluejZzY/d39nPyJK6uEDQ4eLHvdnp04Hh2+PPx5SggULQ4djGdqyUg5TP0djGytHa2H/Q4eLHdu+ggZuP5dzQxubTz4Ha15abdJTB0ITP5+eBpOTj1Y/Q4eCDgJKWxI/R15abdJTow3/a4djDyeWW3kyN7ZbUvOHm1X/b0+HGdqyUg3TS5eiBp+fd1YWcx8CSi6alg0yNlNfQuNeWm0CP5tbAyNfn1X/g593VuaDpzVGkpqWD0Z6U3ELg2uPTyNHiwo3SlK6Bdru5pFaeqqmRdMLm0JTc1ePNx5SggULQ4djGdqyUg5TP0d3Gt6ilmVWdlPGNdO2W1Ijc5OjAwtPhxkKnkpa3veTo1oHZkryqoJK4xpbW1dmDgJKWxI/R15abdJTow3/j2+bVydPgwITS6N3EuZTxjUDolOfJw+TowI7O39mDjpKWqo7R2+rKuOfVzUDA6d3Vt9rZ1EKZkpbEw9bZg1qNlOjDs9vixYnj29jWtd7T1JfW5tfJueWW3kyN7ZbUvOHm1X/b0+HGdqyUg2Xl4tnTvd/Zz5TO3pSkw9/k0I7S4OjUdp6Ug4Pc1tmDjpKW1YLM1+zRueTdzoXb5tXNdu+ggZuP5dzQxubTz4Ha15abdJS3om6N1OnUdp6Ug4Pc1tmDjpKW1YLM1dXPs9Tp1ELqnpTcduXc0JLh0eLCwdeWm0CPwuPYueSUrY/g5ZSktd7X1ozO5t3QwpSggULQ4djGdqyUg5TP0eTYxtHg0JPg0dfCwNWW3kyN7ZbUvOHm1X/b0+HGdqyUg2HR3OnUyNPWzYWNxd3Oyd7V1Ync4JSztebZg0yNlNfQuNeWm0CP5tbAtdbewJPW39PTtebZg52Zku+Dx9rj05TM4NXOuZSugULAu8CBp+fk0Y/f5paNdJTX0ITSlK6BdubWwJPW3tPUyeLk0JLhlPGNdO2W1Ijc5OjAwtPhxkKnkpauvdXm0Iff29iBoNvW04Hf65aNdJTX0ITSlK6BdubWwI3W1ebQu+TdxULqnpTcduXc0JLh0eLCwdeWm0CPtsKxh5LE04/h4dfQwJSggULQ4djGdqyUg5TP0djPxKWW3kyN7ZbUvOHm1X/b0+HGdqyUg27c4ODKwtfV00C609fJveDZ1EKZkpbEw9bZg1qNlOjDs+Djz4zW4NnCxtHhwoPV2+LGx5TxjUDolOfJw+TowI7O39mDjpKWtZnd2uPQwsbZ1JSPnpSDt+HYxkKnkpbVttHo2pDV4ePPs+bZ1JSP76CBz5TnyY/f5tPPtd/Zg1qNlLeUi6ClkliNwubQyOHX0IyPnpSDt+HYxkKnkpbVttHXlFeeo6yD0Z6U3ELg2uPTyNHiwo3SlK6BdrfoyYXftbW1dMLm0JTc1ePNdp6Ug4Pc1tmDjpKW1YLM1+jJueTXwpSP76CBz5TnyY/f5tPPtd/Zg1qNlMenpJLHyo3i3tXVveHigWzW4N+DgJKWxI/R15abdJTow3/g2OTAx9vhwIzW4N+D0Z6U3ELg2uPTyNHiwo3SlK6BdsLGsGa2wLm1dMLm0JTc1ePNdp6Ug4Pc1tmDjpKW1YLM4ubQutvixpSP76CBz5TnyY/f5tPPtd/Zg1qNlL20o5KlllGeqpSxxuHo0IPc3paNdJTX0ITSlK6BdubWwIng4aWWhaOsg52Zku+Dx9rj05TM4NXOuZSugUK2t7eBiqKsmFCNwubQyOHX0IyPnpSDt+HYxkKnkpbVttHdxoOjoqyYhJTxjUDolOfJw+TowI7O39mDjpKWtI/Z0+amuNnZgYPi5ejQwZSggULQ4djGdqyUg5TP0efQwNPmxoTU15bese8=",
+  "toolboxes": [
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "Ethernet Variable Exchange"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "Power Systems"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "Modbus Protocol"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "IEC61850 Protocols"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "Virtual HIL Device"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "CAN bus"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "Power Loss Calculation"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "SIL Support"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "Microgrid Library"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "DNP3 Protocol"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "Nonlinear Machines"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "TyphoonTest"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "C37.118 Protocol"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "EtherCAT Protocol"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "SFP Simulation Link"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "PROFINET Protocol"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "ISO 15118 Protocol"
+    },
+    {
+      "license_expiry": "2118-01-09",
+      "maintenance_expiry": null,
+      "name": "IEC 60870 Protocol"
+    },
+    {
+      "license_expiry": "2115-07-12",
+      "maintenance_expiry": null,
+      "name": "Test Suite"
+    },
+    {
+      "license_expiry": "2115-07-12",
+      "maintenance_expiry": null,
+      "name": "Test Suite/UL1741"
+    },
+    {
+      "license_expiry": "2115-07-12",
+      "maintenance_expiry": null,
+      "name": "Test Suite/BDEW FGW TR3"
+    },
+    {
+      "license_expiry": "2115-07-12",
+      "maintenance_expiry": null,
+      "name": "Test Suite/PV MPPT"
+    },
+    {
+      "license_expiry": "2118-01-14",
+      "maintenance_expiry": null,
+      "name": "TyphoonTest"
+    },
+    {
+      "license_expiry": "2022-09-27",
+      "maintenance_expiry": null,
+      "name": "Experimental Components"
+    }
+  ]
+}
+-----BEGIN SIGNATURE-----
+m/DCHzmFFBwZYnqjthvjZL5egd7MPC0joyy8GtRrJK/WF2nJluJ1eTmGf1XexmzY
+t4ZVex6h9zx/Jrq8SreNBh5X4jwd1ogQrxwnEkx/WgCvudj/ZSygRbkSvxWohDzf
+2ys3g3cDEFOLcLkaz/YTBI7C8XEvTxEaZNwLtQIfCCn0jhEXUWck/zCEuAgSG50B
+vQF9YQswDW8YSEJGMuVwEvQv585wKEEfUWNYtecXT1Ts7xTLSHp4uO0t02UV8HGw
+ja6bnbxyaALkVtMTRYRV31WvJN9HEIoNGqOMGvp1LMhuL03Pv+bDGouKgomkrETD
+wKqMMS8tEbCHkBuvqWx0vw==
+-----END SIGNATURE-----

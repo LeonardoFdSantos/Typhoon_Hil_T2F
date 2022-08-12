@@ -1,0 +1,1499 @@
+2022-02-03 17:17:25.781  INFO   QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-02-03 17:19:35.101  INFO   QuickSet.exe(6508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp9C5C.tmp 
+2022-02-03 17:19:36.401  INFO   QuickSet.exe(6508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-02-03 18:19:09.798  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:19:30.094  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:19:50.413  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:20:10.728  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:20:31.049  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:20:51.351  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:21:11.668  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:21:32.002  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:21:52.315  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:22:12.618  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:22:32.940  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:22:53.253  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:23:13.555  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:23:33.875  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:23:54.194  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:24:14.511  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:24:34.830  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:24:55.128  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:25:15.452  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:25:35.778  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:25:56.108  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:26:16.397  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:26:36.724  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:26:57.029  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:27:17.345  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:27:37.658  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:27:57.977  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-03 18:28:18.304  ERROR  QuickSet.exe(6508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-02-21 14:59:39.166  INFO   QuickSet.exe(5816)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-02-21 15:08:29.494  INFO   QuickSet.exe(5816)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp928C.tmp 
+2022-02-21 15:08:30.806  INFO   QuickSet.exe(5816)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-02-21 15:08:30.838  INFO   QuickSet.exe(5816)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp984D.tmp 
+2022-02-21 15:08:31.540  INFO   QuickSet.exe(5816)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-02-21 15:08:31.587  INFO   QuickSet.exe(5816)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp9B40.tmp 
+2022-02-21 15:08:32.977  INFO   QuickSet.exe(5816)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-02-21 15:42:43.195  INFO   QuickSet.exe(5816)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmpE95D.tmp 
+2022-02-21 15:42:44.008  INFO   QuickSet.exe(5816)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-03-07 09:30:06.909  INFO   QuickSet.exe(3252)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-03-07 09:34:58.767  INFO   QuickSet.exe(3252)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp791A.tmp 
+2022-03-07 09:35:00.501  INFO   QuickSet.exe(3252)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-03-15 09:46:53.688  INFO   QuickSet.exe(6900)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-03-15 09:52:48.822  INFO   QuickSet.exe(6900)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmpD41C.tmp 
+2022-03-15 09:52:49.892  INFO   QuickSet.exe(6900)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-03-15 11:03:29.579  INFO   QuickSet.exe(6900)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp8A0B.tmp 
+2022-03-15 11:03:30.469  INFO   QuickSet.exe(6900)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-03-22 16:04:49.262  INFO   QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-03-22 16:08:10.676  INFO   QuickSet.exe(8920)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp90D9.tmp 
+2022-03-22 16:08:11.926  INFO   QuickSet.exe(8920)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-03-22 16:12:38.790  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:12:59.108  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:13:19.449  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:13:39.746  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:14:00.048  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:14:20.355  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:14:40.668  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:15:00.993  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:15:21.304  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:15:41.615  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:16:01.928  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:16:22.256  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:16:42.552  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:17:02.859  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:17:23.167  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:17:43.491  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:18:03.800  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:18:24.108  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:18:44.431  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:19:04.740  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:19:25.047  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:19:45.355  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:20:05.683  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:20:25.996  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:20:46.304  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:21:06.614  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:25:38.493  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:25:58.816  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 16:26:19.128  ERROR  QuickSet.exe(8920)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 19:13:48.730  INFO   QuickSet.exe(1628)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-03-22 19:16:33.401  ERROR  QuickSet.exe(1628)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 19:16:53.699  ERROR  QuickSet.exe(1628)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 19:17:14.013  ERROR  QuickSet.exe(1628)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-03-22 19:17:34.326  ERROR  QuickSet.exe(1628)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-05-31 16:20:22.091  INFO   QuickSet.exe(9864)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-05-31 16:22:20.611  INFO   QuickSet.exe(9864)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmpF360.tmp 
+2022-05-31 16:22:22.267  INFO   QuickSet.exe(9864)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-06-01 11:30:49.658  INFO   QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-06-01 11:31:46.812  INFO   QuickSet.exe(7580)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp4B28.tmp 
+2022-06-01 11:31:47.928  INFO   QuickSet.exe(7580)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-06-01 11:53:19.870  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:53:40.177  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:54:00.484  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:54:20.806  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:54:41.113  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:55:01.420  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:55:21.742  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:55:42.049  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:56:02.371  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:56:22.663  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:56:42.985  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:57:03.295  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:57:23.602  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:57:43.909  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:58:04.231  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:58:24.537  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:58:44.844  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:59:05.167  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:59:25.472  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 11:59:45.774  ERROR  QuickSet.exe(7580)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-01 12:01:02.677  INFO   QuickSet.exe(7580)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp16F9.tmp 
+2022-06-01 12:01:03.583  INFO   QuickSet.exe(7580)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-06-01 14:45:56.696  INFO   QuickSet.exe(3264)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-06-01 14:46:29.360  INFO   QuickSet.exe(3264)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp8EE6.tmp 
+2022-06-01 14:46:30.219  INFO   QuickSet.exe(3264)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-06-23 10:01:03.578  INFO   QuickSet.exe(8264)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-06-23 10:09:23.842  INFO   QuickSet.exe(8264)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp4DF0.tmp 
+2022-06-23 10:09:25.982  INFO   QuickSet.exe(8264)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-06-23 14:06:03.413  INFO   QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-06-23 14:06:54.949  INFO   QuickSet.exe(10244)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmpC294.tmp 
+2022-06-23 14:06:55.699  INFO   QuickSet.exe(10244)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-06-23 14:10:49.587  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:11:09.895  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:11:30.204  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:11:50.512  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:12:10.819  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:12:31.143  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:12:51.455  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:13:11.763  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:13:32.071  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:13:52.396  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:14:12.703  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:14:33.011  ERROR  QuickSet.exe(10244)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:14:58.768  INFO   QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-06-23 14:44:16.534  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:44:36.857  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:44:57.165  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:45:17.504  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:45:37.811  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:45:58.119  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:46:18.442  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:46:38.750  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:46:59.058  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:47:19.381  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:47:39.692  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:48:00.000  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:48:20.308  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:48:40.631  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:49:00.939  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:49:21.247  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:49:41.554  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:50:01.878  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:50:22.185  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:50:42.493  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:51:02.816  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:51:23.124  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:51:43.432  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:52:03.745  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:52:24.068  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:52:44.369  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:53:04.692  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:53:25.000  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:53:45.308  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:54:05.633  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:54:25.942  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:54:46.249  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:55:06.557  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:55:26.880  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:55:47.188  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:56:07.496  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:56:27.821  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:56:48.128  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:57:08.436  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:57:28.744  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:57:49.062  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:58:09.369  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:58:29.693  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:58:50.000  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:59:10.308  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:59:30.647  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 14:59:50.955  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:00:11.263  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:00:31.570  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:00:51.894  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:01:12.201  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:01:32.509  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:01:52.832  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:02:13.141  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:02:33.444  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:02:53.767  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:03:14.066  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:03:34.389  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:03:54.697  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:04:15.022  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:04:35.332  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:04:55.639  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:05:15.947  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:05:36.270  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:05:56.578  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:06:16.886  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:06:37.209  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:06:57.519  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:07:17.819  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:07:38.135  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:07:58.458  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:08:18.770  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:08:39.078  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:08:59.385  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:09:19.706  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:09:40.014  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:10:00.321  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:10:20.637  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:10:40.947  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:11:01.288  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:11:21.612  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:11:41.919  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:12:02.227  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:12:22.550  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:12:42.857  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:13:03.165  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:13:23.488  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:13:43.796  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:14:04.106  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:14:24.414  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:14:44.737  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:15:05.045  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:15:25.353  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:15:45.676  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:16:05.976  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:16:26.300  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:16:46.607  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:17:06.915  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:17:27.238  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:17:47.549  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:18:07.856  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:18:28.164  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:18:48.488  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:19:08.795  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:19:29.105  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:19:49.428  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:20:09.736  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:20:30.043  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:20:50.351  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:21:10.674  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:21:30.975  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:21:51.298  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:22:11.596  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:22:31.920  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:22:52.220  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:23:12.544  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:23:32.853  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:23:53.176  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:24:13.486  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:24:33.793  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:24:54.101  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:25:14.424  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:25:34.732  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:25:55.040  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:26:15.363  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:26:35.671  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:26:55.978  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:27:16.302  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:27:36.604  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:27:56.928  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:28:17.235  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:28:37.543  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:28:57.851  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:29:18.174  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:29:38.482  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:29:58.789  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:30:19.113  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:30:39.420  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:30:59.728  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:31:20.051  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:31:40.359  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:32:00.669  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:32:20.977  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:32:41.296  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:33:01.604  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:33:21.927  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:33:42.235  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:34:02.544  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:34:22.851  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:34:43.175  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:35:03.482  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:35:23.790  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:35:44.129  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:36:04.437  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:36:24.745  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:36:45.068  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:37:05.376  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:37:25.683  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-06-23 15:37:46.002  ERROR  QuickSet.exe(10224)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-07-21 14:25:59.168  INFO   QuickSet.exe(4468)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-07-21 14:58:59.592  INFO   QuickSet.exe(4468)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp504F.tmp 
+2022-07-21 14:59:00.811  INFO   QuickSet.exe(4468)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-07-21 15:27:57.596  INFO   QuickSet.exe(8508)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-07-21 15:28:17.627  INFO   QuickSet.exe(8508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp263F.tmp 
+2022-07-21 15:28:22.117  INFO   QuickSet.exe(8508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-07-21 15:28:22.139  INFO   QuickSet.exe(8508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp3835.tmp 
+2022-07-21 15:28:22.711  INFO   QuickSet.exe(8508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-07-21 15:28:22.744  INFO   QuickSet.exe(8508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp3A8C.tmp 
+2022-07-21 15:28:23.713  INFO   QuickSet.exe(8508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-07-21 15:32:31.608  INFO   QuickSet.exe(8508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp6BB.tmp 
+2022-07-21 15:32:32.167  INFO   QuickSet.exe(8508)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-08-01 15:37:22.620  INFO   QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 
+2022-08-01 16:10:01.620  INFO   QuickSet.exe(4384)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Executing: "C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\Plugins\SEL.LdmBridge.exe" -config C:\Users\Pichau\AppData\Local\Temp\tmp6D76.tmp 
+2022-08-01 16:10:20.295  INFO   QuickSet.exe(4384)  SEL.LdmSettingsEditor.Process.ProcessExecutor.Execute                                                  1               SEL.LdmSettingsEditor.Process.ProcessExecutor  Process returned code 0.
+Out: 
+Err:  
+2022-08-01 18:22:49.436  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:23:09.683  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:23:30.074  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:23:50.432  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:24:10.785  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:24:31.126  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:24:51.455  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:25:11.814  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:25:32.183  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:25:52.499  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:26:20.104  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:26:43.402  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:39:27.425  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:39:58.431  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:40:16.754  ERROR  QuickSet.exe(4384)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               HMIDataSource  
+{
+  "Message": "DNA(1336) and A5D1(0) data counts are different: ",
+  "Location": "TFastMeterDataSource.ParseFastMeterData - line 0 of Classhmidatasource ()"
+} 
+2022-08-01 18:57:07.613  INFO   QuickSet.exe(2536)  SEL.Reusable.HydraCompatible.Logging.UnmanagedLogger.LogItem                                           1               CopyFile  
+{
+  "Message": "Failed to copy files. C:\\Program Files (x86)\\SEL\\AcSELerator\\QuickSet\\bin\\Relay.rdb to C:\\Users\\Pichau\\AppData\\Roaming\\SEL\\AcSELerator\\QuickSet\\Relay.rdb",
+  "Location": "CopyFile - line 0 of Appfunctions ()"
+} 

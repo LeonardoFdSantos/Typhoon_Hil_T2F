@@ -1,0 +1,33 @@
+0. 
+1. Update Started at: 17/04/2021 15:31:20
+2. SEL Compass Version: 3.0.6.1
+3. Database Version: 09/07/2018
+4. Last Update Poll: 17/04/2021
+5. Source Location: Local Drive (C:)
+6. 
+7. 
+8. AntiVirus Name: Windows Defender
+9. AntiVirus Enabled: True
+10. 
+11. 
+12. 
+13. 
+14. Copying  File: AcSELerator QuickSet SEL-5030  137,67 MB of 137,67 MB (100%). Complete.
+15. Copying  File: AcSELerator QuickSet SEL-5030 Software  22,06 MB of 22,06 MB (100%). Complete.
+16. Copying  File: AcSELerator QuickSet SEL-5030 Language Files  0,32 MB of 0,32 MB (100%). Complete.
+17. Copying  File: QuickSet Prerequisites  52,53 MB of 52,53 MB (100%). Complete.
+18. Copying  File: AcSELerator Analytic Assistant SEL-5601  6,63 MB of 6,63 MB (100%). Complete.
+19. Copying  File: QuickSet Common Files  28,12 MB of 28,12 MB (100%). Complete.
+20. Installing AcSELerator QuickSet SEL-5030 completed 
+21. Successfully installed AcSELerator QuickSet SEL-5030.
+22. Copied file QuickSet_IM.pdf to C:\SEL\Instruction Manuals\.
+23. Unpacking file: CoreLanguageFiles.zip 100% complete.
+24. Decompressed the contents of file CoreLanguageFiles.zip to C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\.
+25. Unpacking file: 503xCommonFiles.zip 100% complete.
+26. Decompressed the contents of file 503xCommonFiles.zip to C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\.
+27. Installing AcSELerator Analytic Assistant SEL-5601 completed 
+28. Successfully installed AcSELerator Analytic Assistant SEL-5601.
+29. Unpacking file: SupportFiles.zip 100% complete.
+30. Decompressed the contents of file SupportFiles.zip to C:\Program Files (x86)\SEL\AcSELerator\QuickSet\bin\.
+31. Updating local database. This may take several minutes.
+32. SEL Compass completed update to system successfully.

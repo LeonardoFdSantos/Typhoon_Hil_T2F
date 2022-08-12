@@ -1,0 +1,1716 @@
+version = 4.2
+
+//
+// Saved by sw version: 2022.2
+//
+
+model "T2F" {
+    configuration {
+        hil_device = "HIL604"
+        hil_configuration_id = 2
+        simulation_method = bilinear
+        simulation_time_step = 1e-6
+        simulation_discret_scaling = 1.0
+        dsp_timer_periods = 100e-6, 50e-3
+        ss_calc_method = "constraint matrix"
+        enb_pole_shift = True
+        enb_gds_oversampling = True
+        show_modes = False
+        device_ao_limit_enable = False
+        reset_analog_outputs_on_sim_stop = True
+        reset_digital_outputs_on_sim_stop = True
+        vhil_adio_loopback = False
+        cpl_stb = True
+        enb_dep_sw_detect = False
+        code_section = "internal memory"
+        data_section = "external memory"
+        sys_sp_rate_1 = 0.0001
+        sys_sp_rate_2 = 0.05
+        sys_real_type_precision = "default"
+        user_real_type_precision = "single precision"
+        sys_cpu_optimization = "high"
+        user_cpu_optimization = "high"
+        user_cpu_part_option = "execution rate based"
+        matrix_based_reduction = True
+        cpl_dynamics_analysis = False
+        export_ss_to_pickle = False
+        ground_scope_core = True
+        dss_num_tol = 1e-15
+        cce_platform = "generic"
+        cce_use_relative_names = False
+        cce_type_mapping_real = "double"
+        cce_type_mapping_uint = "unsigned int"
+        cce_type_mapping_int = "int"
+        cce_directory = ""
+        cce_custom_type_int = ""
+        cce_custom_type_uint = ""
+        cce_custom_type_real = ""
+        tunable_params = "off"
+        sp_compiler_type = "C compiler"
+        sig_stim = "off"
+        export_resource_list = ""
+        export_dependency_list = ""
+        export_out_file = ""
+        export_lock_top_level = True
+        export_encrypt_library = True
+        export_encrypt_resources = True
+    }
+
+    component Subsystem Root {
+        component "core/Two Coupled Inductors" M1 {
+            L1 = "0.1503"
+            L2 = "0.1503"
+            R1 = "69.6731"
+            R2 = "69.6731"
+            k = "0.5"
+        }
+        [
+            position = 7616, 8176
+            size = 64, 128
+        ]
+
+        component pas_resistor R2 {
+            resistance = "10"
+        }
+        [
+            position = 8504, 8368
+        ]
+
+        component "core/Three Phase Two Winding Transformer" Tr1 {
+            Sn = "75e3"
+            V1 = "13800/(3**0.5)"
+            V2 = "13800/(3**0.5)"
+            clock_number = "1"
+            current_vals_pu = "[0.16260121958817295, 67.75030486853915]"
+            f = "60"
+            flux_vals_pu = "[36.90104033375619, 46.74106019765998]"
+            input = "pu"
+            l1 = "0.018511"
+            l2 = "0.018511"
+            lm = "40.010686750359440*1000"
+            r1 = "0.0048119"
+            r2 = "0.0048119"
+            rm = "1.730769230769231e+03*1000"
+            winding_1_connection = "D"
+        }
+        [
+            position = 6824, 8240
+            size = 126, 256
+        ]
+
+        component "core/Three Phase Two Winding Transformer" Tr2 {
+            Sn = "75e3"
+            V1 = "13800/(3**0.5)"
+            V2 = "380/(3**0.5)"
+            clock_number = "3"
+            f = "60"
+            input = "pu"
+            l1 = "0.018511"
+            l2 = "0.018511"
+            lm = "8.409977380031759e+02*1000"
+            r1 = "0.0048119"
+            r2 = "0.0048119"
+            rm = "5.801193266567229e+02*1000"
+            winding_1_connection = "D"
+        }
+        [
+            position = 9024, 8248
+            size = 126, 256
+        ]
+
+        component src_ground gnd1 {
+        }
+        [
+            position = 9144, 8512
+        ]
+
+        component "core/Constant Impedance Load" "Constant Impedance Load1" {
+            SAB = "75000.0/3"
+            SAn = "75000.0/3"
+            SBC = "75000.0/3"
+            SBn = "75000.0/3"
+            SCA = "75000.0/3"
+            SCn = "75000.0/3"
+            Sn_3ph = "75e3"
+            VAB = "380"
+            VAn = "380/(3**0.5)"
+            VBC = "380"
+            VBn = "380/(3**0.5)"
+            VCA = "380"
+            VCn = "380/(3**0.5)"
+            Vn_3ph = "380"
+            enable_neutral = "True"
+            pfA = "0.8"
+            pfB = "0.8"
+            pfC = "0.8"
+            pf_3ph = "0.8"
+            pf_modeA = "Lag"
+            pf_modeB = "Lag"
+            pf_modeC = "Lag"
+            pf_mode_3ph = "Lag"
+        }
+        [
+            position = 9576, 8240
+            rotation = left
+            scale = 1, -1
+            size = 184, 152
+        ]
+
+        component "core/Three Phase Voltage Source" Vs1 {
+            init_frequency = "60"
+            init_rms_value = "13800/(3**0.5)"
+        }
+        [
+            position = 5584, 8240
+            size = 62, 256
+        ]
+
+        component src_ground gnd2 {
+        }
+        [
+            position = 6856, 8408
+        ]
+
+        component src_ground gnd3 {
+        }
+        [
+            position = 8088, 8488
+        ]
+
+        component "core/Three-phase Meter" Consumidor {
+            I_avg_rms = "True"
+            I_rms = "True"
+            P_method = "RMS based"
+            Ts = "1e-3"
+            VAB = "True"
+            VBC = "True"
+            VCA = "True"
+            VLL_rms = "True"
+            VLn_rms = "True"
+            freq = "True"
+            remove_snubber = "True"
+        }
+        [
+            position = 9168, 8240
+            size = 64, 272
+        ]
+
+        component gen_scada_output Linha_Tensao_A {
+            unit = ""
+        }
+        [
+            position = 8408, 7752
+        ]
+
+        component gen_scada_output Linha_Tensao_B {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 8592, 7808
+        ]
+
+        component gen_scada_output Linha_Tensao_C {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 8504, 7928
+        ]
+
+        component gen_scada_output Linha_Angulo_A {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 8424, 7800
+        ]
+
+        component gen_scada_output Linha_Angulo_B {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 8592, 7888
+        ]
+
+        component gen_scada_output Linha_Angulo_C {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 8504, 7984
+        ]
+
+        component msr_phasor_3ph "Three Phase Phasor3" {
+        }
+        [
+            position = 9384, 7976
+        ]
+
+        component "core/Meter Split" "Meter Split2" {
+        }
+        [
+            position = 9256, 8016
+            size = 96, 160
+        ]
+
+        component gen_scada_output Linha_Tensao_A1 {
+            unit = ""
+        }
+        [
+            position = 9528, 7856
+        ]
+
+        component gen_scada_output Linha_Tensao_B1 {
+            unit = ""
+        }
+        [
+            position = 9648, 7912
+        ]
+
+        component gen_scada_output Linha_Tensao_C1 {
+            unit = ""
+        }
+        [
+            position = 9632, 7984
+        ]
+
+        component gen_scada_output Linha_Angulo_A1 {
+            unit = ""
+        }
+        [
+            position = 9624, 7856
+        ]
+
+        component gen_scada_output Linha_Angulo_B1 {
+            unit = ""
+        }
+        [
+            position = 9728, 7960
+        ]
+
+        component gen_scada_output Linha_Angulo_C1 {
+            unit = ""
+        }
+        [
+            position = 9632, 8048
+        ]
+
+        component pas_resistor R3 {
+            resistance = "10"
+        }
+        [
+            position = 7032, 8336
+        ]
+
+        component pas_capacitor C3 {
+            capacitance = "6.4274e-08"
+        }
+        [
+            position = 7360, 8200
+            rotation = right
+        ]
+
+        component pas_capacitor C4 {
+            capacitance = "8.5742e-08"
+        }
+        [
+            position = 7200, 8192
+            rotation = right
+        ]
+
+        component pas_capacitor C5 {
+            capacitance = "1.5002e-07"
+        }
+        [
+            position = 7312, 8328
+            rotation = right
+        ]
+
+        component pas_capacitor C6 {
+            capacitance = "1.5002e-07"
+        }
+        [
+            position = 7408, 8304
+            rotation = right
+        ]
+
+        component pas_capacitor C7 {
+            capacitance = "6.4274e-08"
+        }
+        [
+            position = 8512, 8192
+            rotation = right
+        ]
+
+        component pas_capacitor C8 {
+            capacitance = "8.5742e-08"
+        }
+        [
+            position = 8432, 8192
+            rotation = right
+        ]
+
+        component pas_capacitor C9 {
+            capacitance = "1.5002e-07"
+        }
+        [
+            position = 8232, 8336
+            rotation = right
+        ]
+
+        component pas_capacitor C10 {
+            capacitance = "1.5002e-07"
+        }
+        [
+            position = 8304, 8312
+            rotation = right
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S1 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 7144, 8144
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkA {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 7064, 8144
+            size = 64, 32
+        ]
+
+        component "core/Dynamic Grid Fault" Falta {
+            Rph_n = "40/3"
+            Rph_ph = "40/3"
+            execution_rate = "1e-3"
+        }
+        [
+            position = 8088, 8384
+            size = 64, 64
+        ]
+
+        component msr_phasor_3ph "Three Phase Phasor4" {
+            execution_rate = "1e-3"
+        }
+        [
+            position = 8232, 7880
+        ]
+
+        component "core/Three-phase Meter" Linha {
+            I_avg_rms = "True"
+            I_rms = "True"
+            P_method = "RMS based"
+            Ts = "1e-3"
+            VAB = "True"
+            VBC = "True"
+            VCA = "True"
+            VLL_rms = "True"
+            VLn_rms = "True"
+            freq = "True"
+            remove_snubber = "True"
+        }
+        [
+            position = 7824, 8288
+            size = 64, 272
+        ]
+
+        component src_ground gnd4 {
+        }
+        [
+            position = 7824, 8464
+        ]
+
+        component "core/Meter Split" "Meter Split3" {
+            vab = "True"
+            van = "False"
+            vbc = "True"
+            vbn = "False"
+            vca = "True"
+            vcn = "False"
+        }
+        [
+            position = 8056, 7896
+            size = 96, 96
+        ]
+
+        component "core/Dynamic Grid Fault" FaltaConsumidor {
+            Rph_n = "40"
+            Rph_ph = "40"
+            execution_rate = "1e-3"
+        }
+        [
+            position = 9376, 8264
+            size = 64, 64
+        ]
+
+        component gen_scada_output Fuse_Link_A1 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 7120, 7968
+        ]
+
+        component "core/Four Phase Core Coupling" "Core Coupling 1" {
+            snb_type_i = "R1"
+        }
+        [
+            position = 8664, 8288
+            size = 12, 352
+        ]
+
+        component src_ground gnd5 {
+        }
+        [
+            position = 8728, 8504
+        ]
+
+        component src_ground gnd6 {
+        }
+        [
+            position = 8584, 8504
+        ]
+
+        component src_ground gnd7 {
+        }
+        [
+            position = 9056, 8464
+        ]
+
+        component "core/(50) Instantaneous Overcurrent" "(50) Instantaneous Overcurrent1" {
+            In = "3"
+            OC_thresh = "10"
+            execution_rate = "1e-3"
+            phase_trip = "False"
+            trip_mem = "False"
+        }
+        [
+            position = 5880, 7808
+            size = 144, 160
+        ]
+
+        component "core/(51) AC Inverse Time Overcurrent" "(51) AC Inverse Time Overcurrent1" {
+            EM_reset = "False"
+            In = "3"
+            TOC_curve_type = "U4 - Extremely Inverse (US)"
+            TOC_thresh = "3"
+            TOC_timeDial = "0.8"
+            execution_rate = "1e-3"
+            trip_mem = "False"
+        }
+        [
+            position = 5880, 7624
+            size = 144, 160
+        ]
+
+        component gen_scada_output Disj1 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6016, 7744
+        ]
+
+        component gen_scada_output Disj2 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6016, 7560
+        ]
+
+        component gen_scada_output Dial_reset {
+            unit = ""
+        }
+        [
+            position = 6016, 7624
+        ]
+
+        component "core/Triple Pole Single Throw Contactor" CB {
+            ctrl_src = "Model"
+            execution_rate = "1e-3"
+        }
+        [
+            position = 6024, 8240
+            size = 64, 256
+        ]
+
+        component src_scada_input Memoria50 {
+            execution_rate = "1e-3"
+            format = "int"
+            signal_type = "int"
+            unit = ""
+        }
+        [
+            position = 6240, 7992
+            rotation = down
+        ]
+
+        component src_scada_input Memoria51 {
+            execution_rate = "1e-3"
+            format = "int"
+            signal_type = "int"
+            unit = ""
+        }
+        [
+            position = 6240, 8072
+            rotation = down
+        ]
+
+        component gen_logic_op "Logical operator3" {
+            operator = "NAND"
+        }
+        [
+            position = 6136, 8032
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S2 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 7136, 8240
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkB {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 7056, 8240
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_B1 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6968, 8200
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S3 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 6576, 8144
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkA1 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 6448, 8144
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_A {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6368, 8072
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S4 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 6568, 8240
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkB1 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 6440, 8240
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_B {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6368, 8192
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S5 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 6576, 8336
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkB2 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 6432, 8336
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_C {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6376, 8288
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S6 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 8888, 8152
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkA3 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 8808, 8152
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_A2 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 8736, 8088
+            rotation = down
+        ]
+
+        component "core/Single Pole Single Throw Contactor" S7 {
+            Sa_logic = "active low"
+            enable_fb_out = "True"
+            fb_out_type = "int"
+            initial_state = "on"
+        }
+        [
+            position = 8880, 8248
+            size = 64, 32
+        ]
+
+        component "core/Current RMS" FuseLinkB5 {
+            execution_rate = "1e-3"
+            sig_output = "True"
+        }
+        [
+            position = 8800, 8248
+            size = 64, 32
+        ]
+
+        component gen_scada_output Fuse_Link_B2 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 8736, 8208
+            rotation = down
+        ]
+
+        component "core/Four Phase Core Coupling" "Core Coupling 2" {
+            snb_type_i = "R1"
+        }
+        [
+            position = 7520, 8288
+            size = 12, 352
+        ]
+
+        component src_ground gnd8 {
+        }
+        [
+            position = 7456, 8512
+        ]
+
+        component src_ground gnd9 {
+        }
+        [
+            position = 7592, 8512
+        ]
+
+        component gen_scada_output S1_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 7208, 8032
+        ]
+
+        component gen_scada_output S2_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 7208, 8088
+        ]
+
+        component gen_scada_output S3_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6672, 7984
+        ]
+
+        component gen_scada_output S4_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6672, 7928
+        ]
+
+        component gen_scada_output S5_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6672, 8040
+        ]
+
+        component gen_scada_output S6_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 9016, 8000
+        ]
+
+        component gen_scada_output S7_feed {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 9016, 8056
+        ]
+
+        component "core/Three-phase Meter" Rele {
+            I_avg_rms = "True"
+            I_rms = "True"
+            Ts = "1e-3"
+            VAB = "True"
+            VBC = "True"
+            VCA = "True"
+            VLL_rms = "True"
+            VLn_rms = "True"
+            freq = "True"
+            remove_snubber = "True"
+        }
+        [
+            position = 5752, 8240
+            size = 64, 272
+        ]
+
+        component src_ground gnd10 {
+        }
+        [
+            position = 5752, 8448
+        ]
+
+        component src_ground gnd11 {
+        }
+        [
+            position = 5464, 8392
+        ]
+
+        component gen_scada_output ReleA {
+            unit = ""
+        }
+        [
+            position = 6368, 7672
+            rotation = left
+        ]
+
+        component "core/Meter Split" "Meter Split4" {
+            i_rms = "True"
+            ia_rms = "True"
+            ib_rms = "True"
+            ic_rms = "True"
+            van = "False"
+            vbn = "False"
+            vcn = "False"
+        }
+        [
+            position = 6168, 7824
+            size = 96, 96
+        ]
+
+        component gen_scada_output ReleB {
+            unit = ""
+        }
+        [
+            position = 6440, 7672
+            rotation = left
+        ]
+
+        component gen_scada_output ReleC {
+            unit = ""
+        }
+        [
+            position = 6520, 7672
+            rotation = left
+        ]
+
+        component gen_scada_output ReleI {
+            unit = ""
+        }
+        [
+            position = 6600, 7672
+            rotation = left
+        ]
+
+        component gen_scada_output Disj3 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6192, 7928
+            rotation = left
+        ]
+
+        component gen_scada_output Disj4 {
+            execution_rate = "1e-3"
+            unit = ""
+        }
+        [
+            position = 6184, 8104
+            rotation = right
+        ]
+
+        component "core/Voltage Measurement" VCB {
+            override_signal_name = "True"
+            signal_name = "VCB"
+        }
+        [
+            position = 5880, 8296
+            rotation = left
+            size = 64, 32
+        ]
+
+        junction Junction23 sp
+        [
+            position = 9344, 7968
+        ]
+
+        junction Junction31 pe
+        [
+            position = 7360, 8144
+        ]
+
+        junction Junction48 pe
+        [
+            position = 7280, 8144
+        ]
+
+        junction Junction85 pe
+        [
+            position = 8304, 8400
+        ]
+
+        junction Junction87 sp
+        [
+            position = 8168, 7872
+        ]
+
+        junction Junction88 pe
+        [
+            position = 8232, 8400
+        ]
+
+        junction Junction89 pe
+        [
+            position = 8304, 8144
+        ]
+
+        junction Junction90 pe
+        [
+            position = 8232, 8240
+        ]
+
+        junction Junction92 pe
+        [
+            position = 9376, 8432
+        ]
+
+        junction Junction93 pe
+        [
+            position = 8432, 8144
+        ]
+
+        junction Junction104 pe
+        [
+            position = 9168, 8432
+        ]
+
+        junction Junction113 pe
+        [
+            position = 7272, 8240
+        ]
+
+        junction Junction117 pe
+        [
+            position = 7408, 8416
+        ]
+
+        junction Junction118 pe
+        [
+            position = 7312, 8416
+        ]
+
+        junction Junction119 pe
+        [
+            position = 7488, 8144
+        ]
+
+        junction Junction120 pe
+        [
+            position = 7312, 8240
+        ]
+
+        junction Junction121 pe
+        [
+            position = 7360, 8240
+        ]
+
+        junction Junction124 pe
+        [
+            position = 8512, 8144
+        ]
+
+        junction Junction125 pe
+        [
+            position = 8432, 8240
+        ]
+
+        junction Junction126 pe
+        [
+            position = 8512, 8240
+        ]
+
+        junction Junction128 sp
+        [
+            position = 5752, 7744
+        ]
+
+        junction Junction129 sp
+        [
+            position = 5752, 7976
+        ]
+
+        junction Junction130 sp
+        [
+            position = 6192, 8024
+        ]
+
+        junction Junction131 sp
+        [
+            position = 6184, 8040
+        ]
+
+        junction Junction132 pe
+        [
+            position = 5880, 8240
+        ]
+
+        junction Junction133 pe
+        [
+            position = 5880, 8352
+        ]
+
+        connect "Three Phase Phasor3.out1" Linha_Tensao_A1.in as Connection263
+        connect Linha_Tensao_B1.in "Three Phase Phasor3.out2" as Connection264
+        [
+            breakpoints = 9520, 7912; 9520, 7968; 9424, 7968
+        ]
+        connect "Three Phase Phasor3.out3" Linha_Tensao_C1.in as Connection265
+        connect "Three Phase Phasor3.phase1" Linha_Angulo_A1.in as Connection266
+        connect Linha_Angulo_B1.in "Three Phase Phasor3.phase2" as Connection267
+        [
+            breakpoints = 9576, 7984; 9576, 7984; 9424, 7984; 9424, 7984
+        ]
+        connect "Three Phase Phasor3.phase3" Linha_Angulo_C1.in as Connection279
+        [
+            breakpoints = 9536, 8016; 9536, 8048
+        ]
+        connect Consumidor.Out "Meter Split2.Input" as Connection285
+        connect "Three Phase Phasor3.in_ref" Junction23 as Connection286
+        connect "Meter Split2.VAn" Junction23 as Connection288
+        [
+            breakpoints = 9320, 7968; 9344, 7968
+        ]
+        connect "Meter Split2.VBn" "Three Phase Phasor3.in2" as Connection289
+        connect "Meter Split2.VCn" "Three Phase Phasor3.in3" as Connection290
+        connect Junction23 "Three Phase Phasor3.in1" as Connection297
+        [
+            breakpoints = 9344, 7968; 9344, 7968
+        ]
+        connect C3.p_node Junction31 as Connection356
+        connect S1.a_in FuseLinkA.n_node as Connection400
+        connect C4.p_node Junction48 as Connection433
+        [
+            breakpoints = 7280, 8152
+        ]
+        connect Junction48 Junction31 as Connection434
+        [
+            breakpoints = 7280, 8144; 7280, 8144
+        ]
+        connect "Three Phase Phasor4.out1" Linha_Tensao_A.in as Connection627
+        [
+            breakpoints = 8304, 7840; 8304, 7752
+        ]
+        connect Linha_Angulo_A.in "Three Phase Phasor4.phase1" as Connection628
+        [
+            breakpoints = 8320, 7800; 8320, 7856
+        ]
+        connect "Three Phase Phasor4.out2" Linha_Tensao_B.in as Connection629
+        [
+            breakpoints = 8480, 7856
+        ]
+        connect "Three Phase Phasor4.phase2" Linha_Angulo_B.in as Connection630
+        [
+            breakpoints = 8464, 7888; 8560, 7888
+        ]
+        connect "Three Phase Phasor4.out3" Linha_Tensao_C.in as Connection631
+        [
+            breakpoints = 8368, 7920
+        ]
+        connect "Three Phase Phasor4.phase3" Linha_Angulo_C.in as Connection632
+        [
+            breakpoints = 8352, 7920; 8352, 7976; 8352, 7976
+        ]
+        connect R2.p_node Junction85 as Connection654
+        [
+            breakpoints = 8448, 8400
+        ]
+        connect Junction85 C10.n_node as Connection655
+        [
+            breakpoints = 8304, 8400; 8304, 8400
+        ]
+        connect Linha.GND gnd4.node as Connection660
+        connect "Three Phase Phasor4.in1" Junction87 as Connection665
+        connect Junction87 "Three Phase Phasor4.in_ref" as Connection666
+        [
+            breakpoints = 8176, 7856
+        ]
+        connect "Meter Split3.VAB" Junction87 as Connection667
+        [
+            breakpoints = 8120, 7872; 8168, 7872
+        ]
+        connect "Meter Split3.VBC" "Three Phase Phasor4.in2" as Connection668
+        [
+            breakpoints = 8120, 7888; 8192, 7888
+        ]
+        connect "Three Phase Phasor4.in3" "Meter Split3.VCA" as Connection669
+        [
+            breakpoints = 8160, 7904; 8160, 7920
+        ]
+        connect Junction85 Junction88 as Connection675
+        [
+            breakpoints = 8304, 8400
+        ]
+        connect Junction88 C9.n_node as Connection676
+        [
+            breakpoints = 8232, 8400
+        ]
+        connect Falta.P7 Junction88 as Connection677
+        connect C10.p_node Junction89 as Connection681
+        [
+            breakpoints = 8304, 8176
+        ]
+        connect Falta.P5 Junction89 as Connection683
+        [
+            breakpoints = 8136, 8368; 8136, 8144
+        ]
+        connect Junction90 C9.p_node as Connection685
+        [
+            breakpoints = 8232, 8256; 8232, 8256
+        ]
+        connect Falta.P6 Junction90 as Connection686
+        [
+            breakpoints = 8168, 8376
+        ]
+        connect "Constant Impedance Load1.N" Junction92 as Connection700
+        [
+            breakpoints = 9680, 8240; 9680, 8432
+        ]
+        connect FaltaConsumidor.P8 Junction92 as Connection702
+        connect "Constant Impedance Load1.C" FaltaConsumidor.P7 as Connection703
+        connect FaltaConsumidor.P3 Consumidor.C- as Connection704
+        [
+            breakpoints = 9328, 8280; 9328, 8352
+        ]
+        connect FaltaConsumidor.P6 "Constant Impedance Load1.B" as Connection705
+        connect FaltaConsumidor.P5 "Constant Impedance Load1.A" as Connection706
+        [
+            breakpoints = 9440, 8240
+        ]
+        connect Consumidor.A- FaltaConsumidor.P1 as Connection707
+        [
+            breakpoints = 9288, 8176; 9288, 8248
+        ]
+        connect FaltaConsumidor.P2 Consumidor.B- as Connection708
+        [
+            breakpoints = 9240, 8264
+        ]
+        connect Junction48 S1.a_out as Connection709
+        [
+            breakpoints = 7280, 8144; 7256, 8144
+        ]
+        connect FuseLinkA.out Fuse_Link_A1.in as Connection711
+        connect C8.p_node Junction93 as Connection732
+        connect Junction93 Junction89 as Connection733
+        [
+            breakpoints = 8432, 8144; 8432, 8144; 8432, 8144; 8304, 8144; 8304, 8144; 8304, 8144
+        ]
+        connect Junction92 Junction104 as Connection832
+        [
+            breakpoints = 9376, 8432
+        ]
+        connect Junction104 Consumidor.GND as Connection833
+        [
+            breakpoints = 9168, 8432; 9168, 8432; 9168, 8432
+        ]
+        connect Junction104 gnd1.node as Connection869
+        [
+            breakpoints = 9168, 8432; 9080, 8432; 9080, 8440
+        ]
+        connect "Core Coupling 1.d_out" gnd5.node as Connection871
+        connect gnd6.node "Core Coupling 1.d_in" as Connection872
+        connect gnd3.node Falta.P8 as Connection873
+        [
+            breakpoints = 8088, 8456; 8088, 8440
+        ]
+        connect M1.out_1 Linha.A+ as Connection933
+        connect M1.out_2 Linha.B+ as Connection934
+        [
+            breakpoints = 7712, 8216
+        ]
+        connect Tr1.sec_1 FuseLinkA.p_node as Connection979
+        connect S2.a_in FuseLinkB.n_node as Connection980
+        connect FuseLinkB.out Fuse_Link_B1.in as Connection981
+        connect Junction113 C4.n_node as Connection984
+        [
+            breakpoints = 7280, 8240
+        ]
+        connect S2.a_out Junction113 as Connection985
+        connect FuseLinkB.p_node Tr1.sec_2 as Connection986
+        connect S3.a_in FuseLinkA1.n_node as Connection987
+        connect FuseLinkA1.out Fuse_Link_A.in as Connection988
+        connect S4.a_in FuseLinkB1.n_node as Connection989
+        connect FuseLinkB1.out Fuse_Link_B.in as Connection990
+        connect S5.a_in FuseLinkB2.n_node as Connection991
+        connect FuseLinkB2.out Fuse_Link_C.in as Connection992
+        connect S3.a_out Tr1.prm_1 as Connection993
+        connect Tr1.prm_2 S4.a_out as Connection994
+        connect Tr1.prm_3 S5.a_out as Connection995
+        connect S6.a_in FuseLinkA3.n_node as Connection1010
+        connect FuseLinkA3.out Fuse_Link_A2.in as Connection1011
+        connect S7.a_in FuseLinkB5.n_node as Connection1012
+        connect FuseLinkB5.out Fuse_Link_B2.in as Connection1013
+        connect S7.a_out Tr2.prm_2 as Connection1014
+        connect S6.a_out Tr2.prm_1 as Connection1015
+        connect Tr1.sec_3 R3.p_node as Connection1027
+        connect "Core Coupling 2.d_in" gnd8.node as Connection1034
+        connect "Core Coupling 2.d_out" gnd9.node as Connection1035
+        connect Linha.C+ "Core Coupling 2.c_out" as Connection1036
+        [
+            breakpoints = 7680, 8384; 7672, 8336
+        ]
+        connect Junction117 "Core Coupling 2.c_in" as Connection1039
+        [
+            breakpoints = 7440, 8336
+        ]
+        connect C6.n_node Junction117 as Connection1040
+        connect R3.n_node Junction118 as Connection1041
+        [
+            breakpoints = 7112, 8344; 7120, 8416
+        ]
+        connect Junction118 Junction117 as Connection1042
+        connect C5.n_node Junction118 as Connection1043
+        connect Junction31 Junction119 as Connection1044
+        [
+            breakpoints = 7360, 8144
+        ]
+        connect Junction119 C6.p_node as Connection1045
+        [
+            breakpoints = 7488, 8144
+        ]
+        connect "Core Coupling 2.a_in" Junction119 as Connection1046
+        connect Junction120 Junction113 as Connection1049
+        connect C5.p_node Junction120 as Connection1050
+        connect C3.n_node Junction121 as Connection1051
+        connect Junction121 Junction120 as Connection1052
+        [
+            breakpoints = 7360, 8240; 7360, 8240
+        ]
+        connect "Core Coupling 2.b_in" Junction121 as Connection1053
+        connect "Core Coupling 2.a_out" M1.in_1 as Connection1054
+        connect M1.in_2 "Core Coupling 2.b_out" as Connection1055
+        connect Tr2.prm_3 "Core Coupling 1.c_out" as Connection1058
+        connect "Core Coupling 1.c_in" R2.n_node as Connection1059
+        connect C7.p_node Junction124 as Connection1071
+        connect Junction124 Junction93 as Connection1072
+        [
+            breakpoints = 8512, 8144; 8512, 8144; 8512, 8144; 8512, 8144; 8512, 8144; 8512, 8144; 8432, 8144
+        ]
+        connect "Core Coupling 1.a_in" Junction124 as Connection1073
+        connect C8.n_node Junction125 as Connection1075
+        connect Junction125 Junction90 as Connection1076
+        [
+            breakpoints = 8432, 8240; 8432, 8240; 8432, 8240
+        ]
+        connect C7.n_node Junction126 as Connection1078
+        connect Junction126 Junction125 as Connection1079
+        connect "Core Coupling 1.b_in" Junction126 as Connection1080
+        connect "Core Coupling 1.a_out" FuseLinkA3.p_node as Connection1081
+        connect FuseLinkB5.p_node "Core Coupling 1.b_out" as Connection1082
+        connect Tr2.sec_1 Consumidor.A+ as Connection1083
+        connect Consumidor.B+ Tr2.sec_2 as Connection1084
+        connect Consumidor.C+ Tr2.sec_3 as Connection1085
+        connect S2.feedback_out S2_feed.in as Connection1086
+        connect S1.feedback_out S1_feed.in as Connection1087
+        connect S5.feedback_out S5_feed.in as Connection1088
+        connect S4.feedback_out S4_feed.in as Connection1089
+        [
+            breakpoints = 6528, 8216; 6528, 8168; 6528, 8120; 6528, 8040
+        ]
+        connect S3.feedback_out S3_feed.in as Connection1090
+        connect S6.feedback_out S6_feed.in as Connection1091
+        connect S7.feedback_out S7_feed.in as Connection1092
+        [
+            breakpoints = 8952, 8216; 8952, 8176
+        ]
+        connect "Meter Split3.Input" Linha.Out as Connection1094
+        [
+            breakpoints = 7960, 7896; 7952, 7896; 7952, 7896; 7952, 7896
+        ]
+        connect FuseLinkA1.p_node CB.a_out as Connection1095
+        connect FuseLinkB2.p_node CB.c_out as Connection1099
+        connect Falta.P1 Linha.A- as Connection1102
+        [
+            breakpoints = 8032, 8368
+        ]
+        connect Linha.B- Falta.P2 as Connection1103
+        [
+            breakpoints = 7968, 8320; 7968, 8376; 7968, 8376
+        ]
+        connect Linha.C- Falta.P3 as Connection1104
+        connect Vs1.b_node Rele.B+ as Connection1106
+        connect CB.b_out FuseLinkB1.p_node as Connection1108
+        connect Rele.A+ Vs1.a_node as Connection1113
+        connect Rele.C+ Vs1.c_node as Connection1119
+        connect "(50) Instantaneous Overcurrent1.Meas_in" Junction128 as Connection1120
+        connect Junction128 "(51) AC Inverse Time Overcurrent1.Meas_in" as Connection1121
+        [
+            breakpoints = 5752, 7736; 5752, 7560
+        ]
+        connect gnd10.node Rele.GND as Connection1124
+        connect Vs1.n_node gnd11.node as Connection1125
+        connect Tr2.n2 gnd7.node as Connection1126
+        [
+            breakpoints = 9064, 8440; 9048, 8440
+        ]
+        connect Tr1.n2 gnd2.node as Connection1127
+        connect "Logical operator3.out" CB.ctrl_in as Connection1128
+        connect "(51) AC Inverse Time Overcurrent1.time_trip" Disj2.in as Connection1129
+        connect Dial_reset.in "(51) AC Inverse Time Overcurrent1.dial_reset" as Connection1130
+        connect Disj1.in "(50) Instantaneous Overcurrent1.trip_inst" as Connection1131
+        connect ReleA.in "Meter Split4.IA_RMS" as Connection1132
+        connect "Meter Split4.IB_RMS" ReleB.in as Connection1133
+        connect ReleC.in "Meter Split4.IC_RMS" as Connection1134
+        connect Rele.Out Junction129 as Connection1135
+        connect Junction129 Junction128 as Connection1136
+        connect "Meter Split4.Input" Junction129 as Connection1137
+        [
+            breakpoints = 6000, 7824; 6000, 7976
+        ]
+        connect "Meter Split4.I_RMS" ReleI.in as Connection1138
+        connect "Logical operator3.in1" Junction130 as Connection1139
+        [
+            breakpoints = 6160, 8024; 6176, 8024
+        ]
+        connect Junction130 Memoria50.out as Connection1140
+        [
+            breakpoints = 6208, 8024; 6208, 7992
+        ]
+        connect Disj3.in Junction130 as Connection1141
+        connect "Logical operator3.in" Junction131 as Connection1142
+        connect Junction131 Memoria51.out as Connection1143
+        connect Disj4.in Junction131 as Connection1144
+        connect Rele.A- CB.a_in as Connection1148
+        [
+            breakpoints = 5872, 8128
+        ]
+        connect Rele.B- Junction132 as Connection1153
+        connect Junction132 CB.b_in as Connection1154
+        [
+            breakpoints = 5880, 8240
+        ]
+        connect VCB.n_node Junction132 as Connection1155
+        connect Rele.C- Junction133 as Connection1156
+        connect Junction133 CB.c_in as Connection1157
+        connect VCB.p_node Junction133 as Connection1158
+    }
+
+    default {
+        gen_logic_op {
+            operator = "AND"
+            inputs = "2"
+            execution_rate = "inherit"
+        }
+
+        gen_scada_output {
+            addr = "0"
+            format = "real"
+            unit = " "
+            override_signal_name = "False"
+            signal_name = ""
+            execution_rate = "inherit"
+        }
+
+        msr_phasor_3ph {
+            period_timeout = "0.5"
+            angle = "Degrees"
+            execution_rate = "inherit"
+        }
+
+        pas_capacitor {
+            capacitance = "1e-6"
+            initial_voltage = "0"
+            pole_shift_ignore = "False"
+            visible = "True"
+        }
+
+        pas_resistor {
+            resistance = "1"
+            param_set = ""
+        }
+
+        src_scada_input {
+            addr = "0"
+            format = "real"
+            override_signal_name = "False"
+            signal_name = ""
+            signal_type = "real"
+            min = "-1e6"
+            max = "1e6"
+            def_value = "0"
+            unit = " "
+            execution_rate = "100e-6"
+        }
+
+        "core/(50) Instantaneous Overcurrent" {
+            In = "2000"
+            OC_thresh = "5.0"
+            block_fnc = "False"
+            phase_trip = "True"
+            trip_mem = "True"
+            execution_rate = "100e-6"
+        }
+
+        "core/(51) AC Inverse Time Overcurrent" {
+            In = "2000"
+            TOC_thresh = "1"
+            TOC_timeDial = "1"
+            TOC_curve_type = "U1 - Moderatly Inverse (US)"
+            curve_prm_A = "6.407"
+            curve_prm_B = "0.025"
+            curve_prm_P = "2.0"
+            curve_prm_C = "3.0"
+            curve_prm_Pr = "1.0"
+            EM_reset = "True"
+            block_fnc = "False"
+            trip_mem = "True"
+            execution_rate = "100e-6"
+        }
+
+        "core/Constant Impedance Load" {
+            fn = "60"
+            conn_type = "Y"
+            enable_neutral = "False"
+            set_balanced = "True"
+            Vn_3ph = "480"
+            Sn_3ph = "1.0e6"
+            pf_mode_3ph = "Unit"
+            pf_3ph = "0.9"
+            VAn = "480/(3**0.5)"
+            VAB = "480"
+            SAn = "1.0e6/3"
+            SAB = "1.0e6/3"
+            pf_modeA = "Unit"
+            pfA = "0.9"
+            VBn = "480/(3**0.5)"
+            VBC = "480"
+            SBn = "1.0e6/3"
+            SBC = "1.0e6/3"
+            pf_modeB = "Unit"
+            pfB = "0.9"
+            VCn = "480/(3**0.5)"
+            VCA = "480"
+            SCn = "1.0e6/3"
+            SCA = "1.0e6/3"
+            pf_modeC = "Unit"
+            pfC = "0.9"
+        }
+
+        "core/Current RMS" {
+            op_mode = "PLL based"
+            frequency = "50"
+            pin_to_system_cpu = "True"
+            Tfast = "100e-6"
+            Tslow = "200e-6"
+            sig_output = "False"
+            execution_rate = "inherit"
+            feed_forward = "False"
+            nd_msr_estimation = "false"
+        }
+
+        "core/Dynamic Grid Fault" {
+            ctrl_method = "SCADA input"
+            Rph_ph = "0.1"
+            Rph_n = "0.1"
+            execution_rate = "100e-6"
+        }
+
+        "core/Four Phase Core Coupling" {
+            snb_type_i = "none"
+            R1 = "100e3"
+            C1 = "1e-06"
+            C2 = "1e-06"
+            fixed_snb_i = "false"
+            snb_type_u = "none"
+            R2 = "0.1"
+            L1 = "0.1"
+            L2 = "0.1"
+            fixed_snb_u = "false"
+            cpl_connection = "star"
+        }
+
+        "core/Meter Split" {
+            van = "True"
+            vbn = "True"
+            vcn = "True"
+            van_rms = "False"
+            vbn_rms = "False"
+            vcn_rms = "False"
+            vln_rms = "False"
+            vab = "False"
+            vbc = "False"
+            vca = "False"
+            vab_rms = "False"
+            vbc_rms = "False"
+            vca_rms = "False"
+            vll_rms = "False"
+            ia = "False"
+            ib = "False"
+            ic = "False"
+            ia_rms = "False"
+            ib_rms = "False"
+            ic_rms = "False"
+            i_rms = "False"
+            freq = "False"
+            power_p = "False"
+            power_q = "False"
+            power_s = "False"
+            power_pf = "False"
+            enable_extra_in = "No"
+            power_pa = "False"
+            power_pb = "False"
+            power_pc = "False"
+            power_qa = "False"
+            power_qb = "False"
+            power_qc = "False"
+            power_sa = "False"
+            power_sb = "False"
+            power_sc = "False"
+            power_pfa = "False"
+            power_pfb = "False"
+            power_pfc = "False"
+        }
+
+        "core/Single Pole Single Throw Contactor" {
+            ctrl_src = "Digital input"
+            Sa = "1"
+            Sa_logic = "active high"
+            enable_fb_out = "False"
+            fb_out_type = "real"
+            execution_rate = "inherit"
+            initial_state = "off"
+            on_delay = "0"
+            off_delay = "0"
+            switching = "any current"
+        }
+
+        "core/Three Phase Two Winding Transformer" {
+            input = "SC and OC tests"
+            Sn = "160000.0"
+            f = "50.0"
+            V1 = "10000.0"
+            V2 = "400.0"
+            usc1 = "4.0"
+            Psc1 = "2350.0"
+            R1 = "4.58984375"
+            L1 = ".0370093710364"
+            R2 = ".00734375"
+            L2 = "5.92149936583e-05"
+            r1 = ".00734375"
+            l1 = ".0186029389059"
+            r2 = ".00734375"
+            l2 = ".0186029389059"
+            core_model = "Linear"
+            ioc1 = "0.7"
+            Poc1 = "460.0"
+            Rm = "217391.304348"
+            Lm = "311.709196788"
+            flux_vals_SI = "[1910.3, 2419.7]"
+            current_vals_SI = "[0.66653, 277.72]"
+            rm = "347.826086957"
+            lm = "156.68213163"
+            flux_vals_pu = "[1.2, 1.52]"
+            current_vals_pu = "[0.0024, 1]"
+            flux_vals_SCOC = "[1.2, 1.52]"
+            current_vals_SCOC = "[0.0024, 1]"
+            import_from_SI2SCOC = "Import from SI"
+            import_from_pu2SCOC = "Import from PU"
+            import_from_SCOC2SI = "Import from SC OC"
+            import_from_pu2SI = "Import from PU"
+            import_from_SCOC2pu = "Import from SC OC"
+            import_from_SI2pu = "Import from SI"
+            winding_1_connection = "Y"
+            winding_2_connection = "Y"
+            clock_number = "0"
+            embedded_cpl = "None"
+            coupling_type = "core"
+            ratio_type = "Automatic"
+            ratio = "0.1"
+            Rshunt = "inf"
+        }
+
+        "core/Three Phase Voltage Source" {
+            init_rms_value = "0.0"
+            init_frequency = "50.0"
+            init_phase = "0.0"
+        }
+
+        "core/Three-phase Meter" {
+            R = "1e5"
+            n_cycles = "1"
+            Ts = "100e-6"
+            enable_probes = "True"
+            enable_out = "True"
+            remove_snubber = "False"
+            VAn = "True"
+            VBn = "True"
+            VCn = "True"
+            VAB = "False"
+            VBC = "False"
+            VCA = "False"
+            IA = "True"
+            IB = "True"
+            IC = "True"
+            freq = "False"
+            VLn_rms = "False"
+            VLL_rms = "False"
+            VLn_avg_rms = "False"
+            VLL_avg_rms = "False"
+            I_rms = "False"
+            I_avg_rms = "False"
+            P_method = "alpha-beta"
+            enable_extra_out = "False"
+            P_meas = "False"
+        }
+
+        "core/Triple Pole Single Throw Contactor" {
+            ctrl_src = "Digital input"
+            Sa = "1"
+            Sa_logic = "active high"
+            enable_fb_out = "False"
+            fb_out_type = "real"
+            execution_rate = "inherit"
+            initial_state = "off"
+            on_delay = "0"
+            off_delay = "0"
+        }
+
+        "core/Two Coupled Inductors" {
+            L1 = "0.001"
+            I1_0 = "0.0"
+            R1 = "0.01"
+            L2 = "0.001"
+            I2_0 = "0.0"
+            R2 = "0.01"
+            k = "0.0"
+        }
+
+        "core/Voltage Measurement" {
+            bw_limit = "False"
+            frequency = "10e3"
+            comparator_enable = "False"
+            operator = "greater"
+            threshold = "0"
+            cmp_abs_value = "False"
+            feed_forward = "false"
+            sig_output = "False"
+            sig_output_filt_and_full_bw = "False"
+            execution_rate = "100e-6"
+            addr = "0"
+            nd_msr_estimation = "false"
+            dev_cpl_msr = "false"
+            host_device = "0"
+            output_to_device = "0"
+            dev_cpl_index = "0"
+            dev_cpl_var_nb = "0"
+            visible = "True"
+            override_signal_name = "False"
+            signal_name = ""
+        }
+    }
+
+    CODE model_init
+        # Numpy module is imported as 'np'
+        # Scipy module is imported as 'sp'
+        # The Schematic API is imported as 'mdl'
+        # To get the model file path, use 'mdl.get_model_file_path()'
+        # To print information to the console, use info()
+    ENDCODE
+}
